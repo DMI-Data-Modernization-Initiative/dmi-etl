@@ -1,0 +1,48 @@
+
+version: 2
+
+models:
+  - name: aggregate_moh_505_report
+    description: This table has aggregate data for various diseases' indicator as reported on the DHIS MOH 505 report
+    columns:
+      - name: disease
+        description: Name of disease being reported
+        tests:
+          - not_null
+          - unique
+      - name: gender
+        description: Gender of cases reported
+        tests:
+          - not_null
+          - accepted_values:
+             values: ['Female', 'Male']
+      - name: age_group_category
+        description: Age group categorization of under five years or over five year
+        tests:
+          - not_null
+          - accepted_values:
+             values: ['< 5 years', '>= 5 years']  
+      - name: epi_week
+        description: EPI week of the report
+        tests:
+          - not_null
+      - name: year         
+        description: Year of the report
+        tests:
+          - not_null
+      - name: county         
+        description: County where data was reported for
+        tests:
+          - not_null
+      - name: facility_name       
+        description: Facility where data was reported for
+        tests:
+          - not_null
+      - name: indicator       
+        description: Indicator name being reported
+        tests:
+          - not_null
+      - name: indicator_value      
+        description: Indicator name being reported
+        tests:
+          - not_null

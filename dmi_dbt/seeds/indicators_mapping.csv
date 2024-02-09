@@ -1,0 +1,12 @@
+indicator,indicator_description
+no_of_cases,Number of cases reported
+no_of_deaths,Number of deceased cases
+no_of_tests,Number of  tests or specimens/samples
+no_of_tests_specimen_positive,Number of tests or specimens/samples turned positive
+no_of_tests_specimen_negative,Number of tests or specimens/samples turned negative
+positivity_rate,Percentage of psotive tests or specimens/samples
+no_ILI_tests,Number of ILI specimens/samples
+no_of_specimen_positive_SAR_COV2,Number of positive test results for SARS-COV2
+no_of_specimen_negative_SAR_COV2,Number of negative test results for SARS-COV2
+no_of_specimen_positive_influenza_a,Number of specimens tested positive for Influenza A (1Pan H1 and 1 H3)
+no_of_specimen_positive_influenza_b,Number of specimens tested positive for Influenza B (Victoria)
