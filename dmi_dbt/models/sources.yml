@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: central_raw_sari_ili
+    database: central_raw_sari_ili
+    schema: dbo
+    tables:
+      - name: SARI_ILI_data
+        description: This table contains raw data for SARI-ILI

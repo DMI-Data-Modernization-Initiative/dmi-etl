@@ -1,0 +1,19 @@
+disease,threshold
+Malaria,5
+Cholera,10
+Dengue Fever,10
+Acute Malnutrition,10
+Rabies,10
+Acute jaundice,10
+Neonatal deaths,10
+Measles,10
+Dysentry,10
+Yellow fever,5
+Typhoid fever,10
+Meningococcal meningitis,10
+Acute Flaccid Paralysis (AFP),10
+Neonatal Tetanus(NNT),10
+Guinea worm,10
+Anthrax,10
+Influenza,10
+Maternal deaths,10
