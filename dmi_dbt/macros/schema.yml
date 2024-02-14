@@ -1,0 +1,5 @@
+version: 2
+
+macros:
+  - name: get_custom_database
+    description: A utility macro that is used to map models to specific databases that they will be created on if the environment is production
