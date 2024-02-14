@@ -16,7 +16,8 @@ select
     {{ tsql_utils.surrogate_key( ['age_group_data.age_group_category']) }} as age_group_key,
     start_age,
     end_age,
-	age_group_category
+	age_group_category,
+    cast(getdate() as date) as load_date
 from age_group_data
 
 

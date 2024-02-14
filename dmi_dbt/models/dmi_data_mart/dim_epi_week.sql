@@ -22,6 +22,7 @@ select
 	end_of_week,
 	datepart(week, date_day) as week_number,
     year,
-    month
+    month,
+    cast(getdate() as date) as load_date
 from epi_week_cte
 where WeekDay = 'Sunday'

@@ -1,0 +1,139 @@
+source_indicator,disease,indicator
+Bacterial Meningitis +ve H Influenza,Bacterial Meningitis,no_ +ve_h_influenza
+Bacterial Meningitis +ve Nm,Bacterial Meningitis,no_+ve_nm
+Bacterial Meningitis +ve Sp,Bacterial Meningitis,no_+ve_sp
+Bacterial Meningitis No CSF,Bacterial Meningitis,no_csf
+Bacterial Meningitis No Contaminated,Bacterial Meningitis,no_contaminated
+Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
+"Deaths Due to Malaria <5 yrs, Cases",Malaria,no_of_cases
+"Deaths Due to Malaria <5 yrs, Deaths",Malaria,no_of_deaths
+"Deaths Due to Malaria >5 yrs, Cases",Malaria,no_of_cases
+"Deaths Due to Malaria >5 yrs, Deaths",Malaria,no_of_deaths
+"AEFI <5 yrs, Cases",AEFI,no_of_cases
+"AEFI <5 yrs, Deaths",AEFI,no_of_deaths
+"AEFI >5 yrs, Cases",AEFI,no_of_cases
+"AEFI >5 yrs, Deaths",AEFI,no_of_cases
+"Acute Flaccid Paralysis <5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
+"Acute Flaccid Paralysis <5 yrs, Deaths",Acute Flaccid Paralysis (AFP),no_of_deaths
+"Acute Flaccid Paralysis >5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
+"Acute Flaccid Paralysis >5 yrs, Deaths",Acute Flaccid Paralysis (AFP),no_of_deaths
+"Acute Jaundice <5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
+"Acute Jaundice <5 yrs, Deaths",Acute Jaundice,no_of_deaths
+"Acute Jaundice >5 yrs, Cases",Acute Jaundice,no_of_cases
+"Acute Jaundice >5 yrs, Deaths",Acute Jaundice,no_of_deaths
+"Acute Malnutrition <5 yrs, Cases",Acute Malnutrition,no_of_cases
+"Acute Malnutrition <5 yrs, Deaths",Acute Malnutrition,no_of_deaths
+"Acute Malnutrition >5 yrs, Cases",Acute Malnutrition,no_of_cases
+"Acute Malnutrition >5 yrs, Deaths",Acute Malnutrition,no_of_deaths
+"Anthrax <5 yrs, Cases",Anthrax ,no_of_cases
+"Anthrax <5 yrs, Deaths",Anthrax ,no_of_deaths
+"Anthrax >5 yrs, Cases",Anthrax ,no_of_cases
+"Anthrax >5 yrs, Deaths",Anthrax ,no_of_deaths
+"Cholera <5 yrs, Cases",Cholera,no_of_cases
+"Cholera <5 yrs, Deaths",Cholera,no_of_deaths
+"Cholera >5 yrs, Cases",Cholera,no_of_cases
+"Cholera >5 yrs, Deaths",Cholera,no_of_deaths
+"Dengue <5 yrs, Cases",Dengue fever,no_of_cases
+"Dengue <5 yrs, Deaths",Dengue fever,no_of_deaths
+"Dengue >5 yrs, Cases",Dengue fever,no_of_cases
+"Dengue >5 yrs, Deaths",Dengue fever,no_of_deaths
+"Dysentery, Cases",Dysentery,no_of_cases
+"Dysentery <5 yrs, Deaths",Dysentery,no_of_deaths
+"Dysentery >5 yrs, Cases",Dysentery,no_of_cases
+"Dysentery >5 yrs, Deaths",Dysentery,no_of_deaths
+"Guinea Worm Disease <5 yrs, Cases",Guinea Worm Disease,no_of_cases
+"Guinea Worm Disease <5 yrs, Deaths",Guinea Worm Disease,no_of_deaths
+"Guinea Worm Disease >5 yrs, Cases",Guinea Worm Disease,no_of_cases
+"Guinea Worm Disease >5 yrs, Deaths",Guinea Worm Disease,no_of_deaths
+"Maternal deaths <5 yrs, Cases",Maternal deaths,no_of_cases
+"Maternal deaths <5 yrs, Deaths",Maternal deaths,no_of_deaths
+"Maternal deaths >5 yrs, Cases",Maternal deaths,no_of_cases
+"Maternal deaths >5 yrs, Deaths",Maternal deaths,no_of_deaths
+"Measles <5 yrs, Cases",Measles,no_of_cases
+"Measles <5 yrs, Deaths",Measles,no_of_deaths
+"Measles >5 yrs, Cases",Measles,no_of_cases
+"Measles >5 yrs, Deaths",Measles,no_of_deaths
+"Meningococcal Meningitis <5 yrs, Cases",Meningococcal Meningitis,no_of_cases
+"Meningococcal Meningitis <5 yrs, Deaths",Meningococcal Meningitis,no_of_deaths
+"Meningococcal Meningitis >5 yrs, Cases",Meningococcal Meningitis,no_of_cases
+"Meningococcal Meningitis >5 yrs, Deaths",Meningococcal Meningitis,no_of_deaths
+"Neonatal Tetanus <5 yrs, Cases",Neonatal Tetanus(NNT),no_of_cases
+"Neonatal Tetanus <5 yrs, Deaths",Neonatal Tetanus(NNT),no_of_deaths
+"Neonatal Tetanus >5 yrs, Cases",Neonatal Tetanus(NNT),no_of_cases
+"Neonatal Tetanus >5 yrs, Deaths",Neonatal Tetanus(NNT),no_of_deaths
+"Neonatal deaths <5 yrs, Cases",Neonatal deaths,no_of_cases
+"Neonatal deaths <5 yrs, Deaths",Neonatal deaths,no_of_deaths
+"Neonatal deaths >5 yrs, Cases",Neonatal deaths,no_of_cases
+"Neonatal deaths >5 yrs, Deaths",Neonatal deaths,no_of_deaths
+"Other Viral Haemorrhagic Fevers <5 yrs, Cases",Other Viral Haemorrhagic Fevers,no_of_cases
+"Other Viral Haemorrhagic Fevers <5 yrs, Deaths",Other Viral Haemorrhagic Fevers,no_of_deaths
+"Other Viral Haemorrhagic Fevers >5 yrs, Cases",Other Viral Haemorrhagic Fevers,no_of_cases
+"Other Viral Haemorrhagic Fevers >5 yrs, Deaths",Other Viral Haemorrhagic Fevers,no_of_deaths
+"Other cases <5 yrs, Cases",Other cases,no_of_cases
+"Other cases <5 yrs, Deaths",Other cases,no_of_deaths
+"Other cases >5 yrs, Cases",Other cases,no_of_cases
+"Other cases >5 yrs, Deaths",Other cases,no_of_deaths
+"Plague <5 yrs, Cases",Plague,no_of_cases
+"Plague <5 yrs, Deaths",Plague,no_of_deaths
+"Plague >5 yrs, Cases",Plague,no_of_cases
+"Plague >5 yrs, Deaths",Plague,no_of_deaths
+"Rabies <5 yrs, Cases",Rabies,no_of_cases
+"Rabies <5 yrs, Deaths",Rabies,no_of_deaths
+"Rabies >5 yrs, Cases",Rabies,no_of_cases
+"Rabies >5 yrs, Deaths",Rabies,no_of_deaths
+"Rift Valley Fever <5 yrs, Cases",Rift Valley Fever,no_of_cases
+"Rift Valley Fever <5 yrs, Deaths",Rift Valley Fever,no_of_deaths
+"Rift Valley Fever >5 yrs, Cases",Rift Valley Fever,no_of_cases
+"Rift Valley Fever >5 yrs, Deaths",Rift Valley Fever,no_of_deaths
+"SARI (Cluster =3 cases) <5 yrs, Cases",SARI (Cluster =3 cases),no_of_cases
+"SARI (Cluster =3 cases) <5 yrs, Deaths",SARI (Cluster =3 cases),no_of_deaths
+"SARI (Cluster =3 cases) >5 yrs, Cases",SARI (Cluster =3 cases),no_of_cases
+"SARI (Cluster =3 cases) >5 yrs, Deaths",SARI (Cluster =3 cases),no_of_deaths
+"Suspected MDR/XDR TB <5 yrs, Cases",Tubercullosis,no_of_cases
+"Suspected MDR/XDR TB <5 yrs, Deaths",Tubercullosis,no_of_deaths
+"Suspected MDR/XDR TB >5 yrs, Cases",Tubercullosis,no_of_cases
+"Suspected MDR/XDR TB >5 yrs, Deaths",Tubercullosis,no_of_deaths
+"Suspected Malaria <5 yrs, Cases",Malaria,no_of_cases
+"Suspected Malaria <5 yrs, Deaths",Malaria,no_of_deaths
+"Suspected Malaria >5 yrs, Cases",Malaria,no_of_cases
+"Suspected Malaria >5 yrs, Deaths",Malaria,no_of_deaths
+"Typhoid <5 yrs, No. of Tests performed",Typhoid fever,no_of_tests
+"Typhoid <5 yrs, Positive",Typhoid fever,no_of_tests_specimen_positive
+"Typhoid >5 yrs, No. of Tests performed",Typhoid fever,no_of_tests
+"Typhoid >5 yrs, Positive",Typhoid fever,no_of_tests_specimen_positive
+"Typhoid <5 yrs, Cases",Typhoid fever,no_of_cases
+"Typhoid <5 yrs, Deaths",Typhoid fever,no_of_deaths
+"Typhoid >5 yrs, Cases",Typhoid Fever,no_of_cases
+"Typhoid >5 yrs, Deaths",Yellow Fever,no_of_deaths
+"Yellow Fever <5 yrs, Cases",Yellow Fever,no_of_cases
+"Yellow Fever <5 yrs, Deaths",Yellow Fever,no_of_deaths
+"Yellow Fever >5 yrs, Cases",Yellow Fever,no_of_cases
+"Yellow Fever >5 yrs, Deaths",Yellow Fever,no_of_deaths
+Malaria <5 yrs Microscopy Positive,Malaria,no_microscopy_positive
+Malaria >5 yrs  Microscopy Positive,Malaria,no_microscopy_positive
+Malaria <5 yrs Microscopy Tested,Malaria,no_microscopy_tested
+Malaria >5 yrs Microscopy Tested,Malaria,no_microscopy_tested
+Malaria <5 yrs mRDT Positive,Malaria,no_mrdt_positive
+Malaria >5 yrs mRDT Positive,Malaria,no_mrdt_positive
+Malaria <5 yrs mRDT Tested,Malaria,no_mrdt_tested
+Malaria >5 yrs  mRDT Tested,Malaria,no_mrdt_tested
+CSF -Type Indeterminate,CSF,no_typed_intermediate
+CSF -Typed +ve NmA,CSF,no_typed_+ve_nma
+CSF -Typed +ve NmB,CSF,no_typed_+ve_nmb
+CSF -Typed +ve NmC,CSF,no_typed_+ve_nmc
+CSF -Typed +ve NmW 135,CSF,no_typed_+ve_nmw_135
+CSF -Typed +ve NmX,CSF,no_typed_+ve_nmx
+CSF -Typed +ve NmY,CSF,no_typed_+ve_nmy
+CSF -Typed HiB,CSF,no_typed_hib
+Shigella Dysentry Positive <5 yrs,Shigella Dysentry,no_of_tests_specimen_positive
+Shigella Dysentry Positive >5 yrs,Shigella Dysentry,no_of_tests_specimen_positive
+Shigella DysentryTested <5 yrs,Shigella Dysentry,no_of_tests
+Shigella DysentryTested >5 yrs,Shigella Dysentry,no_of_tests
+Tubercullosis <5 yrs MDR/XDR Positive,Tubercullosis,no_of_tests_specimen_positive
+Tubercullosis >5 yrs MDR/XDR_ Positive,Tubercullosis,no_of_tests_specimen_positive
+Tubercullosis <5 yrs MDR/XDR_Tested,Tubercullosis,no_of_tests
+Tubercullosis >5 yrs MDR/XDR_Tested ,Tubercullosis,no_of_tests
+Typhoid Positive <5 yrs,Typhoid fever,no_of_tests_specimen_positive
+Typhoid Positive >5 yrs,Typhoid fever,no_of_tests_specimen_positive
+Typhoid Tested <5 yrs,Typhoid fever,no_of_tests
+Typhoid Tested >5 yrs,Typhoid fever,no_of_tests

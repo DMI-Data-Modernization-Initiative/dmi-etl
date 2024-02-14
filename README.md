@@ -1,5 +1,5 @@
-# Mumo's dbt project
-Contains dbt models for transformations
+# DMI dbt project
+Contains dbt models for transformations for the SHIELD data warehouse
 
 ## Setting up locally
 ### Requirements 
@@ -32,7 +32,7 @@ Contains dbt models for transformations
 - Make sure you have the config file `profiles.yml` inside the profiles folder with the following configarations:
     
 ```
-mumo_dbt:
+dmi_dbt:
   target: dev
   outputs:
     dev:
