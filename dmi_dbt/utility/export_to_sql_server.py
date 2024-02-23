@@ -16,7 +16,7 @@ port = os.getenv("DBT_PORT")
 
 def process_file(csv_file_path):
     # Read CSV file into a pandas DataFrame
-    df = pd.read_csv(csv_file_path, encoding='utf-8')
+    df = pd.read_csv(csv_file_path, encoding='latin-1')
 
     df.rename(columns=lambda x: x.replace('(', '_').replace(')', '_'), inplace=True)
 
