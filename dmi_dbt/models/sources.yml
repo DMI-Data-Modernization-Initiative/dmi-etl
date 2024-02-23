@@ -12,3 +12,9 @@ sources:
     tables:
       - name: moh_505
         description: This table contains raw data for moh_505 form
+  - name: central_raw_mdharura
+    database: central_raw_mdharura
+    schema: dbo
+    tables:
+      - name: mdharura_ebs
+        description: This table contains raw data for M-dharura app
