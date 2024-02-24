@@ -1,4 +1,4 @@
-mumo_dbt:
+dmi_dbt:
   target: dev
   outputs:
     dev:

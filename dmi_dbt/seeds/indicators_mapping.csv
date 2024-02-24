@@ -1,12 +1,29 @@
 indicator,indicator_description
 no_of_cases,Number of cases reported
-no_of_deaths,Number of deceased cases
+no_of_deaths,Number of deceased cases reported
 no_of_tests,Number of  tests or specimens/samples
-no_of_tests_specimen_positive,Number of tests or specimens/samples turned positive
-no_of_tests_specimen_negative,Number of tests or specimens/samples turned negative
+no_of_tests_specimen_positive,Number of  tests or specimens/samples turned positive
+no_of_tests_specimen_negative,Number of  tests or specimens/samples turned negative
 positivity_rate,Percentage of psotive tests or specimens/samples
 no_ILI_tests,Number of ILI specimens/samples
 no_of_specimen_positive_SAR_COV2,Number of positive test results for SARS-COV2
 no_of_specimen_negative_SAR_COV2,Number of negative test results for SARS-COV2
 no_of_specimen_positive_influenza_a,Number of specimens tested positive for Influenza A (1Pan H1 and 1 H3)
 no_of_specimen_positive_influenza_b,Number of specimens tested positive for Influenza B (Victoria)
+no_ +ve_h_influenza,Number of Bacterial Meningitis +ve H Influenza
+no_+ve_sp,Number of Bacterial Meningitis +ve Sp
+no_+ve_nm,Numberof Bacterial Meningitis +ve Nm
+no_csf,Number  of Bacterial Meningitis CSF
+no_contaminated,Number of Bacterial Meningitis Contaminated
+no_microscopy_tested,Number of Malaria Microscopy tests
+no_microscopy_positive,Number of Malaria Microscopy turned positive
+no_mrdt_tested,Number of Malaria mRDT tests
+no_mrdt_positive,Number of Malaria mRDT turned positive
+no_typed_+ve_nmb,Number of Typed +ve NmB
+no_typed_+ve_nma,Number of Typed +ve NmA
+no_typed_intermediate,Number of Typed Intermediate
+no_typed_+ve_nmc,Number of Typed +ve NmC
+no_typed_+ve_nmw_135,Number of Typed +ve NmW 135
+no_typed_+ve_nmx,Number ofTyped +ve NmX
+no_typed_+ve_nmy,Number of Typed +ve NmY
+no_typed_hib,Number of Typed HiB

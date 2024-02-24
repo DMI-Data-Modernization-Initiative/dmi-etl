@@ -11,5 +11,6 @@ select
     cast(date_day as date) as date,
     year(date_day) as Year,
     month(date_day) Month,
-    datepart(quarter, date_day) as CalendarQuarter
+    datepart(quarter, date_day) as CalendarQuarter,
+    cast(getdate() as date) as load_date
 from date_spine
