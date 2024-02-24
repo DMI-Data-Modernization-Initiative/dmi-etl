@@ -1,5 +1,5 @@
 dmi_dbt:
-  target: dev
+  target: main
   outputs:
     dev:
       type: sqlserver
