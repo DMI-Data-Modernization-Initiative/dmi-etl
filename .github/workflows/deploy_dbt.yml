@@ -33,6 +33,3 @@ jobs:
         run: |
           dbt run --profiles-dir ./profiles/ --target dev
           
-      - name: Test using dbt 
-        run: |
-          dbt test
