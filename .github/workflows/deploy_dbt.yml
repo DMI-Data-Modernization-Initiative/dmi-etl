@@ -35,4 +35,4 @@ jobs:
           
       - name: Test using dbt 
         run: |
-          dbt test ---profiles-dir ./profiles/ -target dev
+          dbt test
