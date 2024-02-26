@@ -5,11 +5,11 @@ on:
     - cron: '* * * * *'
 
 env:
-  DB_HOST: ${{ secrets.DB_HOST }}
-  DB_PORT: ${{ secrets.DB_PORT }}
-  DB_USER: ${{ secrets.DB_USER }}
-  DB_PASS: ${{ secrets.DB_PASS }}
-  DB_NAME: ${{ secrets.DB_NAME }}
+  DB_HOST: ${{ secrets.DBT_SERVER }}
+  DB_PORT: ${{ secrets.DBT_PORT }}
+  DB_USER: ${{ secrets.DBT_USER }}
+  DB_PASS: ${{ secrets.DBT_PASSWORD }}
+  DB_NAME: ${{ secrets.DBT_DATABASE }}
 
 jobs:
   deploy:
