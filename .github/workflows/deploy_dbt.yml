@@ -32,4 +32,7 @@ jobs:
       - name: Run dbt
         run: |
           dbt run --profiles-dir ./profiles/ --target dev
+      - name: Test dbt
+        run: |
+          dbt test
           
