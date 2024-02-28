@@ -130,7 +130,3 @@ dmypy.json
 
 
 .legacy
-
-
-dbt_pacakges/
-logs/
