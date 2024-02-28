@@ -1,2 +1,19 @@
 
 version: 2
+
+models:
+  - name: stg_dhis_moh_505
+    description: This table contains staging cleaned aggregated data from the dhis platform
+    columns:
+      - name: period
+        description: A concat of year and week of reporting
+        tests:
+          - not_null
+      - name: sub_county
+        description: Sub county of reporting
+        tests:
+          - not_null
+      - name: county
+        description: County of reporting
+        tests:
+          - not_null
