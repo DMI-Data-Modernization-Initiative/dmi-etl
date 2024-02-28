@@ -44,7 +44,7 @@
 				'Dengue <5 yrs, Deaths',
 				'Dengue >5 yrs, Cases',
 				'Dengue >5 yrs, Deaths',
-				'Dysentery <5 yrs, Cases',
+				'Dysentery, Cases',
 				'Dysentery <5 yrs, Deaths',
 				'Dysentery >5 yrs, Cases',
 				'Dysentery >5 yrs, Deaths',
