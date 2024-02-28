@@ -56,6 +56,7 @@ dmi_dbt:
 - `dbt docs generate` - generates your project's documentation
 - `dbt docs serve` - starts a webserver on port 8000 to serve your documentation locally
 - `dbt deps` -  pulls the most recent version of the dependencies listed in your packages.yml from git
+- `dbt debug` - tests the database connection and displays information for debugging purposes
     ### For more info on commands see here: https://docs.getdbt.com/reference/dbt-commands
 
 

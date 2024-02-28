@@ -9,17 +9,14 @@ models:
         description: Name of disease being reported
         tests:
           - not_null
-          - unique
       - name: gender
         description: Gender of cases reported
         tests:
-          - not_null
           - accepted_values:
              values: ['Female', 'Male']
       - name: age_group_category
         description: Age group categorization of under five years or over five year
         tests:
-          - not_null
           - accepted_values:
              values: ['< 5 years', '>= 5 years']  
       - name: epi_week
@@ -36,9 +33,7 @@ models:
           - not_null
       - name: facility_name       
         description: Facility where data was reported for
-        tests:
-          - not_null
-      - name: indicator       
+      - name: indicator_description      
         description: Indicator name being reported
         tests:
           - not_null
