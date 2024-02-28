@@ -27,10 +27,18 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install dbt-sqlserver
-          dbt deps --profiles-dir ./profiles/ --target dev
-          
+          dbt deps --profiles-dir ./profiles/ --target prod
+
+      - name: Run dbt seeds
+        run: |
+          dbt seed --profiles-dir ./profiles/ --target prod
+
       - name: Run dbt
         run: |
-          dbt run --profiles-dir ./profiles/ --target dev
-      
+          dbt run --profiles-dir ./profiles/ --target prod
+
+      - name: Run dbt tests
+        run: |
+          dbt test --profiles-dir ./profiles/ --target prod
+
           
