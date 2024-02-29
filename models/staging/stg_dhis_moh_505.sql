@@ -40,7 +40,7 @@ select
       [Dengue <5 yrs, Deaths],
       [Dengue >5 yrs, Cases],
       [Dengue >5 yrs, Deaths],
-      [Dysentery _Bacillary_ <5 yrs, Cases] as [Dysentery <5 yrs, Cases],
+      [Dysentery _Bacillary_ <5 yrs, Cases] as [Dysentery, Cases],
       [Dysentery _Bacillary_ <5 yrs, Deaths] as [Dysentery <5 yrs, Deaths],
       [Dysentery _Bacillary_ >5 yrs, Cases] as [Dysentery >5 yrs, Cases],
       [Dysentery _Bacillary_ >5 yrs, Deaths] as [Dysentery >5 yrs, Deaths],

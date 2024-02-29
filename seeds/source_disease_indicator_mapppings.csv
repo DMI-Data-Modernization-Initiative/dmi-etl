@@ -37,7 +37,7 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "Dengue <5 yrs, Deaths",Dengue fever,no_of_deaths
 "Dengue >5 yrs, Cases",Dengue fever,no_of_cases
 "Dengue >5 yrs, Deaths",Dengue fever,no_of_deaths
-"Dysentery <5 yrs, Cases",Dysentery,no_of_cases
+"Dysentery, Cases",Dysentery,no_of_cases
 "Dysentery <5 yrs, Deaths",Dysentery,no_of_deaths
 "Dysentery >5 yrs, Cases",Dysentery,no_of_cases
 "Dysentery >5 yrs, Deaths",Dysentery,no_of_deaths

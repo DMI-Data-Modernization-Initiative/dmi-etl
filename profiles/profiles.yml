@@ -1,17 +1,7 @@
 dmi_dbt:
-  target: dev
+  target: prod
   outputs:
     dev:
-      type: sqlserver
-      driver: 'ODBC Driver 17 for SQL Server'
-      server: "{{env_var('DBT_SERVER')}}"
-      port: 8912
-      database: "{{env_var('DBT_DATABASE')}}"
-      schema: dbo
-      user:  "{{env_var('DBT_USER')}}"
-      password: "{{env_var('DBT_PASSWORD')}}"
-      trust_cert: true
-    prod:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server'
       server: "{{env_var('DBT_SERVER')}}"
