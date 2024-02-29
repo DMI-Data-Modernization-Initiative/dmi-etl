@@ -2,14 +2,14 @@ name: Deploy SHIELD dbt
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '* * * * *'
 
 env:
-  DB_HOST: ${{ secrets.DB_HOST }}
-  DB_PORT: ${{ secrets.DB_PORT }}
-  DB_USER: ${{ secrets.DB_USER }}
-  DB_PASS: ${{ secrets.DB_PASS }}
-  DB_NAME: ${{ secrets.DB_NAME }}
+  DBT_SERVER: ${{ secrets.DBT_SERVER }}
+  DBT_PORT: ${{ secrets.DBT_PORT }}
+  DBT_USER: ${{ secrets.DBT_USER }}
+  DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
+  DBT_DATABASE: ${{ secrets.DBT_DATABASE }}
 
 jobs:
   deploy:
@@ -26,13 +26,19 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install dbt
-          dbt deps --profiles-dir ./ --target {{target}}
+          pip install dbt-sqlserver
+          dbt deps --profiles-dir ./profiles/ --target prod
           
+      - name: Run dbt seeds
+        run: |
+          dbt seed --profiles-dir ./profiles/ --target prod
+
       - name: Run dbt
         run: |
-          dbt run --profiles-dir ./ --target {{target}}
-          
-      - name: Test using dbt 
+          dbt run --profiles-dir ./profiles/ --target prod
+
+      - name: Run dbt tests
         run: |
-          dbt test ---profiles-dir ./ -target {{target}}
+          dbt test --profiles-dir ./profiles/ --target prod
+
+          
