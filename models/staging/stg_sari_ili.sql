@@ -32,7 +32,15 @@ select
 	victoria,
 	flub_undetermined,
 	covidpos,
-	left(county, charindex(' ', county) - 1) as county,
+	case left(county, charindex(' ', county) - 1)
+		when 'Murang?a' then 'Murang''a'
+		when 'Homa' then 'Homa Bay'
+		when 'Tharaka' then 'Tharaka-Nithi'
+		when 'Taita' then 'Taita Taveta'
+		when 'Tana' then 'Tana River'
+		when 'Uasin' then 'Uasin Gishu'
+		else left(county, charindex(' ', county) - 1)
+	end  as county,
 	Longitude as longitude,
 	Latitude as latitude
 from {{ source('central_raw_sari_ili', 'SARI_ILI_data') }}  as raw_sari

@@ -18,7 +18,17 @@ select
     end_age,
 	age_group_category,
     cast(getdate() as date) as load_date
-from age_group_data
+from age_group_data 
+
+union 
+
+ select 
+   'unset' as age_group_key,
+   -999 as start_age,
+   -999 as end_age,
+   'unset' as age_group_category,
+    cast(getdate() as date) as load_date
+  
 
 
 
