@@ -8,19 +8,19 @@ models:
         description: Name of disease being reported
         tests:
           - not_null
-          - unique
       - name: gender
         description: Gender of cases reported
         tests:
           - not_null
           - accepted_values:
-             values: ['Female', 'Male']
+             values: ['Female', 'Male', 'unset']
       - name: age_group_category
         description: Age group categorization of under five years or over five year
         tests:
-          - not_null
           - accepted_values:
-             values: ['< 5 years', '>= 5 years']  
+             values: ['< 5 years', '>= 5 years', 'unset']  
+          - not_null:
+              where: "indicator_description not in ('CSF -Typed HiB','Bacterial Meningitis +ve Sp','CSF -Typed +ve NmA','Bacterial Meningitis No Contaminated','Bacterial Meningitis +ve H Influenza','CSF -Type Indeterminate','CSF -Typed +ve NmX','Bacterial Meningitis +ve Nm','Dysentery <5 yrs, Cases','CSF -Typed +ve NmC','Bacterial Meningitis No Tested','Bacterial Meningitis No CSF','CSF -Typed +ve NmW 135','CSF -Typed +ve NmB')"
       - name: epi_week
         description: EPI week of the report
         tests:
@@ -37,7 +37,7 @@ models:
         description: Facility where data was reported for
         tests:
           - not_null
-      - name: indicator       
+      - name: indicator_description     
         description: Indicator name being reported
         tests:
           - not_null

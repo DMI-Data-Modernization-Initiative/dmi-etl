@@ -334,4 +334,4 @@ select
       lebs_verificationform_dateverified,
       hebs_responseform_otherresponseactivity,
       hebs_escalationform_reasonother
-from {{ source('central_raw_mdharura', 'mdharura_ebs') }}  as raw_mdharura_ebs
+from {{ source('central_raw_mdharura', 'mdharura_ebs_linelist') }}  as raw_mdharura_ebs

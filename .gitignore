@@ -130,5 +130,5 @@ dmypy.json
 
 
 .legacy
-dbt_pacakges/
+dbt_packages/
 logs/
