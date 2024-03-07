@@ -29,10 +29,6 @@ jobs:
           pip install dbt-sqlserver
           dbt deps --profiles-dir ./profiles/ --target prod
           
-      - name: Run dbt seeds
-        run: |
-          dbt seed --profiles-dir ./profiles/ --target prod
-
       - name: Run dbt
         run: |
           dbt run --profiles-dir ./profiles/ --target prod

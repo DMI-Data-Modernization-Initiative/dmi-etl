@@ -11,6 +11,7 @@ dmi_dbt:
       user:  "{{env_var('DBT_USER')}}"
       password: "{{env_var('DBT_PASSWORD')}}"
       trust_cert: true
+      threads: 24
     prod:
       type: sqlserver
       driver: 'ODBC Driver 17 for SQL Server'
@@ -21,3 +22,4 @@ dmi_dbt:
       user:  "{{env_var('DBT_USER')}}"
       password: "{{env_var('DBT_PASSWORD')}}"
       trust_cert: true
+      threads: 24

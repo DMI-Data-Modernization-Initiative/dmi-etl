@@ -7,11 +7,11 @@ with influenza_data as (
 joined_data as (
 	select
 		disease.disease_key,
-		age_group.age_group_key,
+		coalesce(age_group.age_group_key, 'unset') as age_group_key,
 		epi_wk.epi_week_key,
 		county.county_key,
-        facility.facility_key,
-        sari.gender,
+        coalesce(facility.facility_key, 'unset') as facility_key,
+        coalesce(sari.gender, 'unset') as gender,
 		sari.h3n2,
 		sari.ph1n1,
 		victoria,
@@ -21,7 +21,7 @@ joined_data as (
 		flub_positive
 	from influenza_data as sari
 	left join {{ ref('dim_age_group') }} as age_group on sari.age_in_years between age_group.start_age and age_group.end_age 
-	left join {{ ref('dim_epi_week') }} as epi_wk on sari.date_collected between epi_wk.start_of_week and epi_wk.end_of_week
+	left join {{ ref('dim_epi_week') }} as epi_wk on sari.date_screened between epi_wk.start_of_week and epi_wk.end_of_week
 	left join {{ ref('dim_county') }} as county on county.county =  sari.county
 	left join {{ ref('dim_disease') }} as disease on disease.disease = sari.disease
     left join {{ref('dim_facility')}} as facility on facility.facility_name = sari.facility_name
@@ -92,12 +92,12 @@ union
 
 select 
 	disease_key,
-    null as gender,
-    age_group_key,
-    county.county_key,
+    'unset' as gender,
+    coalesce(age_group.age_group_key, 'unset') as age_group_key,
+    coalesce(county.county_key, 'unset') as county_key,
 	sub_county_key,
     epi_week_key,
-    null as facility_key,
+    'unset' as facility_key,
     indicators.indicator_key,
     indicator_value,
 	'dhis' as data_source,

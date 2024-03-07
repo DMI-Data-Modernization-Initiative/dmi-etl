@@ -24,7 +24,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -48,7 +47,8 @@ models:
 
 seeds:
   dmi_dbt:
-    +database: staging   
+    +database: staging
+    +schema: dbo
 
 dispatch:
   - macro_namespace: dbt_utils

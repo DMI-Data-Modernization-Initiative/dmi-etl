@@ -8,7 +8,9 @@ models:
         description: Age group category
         tests:
           - accepted_values:
-             values: ['< 5 years', '>= 5 years']  
+             values: ['< 5 years', '>= 5 years']
+          - not_null:
+              where: "indicator not in ('CSF -Typed HiB','Bacterial Meningitis +ve Sp','CSF -Typed +ve NmA','Bacterial Meningitis No Contaminated','Bacterial Meningitis +ve H Influenza','CSF -Type Indeterminate','CSF -Typed +ve NmX','Bacterial Meningitis +ve Nm','CSF -Typed +ve NmC','Bacterial Meningitis No Tested','Bacterial Meningitis No CSF','CSF -Typed +ve NmW 135','CSF -Typed +ve NmB')"  
       - name: sub_county
         description: Sub county of reporting
         tests:

@@ -16,5 +16,5 @@ sources:
     database: central_raw_mdharura
     schema: dbo
     tables:
-      - name: mdharura_ebs
+      - name: mdharura_ebs_linelist
         description: This table contains raw data for M-dharura app
