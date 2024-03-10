@@ -140,4 +140,4 @@ select
     "Typhoid Positive >5 yrs", 
     "Typhoid Tested <5 yrs", 
     "Typhoid Tested >5 yrs"
-from {{ source('central_raw_dhis', 'moh_505') }}  as raw_moh_505
+from {{ source('central_raw_khis', 'moh_505') }}  as raw_moh_505

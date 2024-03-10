@@ -1,7 +1,7 @@
 	with wide_data as  (
 			select 
 				*
-			 from {{ ref('stg_dhis_moh_505') }}
+			 from {{ ref('stg_khis_moh_505') }}
 	), cross_applied_data as (
      {{ 
 		cross_apply_columns('wide_data', 

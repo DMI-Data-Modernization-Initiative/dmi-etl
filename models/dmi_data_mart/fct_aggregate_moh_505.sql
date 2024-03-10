@@ -100,16 +100,16 @@ select
     'unset' as facility_key,
     indicators.indicator_key,
     indicator_value,
-	'dhis' as data_source,
+	'khis' as data_source,
 	cast(current_date as date) as load_date
-from {{ref('intermediate_dhis_moh_505_mappings')}} as dhis_moh_505_mappings
-left join {{ ref('dim_age_group') }} as age_group on dhis_moh_505_mappings.age_group = age_group.age_group_category
-left join {{ ref('dim_epi_week') }} as epi_wk on dhis_moh_505_mappings.epi_week::int = epi_wk.week_number::int
-	and dhis_moh_505_mappings.year::int = epi_wk.year::int
-left join {{ ref('dim_county') }} as county on county.county =  dhis_moh_505_mappings.county
-left join {{ ref('dim_disease') }} as disease on disease.disease = dhis_moh_505_mappings.disease
-left join {{ref('dim_sub_county')}} as sub_county on sub_county.sub_county = dhis_moh_505_mappings.sub_county
-left join {{ref('dim_indicator')}} as indicators on indicators.indicator = dhis_moh_505_mappings.indicator
+from {{ref('intermediate_khis_moh_505_mappings')}} as khis_moh_505_mappings
+left join {{ ref('dim_age_group') }} as age_group on khis_moh_505_mappings.age_group = age_group.age_group_category
+left join {{ ref('dim_epi_week') }} as epi_wk on khis_moh_505_mappings.epi_week::int = epi_wk.week_number::int
+	and khis_moh_505_mappings.year::int = epi_wk.year::int
+left join {{ ref('dim_county') }} as county on county.county =  khis_moh_505_mappings.county
+left join {{ ref('dim_disease') }} as disease on disease.disease = khis_moh_505_mappings.disease
+left join {{ref('dim_sub_county')}} as sub_county on sub_county.sub_county = khis_moh_505_mappings.sub_county
+left join {{ref('dim_indicator')}} as indicators on indicators.indicator = khis_moh_505_mappings.indicator
 
 
 

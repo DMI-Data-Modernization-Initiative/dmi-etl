@@ -6,9 +6,9 @@ sources:
     tables:
       - name: sari_ili_data
         description: This table contains raw data for SARI-ILI
-  - name: central_raw_dhis
+  - name: central_raw_khis
     database: SHIELD
-    schema: central_raw_dhis
+    schema: central_raw_khis
     tables:
       - name: moh_505
         description: This table contains raw data for MOH 505 form
