@@ -1,20 +1,20 @@
 version: 2
 sources:
   - name: central_raw_sari_ili
-    database: central_raw_sari_ili
-    schema: dbo
+    database: SHIELD
+    schema: central_raw_sari_ili
     tables:
-      - name: SARI_ILI_data
+      - name: sari_ili_data
         description: This table contains raw data for SARI-ILI
-  - name: central_raw_dhis
-    database: central_raw_dhis
-    schema: dbo
+  - name: central_raw_khis
+    database: SHIELD
+    schema: central_raw_khis
     tables:
       - name: moh_505
-        description: This table contains raw data for moh_505 form
+        description: This table contains raw data for MOH 505 form
   - name: central_raw_mdharura
-    database: central_raw_mdharura
-    schema: dbo
+    database: SHIELD
+    schema: central_raw_mdharura
     tables:
       - name: mdharura_ebs_linelist
         description: This table contains raw data for M-dharura app

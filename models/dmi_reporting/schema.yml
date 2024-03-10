@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: aggregate_moh_505_report
-    description: This table has aggregate data for various diseases' indicator as reported on the DHIS MOH 505 report
+    description: This table has aggregate data for various diseases' indicator as reported on the khis MOH 505 report
     columns:
       - name: disease
         description: Name of disease being reported

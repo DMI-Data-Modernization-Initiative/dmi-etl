@@ -7,10 +7,10 @@ with date_spine as (
   -}}
 )
 select
-    {{ tsql_utils.surrogate_key( ['date_day']) }} as DateKey,
+    {{ dbt_utils.surrogate_key( ['date_day']) }} as DateKey,
     cast(date_day as date) as date,
-    year(date_day) as Year,
-    month(date_day) Month,
-    datepart(quarter, date_day) as CalendarQuarter,
-    cast(getdate() as date) as load_date
+    date_part('year', date_day) as Year,
+    date_part('month', date_day) as Month,
+    date_part('quarter', date_day) as CalendarQuarter,
+    cast(current_date as date) as load_date
 from date_spine

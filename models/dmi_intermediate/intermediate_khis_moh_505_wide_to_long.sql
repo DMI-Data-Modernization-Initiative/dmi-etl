@@ -1,7 +1,7 @@
 	with wide_data as  (
 			select 
 				*
-			 from {{ ref('stg_dhis_moh_505') }}
+			 from {{ ref('stg_khis_moh_505') }}
 	), cross_applied_data as (
      {{ 
 		cross_apply_columns('wide_data', 
@@ -138,7 +138,7 @@
 				'Tubercullosis <5 yrs MDR/XDR Positive',
 				'Tubercullosis >5 yrs MDR/XDR_ Positive',
 				'Tubercullosis <5 yrs MDR/XDR_Tested',
-				'Tubercullosis >5 yrs MDR/XDR_Tested ',
+				'Tubercullosis >5 yrs MDR/XDR_Tested',
 				'Typhoid Positive <5 yrs',
 				'Typhoid Positive >5 yrs',
 				'Typhoid Tested <5 yrs',
@@ -158,5 +158,5 @@
 		cross_applied_data.sub_county,
 	 	cross_applied_data.column_name as indicator,
 		cross_applied_data.column_value as indicator_value,
-		cast(getdate() as date) as load_date
+		cast(current_date as date) as load_date
 	from cross_applied_data

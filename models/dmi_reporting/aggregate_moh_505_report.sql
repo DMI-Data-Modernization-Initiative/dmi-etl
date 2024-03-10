@@ -12,7 +12,7 @@ select
     indicator.indicator_description,
     moh_505.indicator_value,
     moh_505.data_source,
-    cast(getdate() as date) as load_date
+    cast(current_date as date) as load_date
 from {{ref('fct_aggregate_moh_505')}} as moh_505
 left join {{ ref('dim_age_group') }} as age_group on age_group.age_group_key = moh_505.age_group_key
 left join {{ ref('dim_epi_week') }} as epi_wk on epi_wk.epi_week_key = moh_505.epi_week_key
