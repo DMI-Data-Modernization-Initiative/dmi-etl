@@ -1,28 +1,37 @@
-with date_spine as (
-  {{- dbt_utils.date_spine(
-    datepart="day",
-    start_date="cast('2000-01-01' as date)",
-    end_date="cast('2040-12-31' as date)"
-    )
-  -}}
+{% set start_date = '2000-01-01' %}
+{% set end_date = '2040-12-31' %}
+
+with date_range AS (
+    select 
+        generate_series(
+            '{{ start_date }}'::date, 
+            '{{ end_date }}'::date, 
+            '1 day'::interval
+        )::date AS date
+),
+dates as (
+    select 
+      date as date_day
+    from date_range
 ),
 epi_week_cte as (
-    select
+  select
         date_day,
-        dateadd(day, 1 - datepart(weekday, date_day), date_day) as start_of_week,
-        dateadd(day, 7 - datepart(weekday, date_day), date_day) as end_of_week,
-        datename(weekday, date_day) as weekday,
-        year(date_day) as year,
-        month(date_day) as month
-    from  date_spine
+        date_trunc('week', date_day) - interval '1 day' as start_of_week,
+        date_trunc('week', date_day) + interval '5 days' as end_of_week,
+        trim(to_char(date_day, 'Day')) as weekday_name,
+        date_part('year', date_day) as year,
+        date_part('month', date_day) as month
+  from dates
 )
 select
-	{{ tsql_utils.surrogate_key( ['epi_week_cte.date_day']) }} as epi_week_key,
+	{{ dbt_utils.surrogate_key( ['epi_week_cte.date_day']) }} as epi_week_key,
     start_of_week,
 	end_of_week,
-	datepart(week, date_day) as week_number,
-    year,
-    month,
-    cast(getdate() as date) as load_date
+	date_part('week', date_day) as week_number,
+  weekday_name,
+  year,
+  month,
+  cast(current_date as date) as load_date
 from epi_week_cte
-where WeekDay = 'Sunday'
+where weekday_name = 'Sunday'

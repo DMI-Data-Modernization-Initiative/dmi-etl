@@ -2,24 +2,20 @@ dmi_dbt:
   target: dev
   outputs:
     dev:
-      type: sqlserver
-      driver: 'ODBC Driver 17 for SQL Server'
-      server: "{{env_var('DBT_SERVER')}}"
-      port: 8912
+      type: postgres
+      host: "{{env_var('DBT_SERVER')}}"
       database: "{{env_var('DBT_DATABASE')}}"
-      schema: dbo
+      schema: "{{env_var('DBT_SCHEMA')}}"
+      port: 8988
       user:  "{{env_var('DBT_USER')}}"
       password: "{{env_var('DBT_PASSWORD')}}"
-      trust_cert: true
-      threads: 24
+      threads: 4
     prod:
-      type: sqlserver
-      driver: 'ODBC Driver 17 for SQL Server'
-      server: "{{env_var('DBT_SERVER')}}"
-      port: 8912
+      type: postgres
+      host: "{{env_var('DBT_SERVER')}}"
       database: "{{env_var('DBT_DATABASE')}}"
-      schema: dbo
+      schema: "{{env_var('DBT_SCHEMA')}}"
+      port: 8988
       user:  "{{env_var('DBT_USER')}}"
       password: "{{env_var('DBT_PASSWORD')}}"
-      trust_cert: true
-      threads: 24
+      threads: 4

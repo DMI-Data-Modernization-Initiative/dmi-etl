@@ -13,11 +13,11 @@ with age_group_data as (
         ) as age_group(start_age, end_age)
 )
 select 
-    {{ tsql_utils.surrogate_key( ['age_group_data.age_group_category']) }} as age_group_key,
+    {{ dbt_utils.surrogate_key( ['age_group_data.age_group_category']) }} as age_group_key,
     start_age,
     end_age,
 	age_group_category,
-    cast(getdate() as date) as load_date
+    cast(current_date as date) as load_date
 from age_group_data 
 
 union 
@@ -27,7 +27,7 @@ union
    -999 as start_age,
    -999 as end_age,
    'unset' as age_group_category,
-    cast(getdate() as date) as load_date
+    cast(current_date as date) as load_date
   
 
 

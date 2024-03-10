@@ -4,10 +4,10 @@
         ca.column_name,
         ca.column_value
     from {{ table_name }} as t
-    cross apply (
+    cross join lateral (
         values
             {% for column in columns_list %}
-                ('{{ column }}', t.[{{ column}}])
+                ('{{ column }}', t."{{column}}"::text)
                 {% if not loop.last %}
                     ,
                 {% endif %}

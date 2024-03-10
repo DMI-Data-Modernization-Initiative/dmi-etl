@@ -21,7 +21,7 @@ joined_data as (
 		flub_positive
 	from influenza_data as sari
 	left join {{ ref('dim_age_group') }} as age_group on sari.age_in_years between age_group.start_age and age_group.end_age 
-	left join {{ ref('dim_epi_week') }} as epi_wk on sari.date_screened between epi_wk.start_of_week and epi_wk.end_of_week
+	left join {{ ref('dim_epi_week') }} as epi_wk on sari.date_screened between epi_wk.start_of_week::date and epi_wk.end_of_week::date
 	left join {{ ref('dim_county') }} as county on county.county =  sari.county
 	left join {{ ref('dim_disease') }} as disease on disease.disease = sari.disease
     left join {{ref('dim_facility')}} as facility on facility.facility_name = sari.facility_name
@@ -51,7 +51,7 @@ influenza_summary as (
 ),
 long_format_table as (
 	select 
-        {{ tsql_utils.surrogate_key( ['disease_key', 'gender', 'age_group_key', 'county_key',
+        {{ dbt_utils.surrogate_key( ['disease_key', 'gender', 'age_group_key', 'county_key',
          'epi_week_key', 'facility_key', 'indicator']) }} as fact_key,
 		disease_key,
 		gender,
@@ -62,7 +62,7 @@ long_format_table as (
         indicator,
 		indicator_value
 	from influenza_summary
-	cross apply
+	cross join lateral
 	(
 	values
 		('no_of_specimen_positive_influenza_a', no_of_specimen_positive_influenza_a),
@@ -84,7 +84,7 @@ select
     indicators.indicator_key,
     indicator_value,
 	'icap' as data_source,
-	cast(getdate() as date) as load_date
+	cast(current_date as date) as load_date
 from long_format_table
 left join {{ref('dim_indicator')}} as indicators on indicators.indicator = long_format_table.indicator
 
@@ -101,11 +101,11 @@ select
     indicators.indicator_key,
     indicator_value,
 	'dhis' as data_source,
-	cast(getdate() as date) as load_date
+	cast(current_date as date) as load_date
 from {{ref('intermediate_dhis_moh_505_mappings')}} as dhis_moh_505_mappings
 left join {{ ref('dim_age_group') }} as age_group on dhis_moh_505_mappings.age_group = age_group.age_group_category
-left join {{ ref('dim_epi_week') }} as epi_wk on dhis_moh_505_mappings.epi_week = epi_wk.week_number
-	and dhis_moh_505_mappings.year = epi_wk.year
+left join {{ ref('dim_epi_week') }} as epi_wk on dhis_moh_505_mappings.epi_week::int = epi_wk.week_number::int
+	and dhis_moh_505_mappings.year::int = epi_wk.year::int
 left join {{ ref('dim_county') }} as county on county.county =  dhis_moh_505_mappings.county
 left join {{ ref('dim_disease') }} as disease on disease.disease = dhis_moh_505_mappings.disease
 left join {{ref('dim_sub_county')}} as sub_county on sub_county.sub_county = dhis_moh_505_mappings.sub_county
