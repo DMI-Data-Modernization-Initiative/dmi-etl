@@ -11,7 +11,7 @@ sources:
     schema: central_raw_dhis
     tables:
       - name: moh_505
-        description: This table contains raw data for moh_505 form
+        description: This table contains raw data for MOH 505 form
   - name: central_raw_mdharura
     database: SHIELD
     schema: central_raw_mdharura
