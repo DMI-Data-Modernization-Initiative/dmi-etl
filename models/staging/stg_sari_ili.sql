@@ -5,7 +5,7 @@ select
 	Eligible as eligible,
 	Enrolled as enrolled,
 	F_NAME as facility_name,
-	round(Age, 0) as age_in_years,
+	round(Age::numeric, 0) as age_in_years,
 	case 
 		when Sex = 1 then 'Male'
 		else 'Female' 
@@ -17,10 +17,10 @@ select
 	covidtest,
 	cast(Dateassesment as date) as date_assesment,
 	outcome,
-	try_cast(colldate as date) as date_collected,
+	cast(colldate as date) as date_collected,
 	samplecollected,
 	sampletested,
-	try_cast(datetested as date) as date_tested,
+	cast(datetested as date) as date_tested,
 	flupos as flu_positive,
 	fluapos as flua_positive,
 	h3n2,
@@ -32,15 +32,12 @@ select
 	victoria,
 	flub_undetermined,
 	covidpos,
-	case left(county, charindex(' ', county) - 1)
+	case substring(county from '^(.*?) County')
 		when 'Murang?a' then 'Murang''a'
 		when 'Homa' then 'Homa Bay'
-		when 'Tharaka' then 'Tharaka-Nithi'
-		when 'Taita' then 'Taita Taveta'
-		when 'Tana' then 'Tana River'
-		when 'Uasin' then 'Uasin Gishu'
-		else left(county, charindex(' ', county) - 1)
+		when 'Tharaka Nithi' then 'Tharaka-Nithi'
+		else substring(county from '^(.*?) County')
 	end  as county,
 	Longitude as longitude,
 	Latitude as latitude
-from {{ source('central_raw_sari_ili', 'SARI_ILI_data') }}  as raw_sari
+from {{ source('central_raw_sari_ili', 'sari_ili_data') }}  as raw_sari

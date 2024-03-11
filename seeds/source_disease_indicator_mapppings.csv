@@ -17,18 +17,18 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "Acute Flaccid Paralysis <5 yrs, Deaths",Acute Flaccid Paralysis (AFP),no_of_deaths
 "Acute Flaccid Paralysis >5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
 "Acute Flaccid Paralysis >5 yrs, Deaths",Acute Flaccid Paralysis (AFP),no_of_deaths
-"Acute Jaundice <5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
-"Acute Jaundice <5 yrs, Deaths",Acute Jaundice,no_of_deaths
-"Acute Jaundice >5 yrs, Cases",Acute Jaundice,no_of_cases
-"Acute Jaundice >5 yrs, Deaths",Acute Jaundice,no_of_deaths
+"Acute Jaundice <5 yrs, Cases",Acute jaundice,no_of_cases
+"Acute Jaundice <5 yrs, Deaths",Acute jaundice,no_of_deaths
+"Acute Jaundice >5 yrs, Cases",Acute jaundice,no_of_cases
+"Acute Jaundice >5 yrs, Deaths",Acute jaundice,no_of_deaths
 "Acute Malnutrition <5 yrs, Cases",Acute Malnutrition,no_of_cases
 "Acute Malnutrition <5 yrs, Deaths",Acute Malnutrition,no_of_deaths
 "Acute Malnutrition >5 yrs, Cases",Acute Malnutrition,no_of_cases
 "Acute Malnutrition >5 yrs, Deaths",Acute Malnutrition,no_of_deaths
-"Anthrax <5 yrs, Cases",Anthrax ,no_of_cases
-"Anthrax <5 yrs, Deaths",Anthrax ,no_of_deaths
-"Anthrax >5 yrs, Cases",Anthrax ,no_of_cases
-"Anthrax >5 yrs, Deaths",Anthrax ,no_of_deaths
+"Anthrax <5 yrs, Cases",Anthrax,no_of_cases
+"Anthrax <5 yrs, Deaths",Anthrax,no_of_deaths
+"Anthrax >5 yrs, Cases",Anthrax,no_of_cases
+"Anthrax >5 yrs, Deaths",Anthrax,no_of_deaths
 "Cholera <5 yrs, Cases",Cholera,no_of_cases
 "Cholera <5 yrs, Deaths",Cholera,no_of_deaths
 "Cholera >5 yrs, Cases",Cholera,no_of_cases
@@ -41,10 +41,10 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "Dysentery <5 yrs, Deaths",Dysentery,no_of_deaths
 "Dysentery >5 yrs, Cases",Dysentery,no_of_cases
 "Dysentery >5 yrs, Deaths",Dysentery,no_of_deaths
-"Guinea Worm Disease <5 yrs, Cases",Guinea Worm Disease,no_of_cases
-"Guinea Worm Disease <5 yrs, Deaths",Guinea Worm Disease,no_of_deaths
-"Guinea Worm Disease >5 yrs, Cases",Guinea Worm Disease,no_of_cases
-"Guinea Worm Disease >5 yrs, Deaths",Guinea Worm Disease,no_of_deaths
+"Guinea Worm Disease <5 yrs, Cases",Guinea worm disease,no_of_cases
+"Guinea Worm Disease <5 yrs, Deaths",Guinea worm disease,no_of_deaths
+"Guinea Worm Disease >5 yrs, Cases",Guinea worm disease,no_of_cases
+"Guinea Worm Disease >5 yrs, Deaths",Guinea worm disease,no_of_deaths
 "Maternal deaths <5 yrs, Cases",Maternal deaths,no_of_cases
 "Maternal deaths <5 yrs, Deaths",Maternal deaths,no_of_deaths
 "Maternal deaths >5 yrs, Cases",Maternal deaths,no_of_cases
@@ -53,10 +53,10 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "Measles <5 yrs, Deaths",Measles,no_of_deaths
 "Measles >5 yrs, Cases",Measles,no_of_cases
 "Measles >5 yrs, Deaths",Measles,no_of_deaths
-"Meningococcal Meningitis <5 yrs, Cases",Meningococcal Meningitis,no_of_cases
-"Meningococcal Meningitis <5 yrs, Deaths",Meningococcal Meningitis,no_of_deaths
-"Meningococcal Meningitis >5 yrs, Cases",Meningococcal Meningitis,no_of_cases
-"Meningococcal Meningitis >5 yrs, Deaths",Meningococcal Meningitis,no_of_deaths
+"Meningococcal Meningitis <5 yrs, Cases",Meningococcal meningitis,no_of_cases
+"Meningococcal Meningitis <5 yrs, Deaths",Meningococcal meningitis,no_of_deaths
+"Meningococcal Meningitis >5 yrs, Cases",Meningococcal meningitis,no_of_cases
+"Meningococcal Meningitis >5 yrs, Deaths",Meningococcal meningitis,no_of_deaths
 "Neonatal Tetanus <5 yrs, Cases",Neonatal Tetanus(NNT),no_of_cases
 "Neonatal Tetanus <5 yrs, Deaths",Neonatal Tetanus(NNT),no_of_deaths
 "Neonatal Tetanus >5 yrs, Cases",Neonatal Tetanus(NNT),no_of_cases
@@ -103,12 +103,12 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "Typhoid >5 yrs, Positive",Typhoid fever,no_of_tests_specimen_positive
 "Typhoid <5 yrs, Cases",Typhoid fever,no_of_cases
 "Typhoid <5 yrs, Deaths",Typhoid fever,no_of_deaths
-"Typhoid >5 yrs, Cases",Typhoid Fever,no_of_cases
-"Typhoid >5 yrs, Deaths",Yellow Fever,no_of_deaths
-"Yellow Fever <5 yrs, Cases",Yellow Fever,no_of_cases
-"Yellow Fever <5 yrs, Deaths",Yellow Fever,no_of_deaths
-"Yellow Fever >5 yrs, Cases",Yellow Fever,no_of_cases
-"Yellow Fever >5 yrs, Deaths",Yellow Fever,no_of_deaths
+"Typhoid >5 yrs, Cases",Typhoid fever,no_of_cases
+"Typhoid >5 yrs, Deaths",Yellow fever,no_of_deaths
+"Yellow Fever <5 yrs, Cases",Yellow fever,no_of_cases
+"Yellow Fever <5 yrs, Deaths",Yellow fever,no_of_deaths
+"Yellow Fever >5 yrs, Cases",Yellow fever,no_of_cases
+"Yellow Fever >5 yrs, Deaths",Yellow fever,no_of_deaths
 Malaria <5 yrs Microscopy Positive,Malaria,no_microscopy_positive
 Malaria >5 yrs  Microscopy Positive,Malaria,no_microscopy_positive
 Malaria <5 yrs Microscopy Tested,Malaria,no_microscopy_tested
@@ -132,7 +132,7 @@ Shigella DysentryTested >5 yrs,Shigella Dysentry,no_of_tests
 Tubercullosis <5 yrs MDR/XDR Positive,Tubercullosis,no_of_tests_specimen_positive
 Tubercullosis >5 yrs MDR/XDR_ Positive,Tubercullosis,no_of_tests_specimen_positive
 Tubercullosis <5 yrs MDR/XDR_Tested,Tubercullosis,no_of_tests
-Tubercullosis >5 yrs MDR/XDR_Tested ,Tubercullosis,no_of_tests
+Tubercullosis >5 yrs MDR/XDR_Tested,Tubercullosis,no_of_tests
 Typhoid Positive <5 yrs,Typhoid fever,no_of_tests_specimen_positive
 Typhoid Positive >5 yrs,Typhoid fever,no_of_tests_specimen_positive
 Typhoid Tested <5 yrs,Typhoid fever,no_of_tests

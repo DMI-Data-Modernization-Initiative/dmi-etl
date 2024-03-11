@@ -1,7 +1,7 @@
 with facility_data as (
     select 
         distinct 
-        {{ tsql_utils.surrogate_key( ['sari_data.facility_name']) }} as facility_key,
+        {{ dbt_utils.surrogate_key( ['sari_data.facility_name']) }} as facility_key,
         facility_name,
         longitude,
         latitude
@@ -16,5 +16,5 @@ with facility_data as (
 )
 select 
     facility_data.*,
-    cast(getdate() as date) as load_date
+    cast(current_date as date) as load_date
 from facility_data

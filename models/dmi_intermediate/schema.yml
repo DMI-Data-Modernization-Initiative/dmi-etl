@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: intermediate_dhis_moh_505_wide_to_long
+  - name: intermediate_khis_moh_505_wide_to_long
     description: This table contains preprocessed MOH 505 data that has been transformed from wide format to long format
     columns:
       - name: age_group
@@ -23,7 +23,7 @@ models:
         description: Name of indicator being reported
         tests:
           - not_null
-  - name: intermediate_dhis_moh_505_mappings
+  - name: intermediate_khis_moh_505_mappings
     description: This table contains preprocessed MOH 505 data that contains mappings of internal indicator and  disease list to the external MOH 505 indicators
     columns:
       - name: age_group

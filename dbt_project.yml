@@ -34,21 +34,21 @@ models:
   dmi_dbt:
     staging:
      +materialized: table
-     +database: staging
+     +schema: staging
     dmi_data_mart:
      +materialized: table
-     +database: dmi_data_mart
+     +schema: dmi_data_mart
     dmi_reporting:
      +materialized: table
-     +database: dmi_reporting
+     +schema: dmi_reporting
     dmi_intermediate:
       +materialized: table
-      +database: staging
+      +schema: staging
 
 seeds:
   dmi_dbt:
-    +database: staging
-    +schema: dbo
+    +schema: staging
+
 
 dispatch:
   - macro_namespace: dbt_utils

@@ -1,6 +1,6 @@
  with sub_county_data as (
  select 
-    {{ tsql_utils.surrogate_key( ['sub_county_source.sub_county']) }} as sub_county_key,
+    {{ dbt_utils.surrogate_key( ['sub_county_source.sub_county']) }} as sub_county_key,
     sub_county_source.sub_county,
     sub_county_source.code,
     sub_county_source.sqkm,
@@ -19,5 +19,5 @@
  )
 select 
    sub_county_data.*,
-   cast(getdate() as date) as load_date
+   cast(current_date as date) as load_date
 from sub_county_data
