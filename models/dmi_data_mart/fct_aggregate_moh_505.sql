@@ -9,7 +9,7 @@ joined_data as (
 		disease.disease_key,
 		coalesce(age_group.age_group_key, 'unset') as age_group_key,
 		epi_wk.epi_week_key,
-		county.county_key,
+		coalesce(county.county_key, 'unset') as county_key,
         coalesce(facility.facility_key, 'unset') as facility_key,
         coalesce(sari.gender, 'unset') as gender,
 		sari.h3n2,
@@ -78,7 +78,7 @@ select
     gender,
     age_group_key,
     county_key,
-	null as sub_county_key,
+	'unset' as sub_county_key,
     epi_week_key,
     facility_key,
     indicators.indicator_key,
@@ -95,7 +95,7 @@ select
     'unset' as gender,
     coalesce(age_group.age_group_key, 'unset') as age_group_key,
     coalesce(county.county_key, 'unset') as county_key,
-	sub_county_key,
+	coalesce(sub_county_key, 'unset') as sub_county_key,
     epi_week_key,
     'unset' as facility_key,
     indicators.indicator_key,
@@ -108,8 +108,8 @@ left join {{ ref('dim_epi_week') }} as epi_wk on khis_moh_505_mappings.epi_week:
 	and khis_moh_505_mappings.year::int = epi_wk.year::int
 left join {{ ref('dim_county') }} as county on county.county =  khis_moh_505_mappings.county
 left join {{ ref('dim_disease') }} as disease on disease.disease = khis_moh_505_mappings.disease
-left join {{ref('dim_sub_county')}} as sub_county on sub_county.sub_county = khis_moh_505_mappings.sub_county
-left join {{ref('dim_indicator')}} as indicators on indicators.indicator = khis_moh_505_mappings.indicator
+left join {{ ref('dim_sub_county')}} as sub_county on sub_county.sub_county = khis_moh_505_mappings.sub_county
+left join {{ ref('dim_indicator')}} as indicators on indicators.indicator = khis_moh_505_mappings.indicator
 
 
 
