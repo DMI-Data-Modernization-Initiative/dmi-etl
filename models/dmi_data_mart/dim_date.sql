@@ -7,7 +7,7 @@ with date_spine as (
   -}}
 )
 select
-    {{ dbt_utils.surrogate_key( ['date_day']) }} as DateKey,
+    {{ dbt_utils.surrogate_key( ['date_day']) }} as date_key,
     cast(date_day as date) as date,
     date_part('year', date_day) as Year,
     date_part('month', date_day) as Month,
