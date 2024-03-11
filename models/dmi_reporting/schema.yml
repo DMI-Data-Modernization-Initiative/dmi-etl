@@ -45,3 +45,22 @@ models:
         description: Indicator name being reported
         tests:
           - not_null
+  - name: aggregate_ebs_indicators_report
+    description: This table has aggregate data for various ebs indicators grouped by different dimensions; county, sub county, date reported etc
+    columns:
+      - name: date
+        description: Date when indicator was reported
+        tests:
+          - not_null
+      - name: county 
+        description: County where indicator was reported
+        tests:
+          - not_null 
+      - name: sub_county
+        description: Sub county where indicator was reported 
+        tests: 
+          - not_null 
+      - name: unit_type 
+        description: The type of unit reporting. Can either be Community or Health
+        tests:
+          - not_null

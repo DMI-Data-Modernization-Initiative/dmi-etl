@@ -10,6 +10,7 @@ env:
   DBT_USER: ${{ secrets.DBT_USER }}
   DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
   DBT_DATABASE: ${{ secrets.DBT_DATABASE }}
+  DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
 
 jobs:
   deploy:

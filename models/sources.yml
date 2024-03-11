@@ -18,3 +18,5 @@ sources:
     tables:
       - name: mdharura_ebs_linelist
         description: This table contains raw data for M-dharura app
+      - name: mdharura_ebs_aggregate
+        description: This table contains raw aggregate data for M-dharura app
