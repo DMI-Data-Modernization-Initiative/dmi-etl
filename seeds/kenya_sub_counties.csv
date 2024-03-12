@@ -21,19 +21,22 @@ Bondo,KE041236,Siaya,1310.514282
 Borabu,KE046273,Nyamira,293.2818298
 Budalangi,KE040231,Busia,310.636322
 Bumula,KE039219,Bungoma,345.3331909
+Bunyala,,Busia,
 Bura,KE004020,Tana River,13602.55957
 Buret,KE035191,Kericho,315.7070618
 Butere,KE037207,Kakamega,209.2274323
 Butula,KE040229,Busia,242.9663849
-Buuri,KE012057,Meru,1314.857666
-Cental Imenti,KE012058,Meru,771.8570557
+Buuri East,,Meru,
+Buuri West,,Meru,
+Central Imenti,KE012058,Meru,771.8570557
 Changamwe,KE001001,Mombasa,22.7648983
 Chepalungu,KE036195,Bomet,536.5463867
 Cherangany,KE026140,Trans Nzoia,627.5454102
 Chesumei,KE029154,Nandi,486.0812988
 Dadaab,KE007030,Garissa,6925.175293
-Dagoretti,KE047276,Nairobi,24.44505882
-Dujis,KE007027,Garissa,568.3626709
+Dagoretti North,,Nairobi,
+Dagoretti South,,Nairobi,
+Dujis,KE007027,Garissa,568.362670924707
 Eldama Ravine,KE030162,Baringo,932.6976929
 Eldas,KE008037,Wajir,4740.828613
 Embakasi Central,KE047284,Nairobi,8.182378769
@@ -199,6 +202,7 @@ Mwingi West,KE015068,Kitui,1180.626343
 Naivasha,KE032168,Nakuru,1721.774414
 Nakuru Town East,KE032176,Nakuru,157.4052124
 Nakuru Town West,KE032175,Nakuru,139.8916473
+Nakuru North,,Nakuru,
 Nambale,KE040227,Busia,232.3359222
 Nandi Hills,KE029153,Nandi,393.0799866
 Narok East,KE033180,Narok,2046.767822
@@ -240,6 +244,7 @@ Saku,KE010047,Marsabit,2046.53772
 Samburu East,KE025135,Samburu,10059.125
 Samburu North,KE025134,Samburu,8480.794922
 Samburu West,KE025133,Samburu,2475.748779
+Samia,,Busia,
 Seme,KE042241,Kisumu,449.1040039
 Shinyalu,KE037209,Kakamega,408.3366699
 Siakago,KE014066,Embu,770.4019775
@@ -266,6 +271,7 @@ Thika Town,KE022114,Kiambu,219.1053772
 Tiaty,KE030157,Baringo,4446.501953
 Tigania East,KE012055,Meru,833.3162842
 Tigania West,KE012054,Meru,391.4922791
+Tigania Central,,Meru,
 Tinderet,KE029151,Nandi,541.689209
 Tongaren,KE039224,Bungoma,375.4391785
 Turbo,KE027142,Uasin Gishu,435.0576477
