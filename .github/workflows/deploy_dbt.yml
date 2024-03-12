@@ -29,8 +29,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt-postgres
           dbt deps --profiles-dir ./profiles/ --target prod
+
+      - name: Run dbt seeds
+        run: |
+          dbt seed --profiles-dir ./profiles/ --target prod
           
-      - name: Run dbt
+      - name: Run dbt models
         run: |
           dbt run --profiles-dir ./profiles/ --target prod
 
