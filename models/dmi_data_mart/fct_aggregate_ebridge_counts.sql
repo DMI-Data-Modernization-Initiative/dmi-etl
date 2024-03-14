@@ -1,7 +1,7 @@
 with enriched_data as (
 	select 
 		"UNIT_CREATEDAT":: date as unit_created_at,
-		"UNIT_PARENT_NAME",
+		(regexp_matches("UNIT_PARENT_CODE", 'KE_SubCounty_(\d+)'))[1]  as subcounty_code,
 		case substring("UNIT_PARENT_NAME" from '^(.*?) Sub County') 
 			when 'Nakuru East' then 'Nakuru Town East'
 			when 'Nakuru West' then 'Nakuru Town West'
@@ -19,6 +19,7 @@ select
 	epi_week.epi_week_key,
 	county.county_key,
 	sub_county.sub_county_key,
+	subcounty_code,
 	sum(case when "SIGNAL" = '1' then 1 else 0 end) as count_c1,
 	sum(case when "SIGNAL" = '2' then 1 else 0 end) as count_c2,
 	sum(case when "SIGNAL" = '3' then 1 else 0 end) as count_c3,
@@ -36,4 +37,5 @@ left join {{ ref('dim_sub_county') }} as sub_county on sub_county.sub_county = e
 group by 
 	epi_week.epi_week_key,
 	county.county_key,
-	sub_county_key
+	sub_county_key,
+	subcounty_code
