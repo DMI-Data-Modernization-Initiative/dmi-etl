@@ -2,6 +2,7 @@ select
 	concat('W', week_number::text, ' ', year::text) as year_week,
 	county.county,
 	sub_county.sub_county,
+	subcounty_code,
 	count_c1,
 	count_c2,
 	count_c3,
