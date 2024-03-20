@@ -1,0 +1,40 @@
+subcounty_id,sub_county,county,population
+1,Imenti South,Meru County,206506
+2,Buuri East,Meru County,76598
+3,Tigania East,Meru County,72549
+4,Igembe South,Meru County,161646
+5,Imenti North,Meru County,177567
+6,Igembe North,Meru County,169317
+7,Igembe Central,Meru County,221412
+8,Buuri West,Meru County,80762
+9,Imenti Central,Meru County,133818
+10,Tigania West,Meru County,139961
+11,Tigania Central,Meru County,104730
+12,Subukia,Nakuru County,85164
+13,Gilgil,Nakuru County,185209
+14,Naivasha,Nakuru County,355383
+15,Rongai,Nakuru County,199906
+16,Nakuru West,Nakuru County,198661
+17,Kuresoi South,Nakuru County,155324
+18,Nakuru North,Nakuru County,218050
+19,Molo,Nakuru County,156732
+20,Kuresoi North,Nakuru County,175074
+21,Njoro,Nakuru County,238773
+22,Nakuru East,Nakuru County,193926
+23,Bondo,Siaya County,197883
+24,Ugunja,Siaya County,104241
+25,Gem,Siaya County,179792
+26,Ugenya,Siaya County,134354
+27,Rarieda,Siaya County,152570
+28,Alego Usonga,Siaya County,224343
+29,Samia,Busia County,107176
+30,Matayos,Busia County,107176
+31,Teso South,Busia County,168116
+32,Butula,Busia County,140334
+35,Bunyala,Busia County,85977
+37,Embakasi Central,Nairobi County,85977
+38,Changamwe,Mombasa County,"131,882"
+39,Kisauni,Mombasa County,"291,930"
+40,Nyali,Mombasa County,"216,577"
+49,Embakasi East,Nairobi County,85977
+50,Ruaraka,Nairobi County,85977

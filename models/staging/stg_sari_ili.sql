@@ -33,9 +33,8 @@ select
 	flub_undetermined,
 	covidpos,
 	case substring(county from '^(.*?) County')
-		when 'Murang?a' then 'Murang''a'
+		when 'Murang?a' then 'Muranga'
 		when 'Homa' then 'Homa Bay'
-		when 'Tharaka Nithi' then 'Tharaka-Nithi'
 		else substring(county from '^(.*?) County')
 	end  as county,
 	Longitude as longitude,

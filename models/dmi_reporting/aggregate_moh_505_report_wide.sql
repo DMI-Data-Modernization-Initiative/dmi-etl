@@ -6,7 +6,7 @@ select
     year,
     start_of_epi_week,
     end_of_epi_week,
-    county,
+    concat(county, ' ', 'Sub County') as county,
     facility_name,
     sum(case when indicator_description = 'Number of positive test results for SARS-COV2' then indicator_value else 0 end) as "Number of positive test results for SARS-COV2",
     sum(case when indicator_description = 'Number of  tests or specimens/samples' then indicator_value else 0 end) as "Number of  tests or specimens/samples",
