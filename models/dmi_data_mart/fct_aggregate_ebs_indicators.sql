@@ -1,7 +1,7 @@
 select 
 	date.date_key,
-	county.county_key,
-	sub_county.sub_county_key,
+	coalesce(county.county_key, 'unset') as county_key,
+	coalesce(sub_county.sub_county_key, 'unset') as sub_county_key,
 	unit.unit_type_key,
     hebs_signals_reported,
     hebs_signals_verified,
@@ -27,6 +27,6 @@ select
     sfps_verifying
 from {{ ref('stg_mdharura_ebs_aggregate') }} as ebs
 left join {{ ref('dim_date') }} as date on date.date = ebs.date_start
-left join {{ ref('dim_county') }}  as county on county.county = ebs.county 
-left join {{ ref('dim_sub_county') }} as sub_county on sub_county.sub_county = ebs.subcounty
+left join {{ ref('dim_county') }}  as county on concat(county.county, ' ', 'County') = ebs.county 
+left join {{ ref('dim_sub_county') }} as sub_county on concat(sub_county.sub_county, ' ', 'Sub County') = ebs.subcounty
 left join {{ ref('dim_unit_type') }} as unit on unit.unit_type  = ebs.unit_type

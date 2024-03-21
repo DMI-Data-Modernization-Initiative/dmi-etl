@@ -1,7 +1,7 @@
 select 
 	date.date,
-	county.county,
-	sub_county.sub_county,
+	concat(county.county, ' ', 'County') as county,
+    concat(sub_county.sub_county, ' ', 'Sub County') as sub_county,
 	unit.unit_type,
     sum(hebs_signals_reported) as hebs_signals_reported,
     sum(hebs_signals_verified) as hebs_signals_verified,

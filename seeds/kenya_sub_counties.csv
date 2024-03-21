@@ -1,297 +1,325 @@
-sub_county,code,county,sqkm
-Ainabkoi,KE027144,Uasin Gishu,502.5619202
-Ainamoi,KE035190,Kericho,245.6444397
-Aldai,KE029152,Nandi,467.7442627
-Alego Usonga,KE041234,Siaya,607.5421143
-Awendo,KE044254,Migori,262.9594727
-Bahati,KE032174,Nakuru,298.29776
-Balambala,KE007028,Garissa,4840.463379
-Banissa,KE009040,Mandera,3038.613281
-Baringo Central,KE030159,Baringo,661.6928101
-Baringo North,KE030158,Baringo,1633.774536
-Baringo South,KE030160,Baringo,1826.791626
-Belgut,KE035192,Kericho,382.7289124
-Bobasi,KE045264,Kisii,240.3522339
-Bomachoge Borabu,KE045263,Kisii,114.1512756
-Bomachoge Chache,KE045265,Kisii,101.9977417
-Bomet Central,KE036197,Bomet,268.950531
-Bomet East,KE036196,Bomet,305.8098145
-Bonchari,KE045261,Kisii,126.6782227
-Bondo,KE041236,Siaya,1310.514282
-Borabu,KE046273,Nyamira,293.2818298
-Budalangi,KE040231,Busia,310.636322
-Bumula,KE039219,Bungoma,345.3331909
-Bunyala,,Busia,
-Bura,KE004020,Tana River,13602.55957
-Buret,KE035191,Kericho,315.7070618
-Butere,KE037207,Kakamega,209.2274323
-Butula,KE040229,Busia,242.9663849
-Buuri East,,Meru,
-Buuri West,,Meru,
-Central Imenti,KE012058,Meru,771.8570557
-Changamwe,KE001001,Mombasa,22.7648983
-Chepalungu,KE036195,Bomet,536.5463867
-Cherangany,KE026140,Trans Nzoia,627.5454102
-Chesumei,KE029154,Nandi,486.0812988
-Dadaab,KE007030,Garissa,6925.175293
-Dagoretti North,,Nairobi,
-Dagoretti South,,Nairobi,
-Dujis,KE007027,Garissa,568.362670924707
-Eldama Ravine,KE030162,Baringo,932.6976929
-Eldas,KE008037,Wajir,4740.828613
-Embakasi Central,KE047284,Nairobi,8.182378769
-Embakasi East,KE047285,Nairobi,85.84393311
-Embakasi North,KE047283,Nairobi,5.429279804
-Embakasi South,KE047282,Nairobi,17.54935074
-Embakasi West,KE047286,Nairobi,9.76080513
-Emgwen,KE029155,Nandi,362.8942261
-Emuhaya,KE038215,Vihiga,89.18224335
-Emurua Dikirr,KE033178,Narok,325.0781555
-Endebess,KE026137,Trans Nzoia,668.911499
-Fafi,KE007031,Garissa,16583.39844
-Funyula,KE040230,Busia,273.3175964
-Gachoka,KE014065,Embu,1323.344971
-Galole,KE004019,Tana River,9687.24707
-Ganze,KE003015,Kilifi,2934.549805
-Garsen,KE004018,Tana River,15902.36035
-Gatanga,KE021110,Murang'a,600.6107178
-Gatundu North,KE022112,Kiambu,234.5355682
-Gatundu South,KE022111,Kiambu,221.6983795
-Gem,KE041235,Siaya,402.9761963
-Gichugu,KE020101,Kirinyaga,467.1112671
-Gilgil,KE032169,Nakuru,1263.9646
-Githunguri,KE022116,Kiambu,172.9838715
-Hamisi,KE038213,Vihiga,186.6544952
-Homa Bay,KE043249,Homa Bay,269.0400391
-Igembe Central,KE012052,Meru,802.3614502
-Igembe North,KE012053,Meru,1075.914307
-Igembe South,KE012051,Meru,839.0639648
-Ijara,KE007032,Garissa,8224.787109
-Ikolomani,KE037210,Kakamega,143.8353424
-Isiolo North,KE011049,Isiolo,15321.57227
-Isiolo South,KE011050,Isiolo,10077.75684
-Jomvu,KE001002,Mombasa,31.72088432
-Juja,KE022113,Kiambu,373.4433899
-Kabete,KE022119,Kiambu,56.22026825
-Kabondo Kasipul,KE043246,Homa Bay,246.9146271
-Kabuchai,KE039218,Bungoma,233.7437744
-Kacheliba,KE024131,West Pokot,4110.896973
-Kaiti,KE017085,Makueni,404.2863464
-Kajiado Central,KE034184,Kajiado,4305.316895
-Kajiado East,KE034186,Kajiado,3268.803711
-Kajiado North,KE034183,Kajiado,112.4006119
-Kajiado South,KE034187,Kajiado,6338.670898
-Kajiado West,KE034185,Kajiado,7859.648438
-Kaloleni,KE003013,Kilifi,668.305542
-Kamukunji,KE047288,Nairobi,8.837454796
-Kandara,KE021109,Murang'a,209.9440155
-Kanduyi,KE039220,Bungoma,319.1791992
-Kangema,KE021104,Murang'a,351.3077393
-Kangundo,KE016077,Machakos,171.0052948
-Kapenguria,KE024129,West Pokot,1776.116821
-Kapseret,KE027145,Uasin Gishu,357.1617126
-Karachuonyo,KE043247,Homa Bay,747.8074951
-Kasarani,KE047280,Nairobi,136.2742157
-Kasipul,KE043245,Homa Bay,258.1202393
-Kathiani,KE016079,Machakos,206.0111237
-Keiyo North,KE028149,Elgeyo-Marakwet,541.8540649
-Keiyo South,KE028150,Elgeyo-Marakwet,886.3115845
-Kesses,KE027146,Uasin Gishu,670.7629395
-Khwisero,KE037208,Kakamega,144.4163513
-Kiambaa,KE022118,Kiambu,88.66467285
-Kiambu,KE022117,Kiambu,97.99088287
-Kibra,KE047278,Nairobi,12.3303175
-Kibwezi East,KE017088,Makueni,2219.572998
-Kibwezi West,KE017087,Makueni,1767.545532
-Kieni,KE019095,Nyeri,1814.097656
-Kigumo,KE021107,Murang'a,316.242218
-Kiharu,KE021106,Murang'a,305.6880493
-Kikuyu,KE022120,Kiambu,174.3073883
-Kilgoris,KE033177,Narok,2538.864258
-Kilifi North,KE003011,Kilifi,784.4257813
-Kilifi South,KE003012,Kilifi,424.2839966
-Kilimani,KE047275,Nairobi,29.35572433
-Kilome,KE017084,Makueni,823.2692871
-Kimilili,KE039223,Bungoma,177.410675
-Kiminini,KE026139,Trans Nzoia,368.6295776
-Kinango,KE002010,Kwale,4833.679688
-Kinangop,KE018089,Nyandarua,538.8843384
-Kipipiri,KE018090,Nyandarua,941.1764526
-Kipkelion East,KE035188,Kericho,752.4439697
-Kipkelion West,KE035189,Kericho,352.3030701
-Kirinyaga Central,KE020103,Kirinyaga,237.2636719
-Kisauni,KE001003,Mombasa,89.52658081
-Kisumu Central,KE042240,Kisumu,68.31214142
-Kisumu East,KE042238,Kisumu,165.4524078
-Kisumu West,KE042239,Kisumu,312.3574219
-Kitui Central,KE015072,Kitui,728.5588379
-Kitui East,KE015073,Kitui,4726.478027
-Kitui Rural,KE015071,Kitui,1529.265015
-Kitui South,KE015074,Kitui,12719.35352
-Kitui West,KE015070,Kitui,630.3432007
-Kitutu Chache North,KE045268,Kisii,130.4313202
-Kitutu Chache South,KE045269,Kisii,97.57301331
-Kitutu Masaba,KE046270,Nyamira,253.7003937
-Konoin,KE036198,Bomet,851.3751221
-Kuresoi North,KE032171,Nakuru,611.4645996
-Kuresoi South,KE032170,Nakuru,524.9326172
-Kuria East,KE044260,Migori,238.2397308
-Kuria West,KE044259,Migori,341.8085938
-Kwanza,KE026136,Trans Nzoia,464.8059387
-Lafey,KE009044,Mandera,3543.549561
-Lagdera,KE007029,Garissa,6453.811035
-Laikipia East,KE031164,Laikipia,3222.260254
-Laikipia North,KE031165,Laikipia,4916.200684
-Laikipia West,KE031163,Laikipia,1398.459839
-Laisamis,KE010048,Marsabit,24080.16797
-Lamu East,KE005021,Lamu,2153.482422
-Lamu West,KE005022,Lamu,3893.53833
-Langata,KE047277,Nairobi,209.8090973
-Lari,KE022122,Kiambu,465.9374084
-Likoni,KE001005,Mombasa,52.07635498
-Likuyani,KE037200,Kakamega,301.2480469
-Limuru,KE022121,Kiambu,284.9660339
-Loima,KE023126,Turkana,9746.041992
-Luanda,KE038214,Vihiga,83.61746979
-Lugari,KE037199,Kakamega,367.7707214
-Lunga Lunga,KE002008,Kwale,2018.801392
-Lurambi,KE037202,Kakamega,161.6921234
-Maara,KE013061,Tharaka-Nithi,504.8777466
-Machakos Town,KE016081,Machakos,757.0568237
-Magarini,KE003017,Kilifi,6977.02002
-Makadara,KE047287,Nairobi,11.99723434
-Makueni,KE017086,Makueni,1979.755859
-Malava,KE037201,Kakamega,422.9586182
-Malindi,KE003016,Kilifi,576.7576904
-Mandera East,KE009043,Mandera,2551.358154
-Mandera North,KE009041,Mandera,6129.766113
-Mandera South,KE009042,Mandera,5541.341797
-Mandera West,KE009039,Mandera,5174.643555
-Manyatta,KE014063,Embu,358.1193237
-Maragwa,KE021108,Murang'a,461.9839172
-Marakwet East,KE028147,Elgeyo-Marakwet,810.5366821
-Marakwet West,KE028148,Elgeyo-Marakwet,769.6889038
-Masinga,KE016075,Machakos,1406.428101
-Matayos,KE040228,Busia,193.9221497
-Mathare,KE047290,Nairobi,2.902835846
-Mathioya,KE021105,Murang'a,279.7182312
-Mathira,KE019096,Nyeri,457.9579468
-Matuga,KE002009,Kwale,1053.852051
-Matungu,KE037206,Kakamega,277.8104858
-Matungulu,KE016078,Machakos,581.4158936
-Mavoko,KE016080,Machakos,842.567749
-Mbooni,KE017083,Makueni,980.4232788
-Mogotio,KE030161,Baringo,1387.780518
-Moiben,KE027143,Uasin Gishu,775.8503418
-Molo,KE032166,Nakuru,511.1366272
-Mosop,KE029156,Nandi,584.2975464
-Moyale,KE010045,Marsabit,9343.782227
-Msambweni,KE002007,Kwale,359.6965637
-Mt. Elgon,KE039216,Bungoma,954.8994141
-Muhoroni,KE042243,Kisumu,664.1870117
-Mukurweni,KE019098,Nyeri,178.358963
-Mumias East,KE037205,Kakamega,174.9698792
-Mumias West,KE037204,Kakamega,138.3354797
-Mvita,KE001006,Mombasa,14.71895885
-Mwala,KE016082,Machakos,1018.840027
-Mwatate,KE006025,Taita Taveta,3691.552002
-Mwea,KE020100,Kirinyaga,432.5062256
-Mwingi East,KE015069,Kitui,4244.865234
-Mwingi North,KE015067,Kitui,4697.320801
-Mwingi West,KE015068,Kitui,1180.626343
-Naivasha,KE032168,Nakuru,1721.774414
-Nakuru Town East,KE032176,Nakuru,157.4052124
-Nakuru Town West,KE032175,Nakuru,139.8916473
-Nakuru North,,Nakuru,
-Nambale,KE040227,Busia,232.3359222
-Nandi Hills,KE029153,Nandi,393.0799866
-Narok East,KE033180,Narok,2046.767822
-Narok North,KE033179,Narok,2723.42749
-Narok South,KE033181,Narok,4831.418945
-Narok West,KE033182,Narok,5446.629883
-Navakholo,KE037203,Kakamega,257.4182434
-Ndaragwa,KE018093,Nyandarua,874.0857544
-Ndhiwa,KE043250,Homa Bay,695.4030762
-Ndia,KE020102,Kirinyaga,338.3988037
-Nithi,KE013060,Tharaka-Nithi,598.1681519
-Njoro,KE032167,Nakuru,782.5006104
-North Horr,KE010046,Marsabit,40557.34766
-North Imenti,KE012056,Meru,301.9828491
-North Mugirango,KE046272,Nyamira,170.3484497
-Nyakach,KE042244,Kisumu,402.5355225
-Nyali,KE001004,Mombasa,22.80051231
-Nyando,KE042242,Kisumu,603.0876465
-Nyaribari Chache,KE045267,Kisii,135.9544525
-Nyaribari Masaba,KE045266,Kisii,159.172226
-Nyatike,KE044258,Migori,1214.092896
-Nyeri Town,KE019099,Nyeri,169.1946106
-Ol Jorok,KE018092,Nyandarua,625.380127
-Ol Kalou,KE018091,Nyandarua,287.1991882
-Othaya,KE019097,Nyeri,356.4499817
-Pokot South,KE024132,West Pokot,1267.747192
-Rabai,KE003014,Kilifi,233.9353333
-Rangwe,KE043248,Homa Bay,290.7329407
-Rarieda,KE041237,Siaya,679.1633911
-Rongai,KE032173,Nakuru,1021.44928
-Rongo,KE044253,Migori,212.579422
-Roysambu,KE047279,Nairobi,48.10435867
-Ruaraka,KE047281,Nairobi,7.179671764
-Ruiru,KE022115,Kiambu,153.1184387
-Runyenjes,KE014064,Embu,371.830658
-Sabatia,KE038212,Vihiga,111.4894485
-Saboti,KE026138,Trans Nzoia,354.8114624
-Saku,KE010047,Marsabit,2046.53772
-Samburu East,KE025135,Samburu,10059.125
-Samburu North,KE025134,Samburu,8480.794922
-Samburu West,KE025133,Samburu,2475.748779
-Samia,,Busia,
-Seme,KE042241,Kisumu,449.1040039
-Shinyalu,KE037209,Kakamega,408.3366699
-Siakago,KE014066,Embu,770.4019775
-Sigor,KE024130,West Pokot,2150.747803
-Sigowet/Soin,KE035193,Kericho,464.3832703
-Sirisia,KE039217,Bungoma,210.1429901
-Sotik,KE036194,Bomet,475.5382385
-South Imenti,KE012059,Meru,661.6986694
-South Mugirango,KE045262,Kisii,207.4239197
-Soy,KE027141,Uasin Gishu,655.444397
-Starehe,KE047289,Nairobi,16.8363533
-Suba North,KE043251,Homa Bay,1050.86731
-Suba South,KE043252,Homa Bay,1173.049194
-Subukia,KE032172,Nakuru,454.2550354
-Suna East,KE044255,Migori,206.6816254
-Suna West,KE044256,Migori,284.157074
-Tarbaj,KE008035,Wajir,7544.372559
-Taveta,KE006023,Taita Taveta,4007.269775
-Teso North,KE040225,Busia,254.0739746
-Teso South,KE040226,Busia,304.3193665
-Tetu,KE019094,Nyeri,358.5135803
-Tharaka,KE013062,Tharaka-Nithi,1477.947388
-Thika Town,KE022114,Kiambu,219.1053772
-Tiaty,KE030157,Baringo,4446.501953
-Tigania East,KE012055,Meru,833.3162842
-Tigania West,KE012054,Meru,391.4922791
-Tigania Central,,Meru,
-Tinderet,KE029151,Nandi,541.689209
-Tongaren,KE039224,Bungoma,375.4391785
-Turbo,KE027142,Uasin Gishu,435.0576477
-Turkana Central,KE023125,Turkana,6615.802734
-Turkana East,KE023128,Turkana,11183.86914
-Turkana North,KE023123,Turkana,20482.23242
-Turkana South,KE023127,Turkana,7419.551758
-Turkana West,KE023124,Turkana,14684.24121
-Ugenya,KE041232,Siaya,321.0593567
-Ugunja,KE041233,Siaya,199.1775513
-Uriri,KE044257,Migori,383.7792969
-Vihiga,KE038211,Vihiga,89.52488708
-Voi,KE006026,Taita Taveta,8581.292969
-Wajir East,KE008034,Wajir,4279.577637
-Wajir North,KE008033,Wajir,10398.86914
-Wajir South,KE008038,Wajir,21580.61914
-Wajir West,KE008036,Wajir,8124.320313
-Webuye East,KE039221,Bungoma,163.9555054
-Webuye West,KE039222,Bungoma,236.0701904
-West Mugirango,KE046271,Nyamira,179.8222046
-Westlands,KE047274,Nairobi,72.70425415
-Wundanyi,KE006024,Taita Taveta,850.9522705
-Yatta,KE016076,Machakos,1060.933716
+country,county,unit_name,unit_uid,unit_code,unit _type
+Kenya,Uasin Gishu County,Ainabkoi Sub County,mYlMs4xTj82,KE_SubCounty_3229,Subcounty
+Kenya,Kericho County,Ainamoi Sub County,GshNTMZJ5r1,KE_SubCounty_3026,Subcounty
+Kenya,Nandi County,Aldai Sub County,Sq2fLWnOCGg,KE_SubCounty_3171,Subcounty
+Kenya,Siaya County,Alego Usonga Sub County,Cu46otDi1RO,KE_SubCounty_3203,Subcounty
+Kenya,Mandera County,Arabia Sub County,QiXBA5Ji7dA,KE_SubCounty_3272,Subcounty
+Kenya,Turkana County,Aroo Sub County,FKt9UVErwh3,,Subcounty
+Kenya,Machakos County,Athi River Sub County,BxfsSc6Svrc,KE_SubCounty_3093,Subcounty
+Kenya,Migori County,Awendo Sub County,ka9Uv3Ckcbd,KE_SubCounty_3125,Subcounty
+Kenya,Garissa County,Balambala Sub County,FGBNPr91pXH,KE_SubCounty_2993,Subcounty
+Kenya,Mandera County,Banissa Sub County,hCvlJNjyZna,KE_SubCounty_3104,Subcounty
+Kenya,Baringo County,Baringo Central Sub County,k7Rj54u6dMx,KE_SubCounty_2956,Subcounty
+Kenya,Baringo County,Baringo North Sub County,bqtTmWcikTN,KE_SubCounty_2957,Subcounty
+Kenya,Kericho County,Belgut Sub County,YnIAWg1T4AY,KE_SubCounty_3024,Subcounty
+Kenya,Kisii County,Bobasi Sub County,cooDDG3Lh3A,KE_SubCounty_3058,Subcounty
+Kenya,Kisii County,Bomachoge Borabu Sub County,ntRK47D5dYL,KE_SubCounty_3059,Subcounty
+Kenya,Kisii County,Bomachoge Chache Sub County,YqYSkwmOtiR,KE_SubCounty_3057,Subcounty
+Kenya,Bomet County,Bomet Central Sub County,m9gdonbVXjZ,KE_SubCounty_2960,Subcounty
+Kenya,Bomet County,Bomet East Sub County,OZNRpww2TUK,KE_SubCounty_2961,Subcounty
+Kenya,Kisii County,Bonchari Sub County,zCCIu1Vi3Wh,KE_SubCounty_3061,Subcounty
+Kenya,Siaya County,Bondo Sub County,JNvqpOnKfGR,KE_SubCounty_3201,Subcounty
+Kenya,Nyamira County,Borabu Sub County,ABuzigW8Lzw,KE_SubCounty_3179,Subcounty
+Kenya,Bungoma County,Bumula Sub County,jkQZEow83MX,KE_SubCounty_2969,Subcounty
+Kenya,Busia County,Bunyala Sub County,zI6vnsXresW,KE_SubCounty_2973,Subcounty
+Kenya,Tana River County,Bura Sub County,yWPcTwGwQ2B,KE_SubCounty_3249,Subcounty
+Kenya,Kericho County,Bureti Sub County,wt8cPHWfkfu,KE_SubCounty_3025,Subcounty
+Kenya,Kakamega County,Butere Sub County,K7mZpm8COh7,KE_SubCounty_3014,Subcounty
+Kenya,Busia County,Butula Sub County,RIBiZFJxB1K,KE_SubCounty_2975,Subcounty
+Kenya,Meru County,Buuri East Sub County,xN5aPo4ZOIt,KE_SubCounty_3111,Subcounty
+Kenya,Meru County,Buuri West Sub County,XlYC8FMUgxi,KE_SubCounty_3260,Subcounty
+Kenya,Mombasa County,Changamwe Sub County,OvI6w06DhPJ,KE_SubCounty_3132,Subcounty
+Kenya,Bomet County,Chepalungu Sub County,PUhMyfDD2xp,KE_SubCounty_2962,Subcounty
+Kenya,Bungoma County,Cheptais Sub County,NZphHeczehh,KE_SubCounty_1289,Subcounty
+Kenya,Trans Nzoia County,Cherangany Sub County,f18kGo9yXWo,KE_SubCounty_3215,Subcounty
+Kenya,Nandi County,Chesumei Sub County,xLWuQq3DjOR,KE_SubCounty_3169,Subcounty
+Kenya,Tharaka Nithi County,Chuka Sub County,JmE1qRVQD4F,KE_SubCounty_3213,Subcounty
+Kenya,Garissa County,Dadaab Refugee Camp Sub County,wYTqff68aVM,,Subcounty
+Kenya,Garissa County,Dadaab Sub County,EW4Jw4dVWBt,KE_SubCounty_2991,Subcounty
+Kenya,Nairobi County,Dagoretti North Sub County,CcTr4bcVGAG,KE_SubCounty_3154,Subcounty
+Kenya,Nairobi County,Dagoretti South Sub County,sqNWYDHZZ6W,KE_SubCounty_3153,Subcounty
+Kenya,Wajir County,Eldas Sub County,x6Z1sBeiyqQ,KE_SubCounty_3239,Subcounty
+Kenya,Nairobi County,Embakasi Central Sub County,XvpLXU47BKs,KE_SubCounty_3145,Subcounty
+Kenya,Nairobi County,Embakasi East Sub County,gD4xxgDGJ4Y,KE_SubCounty_3144,Subcounty
+Kenya,Nairobi County,Embakasi North Sub County,SSz1iOv28Jk,KE_SubCounty_3146,Subcounty
+Kenya,Nairobi County,Embakasi South Sub County,aDp1odOWYC1,KE_SubCounty_3147,Subcounty
+Kenya,Nairobi County,Embakasi West Sub County,aCwUX5V42Zz,KE_SubCounty_3143,Subcounty
+Kenya,Nandi County,Emgwen Sub County,Njv37QXxNy2,KE_SubCounty_3168,Subcounty
+Kenya,Vihiga County,Emuhaya Sub County,Lpy789vqRC6,KE_SubCounty_3233,Subcounty
+Kenya,Trans Nzoia County,Endebess Sub County,PsjxYLsJSIp,KE_SubCounty_3218,Subcounty
+Kenya,Garissa County,Fafi Sub County,RScEHA3V38d,KE_SubCounty_2990,Subcounty
+Kenya,Tana River County,Galole Sub County,A4SNYCxrrnv,KE_SubCounty_3248,Subcounty
+Kenya,Kilifi County,Ganze Sub County,x7qUMtZZvo9,KE_SubCounty_3043,Subcounty
+Kenya,Isiolo County,Garbatulla Sub County,ecl4YnDebUi,KE_SubCounty_3003,Subcounty
+Kenya,Garissa County,Garissa Sub County,lQkHbTC1iRg,KE_SubCounty_2994,Subcounty
+Kenya,Tana River County,Garsen Sub County,Lj0mu9j58Ss,KE_SubCounty_3250,Subcounty
+Kenya,Muranga County,Gatanga Sub County,Z7ALMtFNfeZ,KE_SubCounty_3133,Subcounty
+Kenya,Kiambu County,Gatundu North Sub County,HEsM6W2ImQR,KE_SubCounty_3039,Subcounty
+Kenya,Kiambu County,Gatundu South Sub County,EcRytSSIkUq,KE_SubCounty_3040,Subcounty
+Kenya,Siaya County,Gem Sub County,PKeFksHlJkB,KE_SubCounty_3202,Subcounty
+Kenya,Nakuru County,Gilgil Sub County,hBU8B1KI12P,KE_SubCounty_3163,Subcounty
+Kenya,Kiambu County,Githunguri Sub County,E7tkGikenbD,KE_SubCounty_3035,Subcounty
+Kenya,Vihiga County,Hamisi Sub County,BXaq5PxSfz2,KE_SubCounty_3235,Subcounty
+Kenya,Homa Bay County,Homa Bay Town Sub County,Ur2xRBDtazT,KE_SubCounty_2998,Subcounty
+Kenya,Garissa County,Hulugho Sub County,uyeif4CPqHt,KE_SubCounty_2989,Subcounty
+Kenya,Tharaka Nithi County,Igambangombe Sub County,yXwsnpFBIPW,KE_SubCounty_3256,Subcounty
+Kenya,Meru County,Igembe Central Sub County,TPfcUHno8oP,KE_SubCounty_3117,Subcounty
+Kenya,Meru County,Igembe North Sub County,G9DoZvSdGLx,KE_SubCounty_3116,Subcounty
+Kenya,Meru County,Igembe South Sub County,wtuGWT7KjVm,KE_SubCounty_3118,Subcounty
+Kenya,Garissa County,Ijara Sub County,l5E6PiIUs1J,KE_SubCounty_2988,Subcounty
+Kenya,Kakamega County,Ikolomani Sub County,BE6HMtlHyl1,KE_SubCounty_3011,Subcounty
+Kenya,Meru County,Imenti Central Sub County,OnNcTsJgfvL,KE_SubCounty_3112,Subcounty
+Kenya,Meru County,Imenti North Sub County,BDxUGx86itV,KE_SubCounty_3113,Subcounty
+Kenya,Meru County,Imenti South Sub County,AFIlzKNxXST,KE_SubCounty_3110,Subcounty
+Kenya,Isiolo County,Isiolo Sub County,I2LYLqKU6AW,KE_SubCounty_3004,Subcounty
+Kenya,Muranga County,Ithanga Sub County,ETGSIeGBsqt,,Subcounty
+Kenya,Mombasa County,Jomvu Sub County,vSISrsNNHwq,KE_SubCounty_3131,Subcounty
+Kenya,Kiambu County,Juja Sub County,aiqi2bz0IMI,KE_SubCounty_3038,Subcounty
+Kenya,Kiambu County,Kabete Sub County,lb5LzWiUX8Y,KE_SubCounty_3032,Subcounty
+Kenya,Homa Bay County,Kabondo Kasipul Sub County,BzFBYZhF5fx,KE_SubCounty_3001,Subcounty
+Kenya,Bungoma County,Kabuchai Sub County,k1mze33jOs0,KE_SubCounty_2970,Subcounty
+Kenya,West Pokot County,Kacheliba Sub County,wwDtq26ddp6,KE_SubCounty_3264,Subcounty
+Kenya,Muranga County,Kahuro Sub County,s2jeo1C9aM8,,Subcounty
+Kenya,Makueni County,Kaiti Sub County,pKJ4NZGPzTA,KE_SubCounty_3251,Subcounty
+Kenya,Kajiado County,Kajiado Central Sub County,SZapM1R0Kti,KE_SubCounty_3009,Subcounty
+Kenya,Kajiado County,Kajiado East Sub County,g6gTzQ5nfYq,KE_SubCounty_3008,Subcounty
+Kenya,Kajiado County,Kajiado North Sub County,BLz1HkvvMkA,KE_SubCounty_3010,Subcounty
+Kenya,Kajiado County,Kajiado West Sub County,wYsCfCAUWNB,KE_SubCounty_3007,Subcounty
+Kenya,Machakos County,Kalama Sub County,pJDgmrxMQTn,KE_SubCounty_3254,Subcounty
+Kenya,Kilifi County,Kaloleni Sub County,tSKDWoVKiPo,KE_SubCounty_3045,Subcounty
+Kenya,Nairobi County,Kamukunji Sub County,qoLIT7y5f5c,KE_SubCounty_3141,Subcounty
+Kenya,Muranga County,Kandara Sub County,gwYTo0wITYX,KE_SubCounty_3134,Subcounty
+Kenya,Bungoma County,Kanduyi Sub County,CUjthlounWV,KE_SubCounty_2968,Subcounty
+Kenya,Muranga County,Kangema Sub County,U9CLTNIwehR,KE_SubCounty_3252,Subcounty
+Kenya,Machakos County,Kangundo Sub County,vMPhBuymSKt,KE_SubCounty_3096,Subcounty
+Kenya,Uasin Gishu County,Kapseret Sub County,u9yagZzK49q,KE_SubCounty_3228,Subcounty
+Kenya,Homa Bay County,Karachuonyo Sub County,fmsyW02tPng,KE_SubCounty_3000,Subcounty
+Kenya,Nairobi County,Kasarani Sub County,FoqzDgIByL6,KE_SubCounty_3149,Subcounty
+Kenya,Machakos County,Kathiani Sub County,iCey76HYgLP,KE_SubCounty_3094,Subcounty
+Kenya,Elgeyo Marakwet County,Keiyo North Sub County,rlWH0Ac9vjc,KE_SubCounty_2981,Subcounty
+Kenya,Elgeyo Marakwet County,Keiyo South Sub County,SOEG546PqbA,KE_SubCounty_2980,Subcounty
+Kenya,Uasin Gishu County,Kesses Sub County,dKHnvt7gleN,KE_SubCounty_3227,Subcounty
+Kenya,Kakamega County,Khwisero Sub County,UhQS2Mv0PCK,KE_SubCounty_3013,Subcounty
+Kenya,Kiambu County,Kiambaa Sub County,oMaQgNIs85x,KE_SubCounty_3033,Subcounty
+Kenya,Kiambu County,Kiambu Town Sub County,SBz4c48i24Y,KE_SubCounty_3034,Subcounty
+Kenya,Turkana County,Kibish Sub County,AXNntZ7T30a,KE_SubCounty_3226,Subcounty
+Kenya,Nairobi County,Kibra Sub County,LO5he3DtiFG,KE_SubCounty_3151,Subcounty
+Kenya,Makueni County,Kibwezi East Sub County,ZhhyithPNoI,KE_SubCounty_3099,Subcounty
+Kenya,Makueni County,Kibwezi West Sub County,toa2Hl7iVQI,KE_SubCounty_3081,Subcounty
+Kenya,Nyeri County,Kieni East Sub County,YXt5ETQPRlB,KE_SubCounty_3194,Subcounty
+Kenya,Nyeri County,Kieni West Sub County,odOtfcaMg4p,KE_SubCounty_3195,Subcounty
+Kenya,Muranga County,Kigumo Sub County,tyfDsdZ1h3R,KE_SubCounty_3136,Subcounty
+Kenya,Muranga County,Kiharu Sub County,VDlzh6w4LKv,KE_SubCounty_3137,Subcounty
+Kenya,Kiambu County,Kikuyu Sub County,jOVcLeZQSsS,KE_SubCounty_3031,Subcounty
+Kenya,Kilifi County,Kilifi North Sub County,MEkEH8ZmcOU,KE_SubCounty_3047,Subcounty
+Kenya,Kilifi County,Kilifi South Sub County,xWAZBULwGxp,KE_SubCounty_3046,Subcounty
+Kenya,Mandera County,Kiliwehiri Sub County,iGkXVHBAqXX,KE_SubCounty_3273,Subcounty
+Kenya,Makueni County,Kilome Sub County,XAy1bjurhLU,KE_SubCounty_3083,Subcounty
+Kenya,Bungoma County,Kimilili Sub County,AphsS3lJwKU,KE_SubCounty_2965,Subcounty
+Kenya,Trans Nzoia County,Kiminini Sub County,pzZHpL2ueIn,KE_SubCounty_3216,Subcounty
+Kenya,Kwale County,Kinango Sub County,LOgbecTRkbp,KE_SubCounty_3077,Subcounty
+Kenya,Nyandarua County,Kinangop Sub County,RAnL5kBKMIt,KE_SubCounty_3188,Subcounty
+Kenya,Nyandarua County,Kipipiri Sub County,KlVgeHmvG6n,KE_SubCounty_3187,Subcounty
+Kenya,Kericho County,Kipkelion East Sub County,gU0Cz7Qlfss,KE_SubCounty_3028,Subcounty
+Kenya,Kericho County,Kipkelion West Sub County,Taw0Zg7nArd,KE_SubCounty_3027,Subcounty
+Kenya,West Pokot County,Kipkomo Sub County,LpwqSz9xMIj,KE_SubCounty_3263,Subcounty
+Kenya,Kirinyaga County,Kirinyaga Central Sub County,JKNaaTjVapG,KE_SubCounty_3048,Subcounty
+Kenya,Kirinyaga County,Kirinyaga East Sub County,yOaHQLOLd1H,KE_SubCounty_3050,Subcounty
+Kenya,Kirinyaga County,Kirinyaga North/Mwea West Sub County,f6EOn3xI9YH,KE_SubCounty_3052,Subcounty
+Kenya,Kirinyaga County,Kirinyaga South Sub County,jHmpQUlnkQk,KE_SubCounty_3051,Subcounty
+Kenya,Kirinyaga County,Kirinyaga West Sub County,A34NiI4rgnf,KE_SubCounty_3049,Subcounty
+Kenya,Mombasa County,Kisauni Sub County,C1hO6wNOgrH,KE_SubCounty_3130,Subcounty
+Kenya,Kisumu County,Kisumu Central Sub County,OpLt8IgyHop,KE_SubCounty_3066,Subcounty
+Kenya,Kisumu County,Kisumu East Sub County,PRpKwAloU5b,KE_SubCounty_3068,Subcounty
+Kenya,Kisumu County,Kisumu West Sub County,YzEDO9Mq4TR,KE_SubCounty_3067,Subcounty
+Kenya,Kitui County,Kitui Central Sub County,MWqQbxWqACn,KE_SubCounty_3071,Subcounty
+Kenya,Kitui County,Kitui East Sub County,d0Gu8FrRM0Y,KE_SubCounty_3070,Subcounty
+Kenya,Kitui County,Kitui Rural Sub County,vbauk0RRq9N,KE_SubCounty_3072,Subcounty
+Kenya,Kitui County,Kitui South Sub County,d3hSQ3EtnPk,KE_SubCounty_3069,Subcounty
+Kenya,Kitui County,Kitui West Sub County,cmWAJB5kCDW,KE_SubCounty_3073,Subcounty
+Kenya,Kisii County,Kitutu Chache North Sub County,cQkF9l9wePP,KE_SubCounty_3054,Subcounty
+Kenya,Kisii County,Kitutu Chache South Sub County,gPR82w2xgJZ,KE_SubCounty_3053,Subcounty
+Kenya,Baringo County,Koibatek Sub County,Yl9UDBnDvvW,KE_SubCounty_2953,Subcounty
+Kenya,Bomet County,Konoin Sub County,PLFoYJO8MVS,KE_SubCounty_2959,Subcounty
+Kenya,Nakuru County,Kuresoi North Sub County,QBwORnYdu0e,KE_SubCounty_3161,Subcounty
+Kenya,Nakuru County,Kuresoi South Sub County,QwGkDS0DNls,KE_SubCounty_3162,Subcounty
+Kenya,Migori County,Kuria East Sub County,THm2tCJa2ZQ,KE_SubCounty_3119,Subcounty
+Kenya,Migori County,Kuria West Sub County,jtBjNpL9FXS,KE_SubCounty_3120,Subcounty
+Kenya,Mandera County,Kutulo Sub County,iGFdm333PJ2,KE_SubCounty_3258,Subcounty
+Kenya,Trans Nzoia County,Kwanza Sub County,ABy8CNqf2e7,KE_SubCounty_3219,Subcounty
+Kenya,Mandera County,Lafey Sub County,nsfbHBS9tMT,KE_SubCounty_3100,Subcounty
+Kenya,Garissa County,Lagdera Sub County,J69iWev2zwu,KE_SubCounty_2992,Subcounty
+Kenya,Laikipia County,Laikipia East Sub County,pF6qPMIlHte,KE_SubCounty_3086,Subcounty
+Kenya,Laikipia County,Laikipia North Sub County,RJyUfi5BQUm,KE_SubCounty_3085,Subcounty
+Kenya,Laikipia County,Laikipia West Sub County,pXbWrnFPpKb,KE_SubCounty_3087,Subcounty
+Kenya,Marsabit County,Laisamis Sub County,eZpy65ooW0m,KE_SubCounty_3106,Subcounty
+Kenya,Lamu County,Lamu Central Sub County,nfJoTgKpwCg,KE_SubCounty_3262,Subcounty
+Kenya,Lamu County,Lamu East Sub County,cwnqFyTJIgX,KE_SubCounty_3090,Subcounty
+Kenya,Lamu County,Lamu West Sub County,Lfxw0DfD4jN,KE_SubCounty_3089,Subcounty
+Kenya,Nairobi County,Langata Sub County,aTGYlhEw2Xx,KE_SubCounty_3152,Subcounty
+Kenya,Kiambu County,Lari Sub County,nCziQtZ49jj,KE_SubCounty_3029,Subcounty
+Kenya,Mombasa County,Likoni Sub County,iy93Mmi73Or,KE_SubCounty_3128,Subcounty
+Kenya,Kakamega County,Likuyani Sub County,wMv0s3U2nnG,KE_SubCounty_3021,Subcounty
+Kenya,Kiambu County,Limuru Sub County,xhVi71INcFs,KE_SubCounty_3030,Subcounty
+Kenya,Turkana County,Loima Sub County,OZiGQn2R8kK,KE_SubCounty_3222,Subcounty
+Kenya,Kajiado County,Loitokitok Sub County,eyADpAXM834,KE_SubCounty_3006,Subcounty
+Kenya,Turkana County,Lokichoggio Sub County,tKOna0n1Nmk,,Subcounty
+Kenya,Turkana County,Lokiriama Sub County,UGFoTN6rMVy,,Subcounty
+Kenya,Vihiga County,Luanda Sub County,lkYdgjRSOoE,KE_SubCounty_3234,Subcounty
+Kenya,Kakamega County,Lugari Sub County,ZOdhgR19Akq,KE_SubCounty_3022,Subcounty
+Kenya,Kwale County,Lunga Lunga Sub County,TdcYaufNV4p,KE_SubCounty_3079,Subcounty
+Kenya,Kakamega County,Lurambi Sub County,Y3NjAhiBaZT,KE_SubCounty_3019,Subcounty
+Kenya,Machakos County,Machakos Sub County,KXc4ez8OAFz,KE_SubCounty_3092,Subcounty
+Kenya,Kilifi County,Magarini Sub County,KMWrMZrlO5u,KE_SubCounty_3041,Subcounty
+Kenya,Nairobi County,Makadara Sub County,wwROy3Qkwin,KE_SubCounty_3142,Subcounty
+Kenya,Makueni County,Makueni Sub County,AIGIQpolMRn,KE_SubCounty_3082,Subcounty
+Kenya,Kakamega County,Malava Sub County,ES1CWa4AJmJ,KE_SubCounty_3020,Subcounty
+Kenya,Kilifi County,Malindi Sub County,lGg3wEy784X,KE_SubCounty_3042,Subcounty
+Kenya,Mandera County,Mandera East Sub County,fGr9rRvaovO,KE_SubCounty_3101,Subcounty
+Kenya,Mandera County,Mandera North Sub County,jrm0uyLXnC1,KE_SubCounty_3103,Subcounty
+Kenya,Mandera County,Mandera South Sub County,qyhVIMG2rUw,KE_SubCounty_3102,Subcounty
+Kenya,Mandera County,Mandera West Sub County,H5RvDZkoDJL,KE_SubCounty_3105,Subcounty
+Kenya,Nyamira County,Manga Sub County,f3AcdRzgTwz,KE_SubCounty_3183,Subcounty
+Kenya,Embu County,Manyatta Sub County,IPOMRXiYjxr,KE_SubCounty_2987,Subcounty
+Kenya,Elgeyo Marakwet County,Marakwet East Sub County,EZraJgLdRLX,KE_SubCounty_2982,Subcounty
+Kenya,Elgeyo Marakwet County,Marakwet West Sub County,fNCuk4Lpsnh,KE_SubCounty_2983,Subcounty
+Kenya,Baringo County,Marigat Sub County,dSLnPmNlm8Q,KE_SubCounty_2955,Subcounty
+Kenya,Nyamira County,Masaba North Sub County,Qn5Fff2lIDz,KE_SubCounty_3182,Subcounty
+Kenya,Machakos County,Masinga Sub County,hpcb7MYi6nc,KE_SubCounty_3098,Subcounty
+Kenya,Busia County,Matayos Sub County,tvkI2HSIRW9,KE_SubCounty_2976,Subcounty
+Kenya,Nairobi County,Mathare Sub County,gh2kzpOFCeF,KE_SubCounty_3139,Subcounty
+Kenya,Muranga County,Mathioya Sub County,u7Gkh63FYe4,KE_SubCounty_3138,Subcounty
+Kenya,Nyeri County,Mathira East Sub County,vznKK4IegIL,KE_SubCounty_3192,Subcounty
+Kenya,Nyeri County,Mathira West Sub County,msIc1uFAY6B,KE_SubCounty_3193,Subcounty
+Kenya,Kwale County,Matuga Sub County,wUNEDOnx9uB,KE_SubCounty_3078,Subcounty
+Kenya,Kakamega County,Matungu Sub County,ssbO49f0iLN,KE_SubCounty_3015,Subcounty
+Kenya,Machakos County,Matungulu Sub County,GnixPSqaV6D,KE_SubCounty_3095,Subcounty
+Kenya,Embu County,Mbeere North Sub County,eYBXetGx8xF,KE_SubCounty_2984,Subcounty
+Kenya,Embu County,Mbeere South Sub County,AvnM6jKoocs,KE_SubCounty_2985,Subcounty
+Kenya,Homa Bay County,Mbita Sub County,mCGytMcMf6y,KE_SubCounty_2996,Subcounty
+Kenya,Makueni County,Mbooni Sub County,jxjGWCdfsib,KE_SubCounty_3084,Subcounty
+Kenya,Isiolo County,Merti Sub County,NrGORu301bx,KE_SubCounty_3005,Subcounty
+Kenya,Baringo County,Mogotio Sub County,k5sxmlXAtIg,KE_SubCounty_2954,Subcounty
+Kenya,Uasin Gishu County,Moiben Sub County,q8R0FA1hxnP,KE_SubCounty_3230,Subcounty
+Kenya,Nakuru County,Molo Sub County,RJ4LGJiSHFg,KE_SubCounty_3166,Subcounty
+Kenya,Nandi County,Mosop Sub County,Xtb7tbJpk9p,KE_SubCounty_3167,Subcounty
+Kenya,Marsabit County,Moyale Sub County,sZjPgbWI5ra,KE_SubCounty_3109,Subcounty
+Kenya,Kwale County,Msambweni Sub County,ADMywdLwoRX,KE_SubCounty_3080,Subcounty
+Kenya,Bungoma County,Mt Elgon Sub County,ZCYATXdLsL1,KE_SubCounty_2972,Subcounty
+Kenya,Kisumu County,Muhoroni Sub County,NmbwkQ5r5cB,KE_SubCounty_3063,Subcounty
+Kenya,Nyeri County,Mukurweini Sub County,zT8Zj5vNYCy,KE_SubCounty_3190,Subcounty
+Kenya,Kakamega County,Mumias East Sub County,FBteTV1eqB6,KE_SubCounty_3016,Subcounty
+Kenya,Kakamega County,Mumias West Sub County,uRl5fBkhpcE,KE_SubCounty_3017,Subcounty
+Kenya,Muranga County,Muranga South Sub County,l46g2PZUjoh,KE_SubCounty_3135,Subcounty
+Kenya,Tharaka Nithi County,Muthambi Sub County,gLD3Q9fHpvy,KE_SubCounty_3259,Subcounty
+Kenya,Mombasa County,Mvita Sub County,C1xuoa1NAMm,KE_SubCounty_3127,Subcounty
+Kenya,Machakos County,Mwala Sub County,fYYivceocJ2,KE_SubCounty_3091,Subcounty
+Kenya,Taita Taveta County,Mwatate Sub County,IBDoGsLdhvt,KE_SubCounty_3207,Subcounty
+Kenya,Embu County,Mwea Sub County,rBKASpHJblX,3266,Subcounty
+Kenya,Tharaka Nithi County,Mwimbi Sub County,wQ8XjZ7zVwL,KE_SubCounty_3214,Subcounty
+Kenya,Kitui County,Mwingi Central Sub County,uE7HKhqPOtf,KE_SubCounty_3074,Subcounty
+Kenya,Kitui County,Mwingi North Sub County,KXM9VnhuLfP,KE_SubCounty_3076,Subcounty
+Kenya,Kitui County,Mwingi West Sub County,svwbDnzhgik,KE_SubCounty_3075,Subcounty
+Kenya,Nakuru County,Naivasha Sub County,yZJJPoSGhY6,KE_SubCounty_3164,Subcounty
+Kenya,Nakuru County,Nakuru East Sub County,FBJ9Y11esHS,KE_SubCounty_3156,Subcounty
+Kenya,Nakuru County,Nakuru North Sub County,nwh9bXKykiS,KE_SubCounty_3158,Subcounty
+Kenya,Nakuru County,Nakuru West Sub County,KTayLusaU5I,KE_SubCounty_3157,Subcounty
+Kenya,Busia County,Nambale Sub County,e1J7R103h8I,KE_SubCounty_2977,Subcounty
+Kenya,Nandi County,Nandi Hills Sub County,W6Err8cQf5J,KE_SubCounty_3170,Subcounty
+Kenya,Narok County,Narok Central Sub County,zGJ7QQlAMYD,3274,Subcounty
+Kenya,Narok County,Narok East Sub County,gZM3NbHaugk,KE_SubCounty_3175,Subcounty
+Kenya,Narok County,Narok North Sub County,fNROL0qm8De,KE_SubCounty_3176,Subcounty
+Kenya,Narok County,Narok South Sub County,bnYzgzYe2Z7,KE_SubCounty_3174,Subcounty
+Kenya,Narok County,Narok West Sub County,ouA247cg58A,KE_SubCounty_3173,Subcounty
+Kenya,Kakamega County,Navakholo Sub County,G6PJ5kFVAuO,KE_SubCounty_3018,Subcounty
+Kenya,Nyandarua County,Ndaragwa Sub County,EESGLsSLTqH,KE_SubCounty_3184,Subcounty
+Kenya,Homa Bay County,Ndhiwa Sub County,i2Y2fyNoFyZ,KE_SubCounty_2997,Subcounty
+Kenya,Nakuru County,Njoro Sub County,gSJXzH1DM75,KE_SubCounty_3165,Subcounty
+Kenya,Marsabit County,North Horr Sub County,j6fqt5TYqPZ,KE_SubCounty_3108,Subcounty
+Kenya,Kisumu County,Nyakach Sub County,kBQIjtWUBqj,KE_SubCounty_3062,Subcounty
+Kenya,Mombasa County,Nyali Sub County,sr8WEz03EnP,KE_SubCounty_3129,Subcounty
+Kenya,Nyamira County,Nyamira North Sub County,v5qbFUgfIoF,KE_SubCounty_3180,Subcounty
+Kenya,Nyamira County,Nyamira Sub County,cxjRPbvhjzr,KE_SubCounty_3181,Subcounty
+Kenya,Kisumu County,Nyando Sub County,iRK9uABUTVZ,KE_SubCounty_3064,Subcounty
+Kenya,Kisii County,Nyaribari Chache Sub County,fFh3beH29fD,KE_SubCounty_3055,Subcounty
+Kenya,Kisii County,Nyaribari Masaba Sub County,A6Sj8RumZ0m,KE_SubCounty_3056,Subcounty
+Kenya,Migori County,Nyatike Sub County,D2lsuEzZAJP,KE_SubCounty_3121,Subcounty
+Kenya,Nyeri County,Nyeri Central Sub County,GXnD5lHeanK,KE_SubCounty_3189,Subcounty
+Kenya,Nyeri County,Nyeri South Sub County,dd7jowvUO95,KE_SubCounty_3191,Subcounty
+Kenya,Nyandarua County,Oljoroorok Sub County,fVSw60UAC3W,KE_SubCounty_3185,Subcounty
+Kenya,Nyandarua County,Olkalou Sub County,Lm9RMwhIu3G,KE_SubCounty_3186,Subcounty
+Kenya,West Pokot County,Pokot Central Sub County,SCbMzaOeTuR,KE_SubCounty_3246,Subcounty
+Kenya,West Pokot County,Pokot North Sub County,YXpHG1Ez8V2,KE_SubCounty_3245,Subcounty
+Kenya,West Pokot County,Pokot South Sub County,u2zJahNiSP5,KE_SubCounty_3244,Subcounty
+Kenya,Kilifi County,Rabai Sub County,hJf4rt7cvI6,KE_SubCounty_3044,Subcounty
+Kenya,Homa Bay County,Rachuonyo South Sub County,NhsAMiaS0TD,KE_SubCounty_3002,Subcounty
+Kenya,Homa Bay County,Rangwe Sub County,iK2Jk2AxhlD,KE_SubCounty_2999,Subcounty
+Kenya,Siaya County,Rarieda Sub County,XcRpb1xsM64,KE_SubCounty_3200,Subcounty
+Kenya,Nakuru County,Rongai Sub County,OK0hW8DFHq3,KE_SubCounty_3159,Subcounty
+Kenya,Migori County,Rongo Sub County,fT37q3rXQ35,KE_SubCounty_3126,Subcounty
+Kenya,Nairobi County,Roysambu Sub County,j7GpbairCOi,KE_SubCounty_3150,Subcounty
+Kenya,Nairobi County,Ruaraka Sub County,Cc8uEFkzfVf,KE_SubCounty_3148,Subcounty
+Kenya,Kiambu County,Ruiru Sub County,TPRNJqSm4lK,KE_SubCounty_3036,Subcounty
+Kenya,Embu County,Runyenjes Sub County,kMSLkN4nsRl,KE_SubCounty_2986,Subcounty
+Kenya,Vihiga County,Sabatia Sub County,urtJSF5jcBC,KE_SubCounty_3236,Subcounty
+Kenya,Trans Nzoia County,Saboti Sub County,y2M16lesMsF,KE_SubCounty_3217,Subcounty
+Kenya,Marsabit County,Saku Sub County,WILszL634oZ,KE_SubCounty_3107,Subcounty
+Kenya,Samburu County,Samburu Central Sub County,EmQRGVtvWy3,KE_SubCounty_3199,Subcounty
+Kenya,Samburu County,Samburu East Sub County,ldZ10N9unC9,KE_SubCounty_3197,Subcounty
+Kenya,Samburu County,Samburu North Sub County,E2DGjZRlwbY,KE_SubCounty_3198,Subcounty
+Kenya,Kwale County,Samburu Sub County,TnCu7j4XNj6,,Subcounty
+Kenya,Busia County,Samia Sub County,NHRktMsAkO1,KE_SubCounty_2974,Subcounty
+Kenya,Kisumu County,Seme Sub County,LRNmnMw1fBs,KE_SubCounty_3065,Subcounty
+Kenya,Kakamega County,Shinyalu Sub County,sjlSPeRgl7d,KE_SubCounty_3012,Subcounty
+Kenya,Kericho County,Sigowet/Soin Sub County,ScLzA7tQxrH,KE_SubCounty_3023,Subcounty
+Kenya,Bungoma County,Sirisia Sub County,whWfFA9D7td,KE_SubCounty_2971,Subcounty
+Kenya,Bomet County,Sotik Sub County,KyuSYunELJI,KE_SubCounty_2963,Subcounty
+Kenya,Kisii County,South Mugirango Sub County,WHG67QCDRS9,KE_SubCounty_3060,Subcounty
+Kenya,Uasin Gishu County,Soy Sub County,lmr1q6dTaso,KE_SubCounty_3232,Subcounty
+Kenya,Nairobi County,Starehe Sub County,nKHlZyN0lt9,KE_SubCounty_3140,Subcounty
+Kenya,Homa Bay County,Suba Central Sub County,MYSShwNcjzb,3265,Subcounty
+Kenya,Homa Bay County,Suba South Sub County,HoRW5aISmiD,KE_SubCounty_2995,Subcounty
+Kenya,Nakuru County,Subukia Sub County,zQEuNRaPYgE,KE_SubCounty_3160,Subcounty
+Kenya,Turkana County,Suguta Sub County,m1X5Chs8cRL,,Subcounty
+Kenya,Migori County,Suna East Sub County,nHEr5EciFh0,KE_SubCounty_3124,Subcounty
+Kenya,Migori County,Suna West Sub County,VtuwXD7O1O9,KE_SubCounty_3123,Subcounty
+Kenya,Wajir County,Tarbaj Sub County,fmNokBURXjM,KE_SubCounty_3241,Subcounty
+Kenya,Taita Taveta County,Taveta Sub County,jNzRdAwjaQ1,KE_SubCounty_3209,Subcounty
+Kenya,Busia County,Teso Central Sub County,iyOe3zltlp6,3276,Subcounty
+Kenya,Busia County,Teso North Sub County,GpEIlwz3FvT,KE_SubCounty_2979,Subcounty
+Kenya,Busia County,Teso South Sub County,EhchjCHkhJ9,KE_SubCounty_2978,Subcounty
+Kenya,Nyeri County,Tetu Sub County,YT3tecc4atw,KE_SubCounty_3196,Subcounty
+Kenya,Tharaka Nithi County,Tharaka North Sub County,ZNXf7qiVh3t,KE_SubCounty_3212,Subcounty
+Kenya,Tharaka Nithi County,Tharaka South Sub County,Yz1V5Cx8CO2,KE_SubCounty_3211,Subcounty
+Kenya,Kiambu County,Thika Town Sub County,YZAZ1a9MIvX,KE_SubCounty_3037,Subcounty
+Kenya,Baringo County,Tiaty East Sub County,st4v8xfqgJf,KE_SubCounty_2958,Subcounty
+Kenya,Baringo County,Tiaty West Sub County,Mk4bMOSMRTB,KE_SubCounty_3253,Subcounty
+Kenya,Meru County,Tigania Central Sub County,NIVPdmQjQKg,KE_SubCounty_3261,Subcounty
+Kenya,Meru County,Tigania East Sub County,U3lGZ71W9Te,KE_SubCounty_3114,Subcounty
+Kenya,Meru County,Tigania West Sub County,Q4xAPhWUnYC,KE_SubCounty_3115,Subcounty
+Kenya,Nandi County,Tinderet Sub County,NPYRMdqrK6L,KE_SubCounty_3172,Subcounty
+Kenya,Bungoma County,Tongaren Sub County,orUwYD52An3,KE_SubCounty_2964,Subcounty
+Kenya,Narok County,Transmara East Sub County,PGTkGnIAZuy,KE_SubCounty_3177,Subcounty
+Kenya,Narok County,Transmara South Sub County,xAl2ixfcOFU,3275,Subcounty
+Kenya,Narok County,Transmara West Sub County,Nb6e34jNGAq,KE_SubCounty_3178,Subcounty
+Kenya,Uasin Gishu County,Turbo Sub County,KuprsuBe1l0,KE_SubCounty_3231,Subcounty
+Kenya,Turkana County,Turkana Central Sub County,zd8rhYqGowE,KE_SubCounty_3223,Subcounty
+Kenya,Turkana County,Turkana East Sub County,dr8gOvVAdiE,KE_SubCounty_3220,Subcounty
+Kenya,Turkana County,Turkana North Sub County,mWpq607yRXh,KE_SubCounty_3225,Subcounty
+Kenya,Turkana County,Turkana South Sub County,iTw0sFjlqZ2,KE_SubCounty_3221,Subcounty
+Kenya,Turkana County,Turkana West Sub County,HK5SUCMQmsw,KE_SubCounty_3224,Subcounty
+Kenya,Siaya County,Ugenya Sub County,InECuIlzJGx,KE_SubCounty_3205,Subcounty
+Kenya,Siaya County,Ugunja Sub County,m9nsQ1MXlVU,KE_SubCounty_3204,Subcounty
+Kenya,Migori County,Uriri Sub County,fCInDXluNhx,KE_SubCounty_3122,Subcounty
+Kenya,Vihiga County,Vihiga Sub County,OOF3UX4yOt7,KE_SubCounty_3237,Subcounty
+Kenya,Taita Taveta County,Voi Sub County,yoGLpCTgjed,KE_SubCounty_3206,Subcounty
+Kenya,Wajir County,Wajir East Sub County,uov0yFMw9Qm,KE_SubCounty_3242,Subcounty
+Kenya,Wajir County,Wajir North Sub County,qsjAa8FE8OS,KE_SubCounty_3243,Subcounty
+Kenya,Wajir County,Wajir South Sub County,U7KFQn3Up3o,KE_SubCounty_3238,Subcounty
+Kenya,Wajir County,Wajir West Sub County,X98G0eIWdmP,KE_SubCounty_3240,Subcounty
+Kenya,Bungoma County,Webuye East Sub County,f4AOiG8fYtn,KE_SubCounty_2967,Subcounty
+Kenya,Bungoma County,Webuye West Sub County,aqYhbqKclsI,KE_SubCounty_2966,Subcounty
+Kenya,West Pokot County,West Pokot Sub County,ylWg6VvADJE,KE_SubCounty_3247,Subcounty
+Kenya,Nairobi County,Westlands Sub County,f1T0Ltob8VQ,KE_SubCounty_3155,Subcounty
+Kenya,Taita Taveta County,Wundanyi Sub County,AM36DdkZ36Y,KE_SubCounty_3208,Subcounty
+Kenya,Machakos County,Yatta Sub County,CeukNtGhW7J,KE_SubCounty_3097,Subcounty

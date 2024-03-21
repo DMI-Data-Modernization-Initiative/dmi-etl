@@ -1,25 +1,23 @@
 with enriched_data as (
 	select 
 		"UNIT_CREATEDAT":: date as unit_created_at,
-		(regexp_matches("UNIT_PARENT_CODE", 'KE_SubCounty_(\d+)'))[1]  as subcounty_code,
-		case substring("UNIT_PARENT_NAME" from '^(.*?) Sub County') 
-			when 'Nakuru East' then 'Nakuru Town East'
-			when 'Nakuru West' then 'Nakuru Town West'
-			when 'Buuri  East' then 'Buuri East'
-			when 'Imenti South'then 'South Imenti'
-			when 'Imenti Central' then 'Central Imenti'
-			when 'Imenti North' then 'North Imenti'
-			else substring("UNIT_PARENT_NAME" from '^(.*?) Sub County')
+		"UNIT_PARENT_CODE" as subcounty_code_2,
+		case 
+			when "UNIT_PARENT_NAME" = 'Buuri  East Sub County' then 'Buuri East Sub County' 
+			else  "UNIT_PARENT_NAME" 
 		end as subcounty,
-		substring("UNIT_PARENT_PARENT_NAME" from '^(.*?) County') as county,
-		"SIGNAL"
-	from {{ ref('stg_mdharura_ebs_linelist') }}	
+		"UNIT_PARENT_PARENT_NAME" as county,
+		"SIGNAL",
+		population.subcounty_id 
+	from {{ ref('stg_mdharura_ebs_linelist') }} as ebs
+	left join {{ ref('sub_county_population') }} as population on concat(population.sub_county, ' ', 'Sub County') = ebs."UNIT_PARENT_NAME" 	
 )
 select
 	epi_week.epi_week_key,
-	county.county_key,
-	sub_county.sub_county_key,
-	subcounty_code,
+	coalesce(county.county_key, 'unset') as county_key,
+	coalesce(sub_county.sub_county_key, 'unset') as sub_county_key,
+	subcounty_id as subcounty_code,
+	subcounty_code_2,
 	sum(case when "SIGNAL" = '1' then 1 else 0 end) as count_c1,
 	sum(case when "SIGNAL" = '2' then 1 else 0 end) as count_c2,
 	sum(case when "SIGNAL" = '3' then 1 else 0 end) as count_c3,
@@ -32,10 +30,11 @@ select
 	sum(case when "SIGNAL" = 'h3' then 1 else 0 end) as count_h3
 from enriched_data 
 left join {{ ref('dim_epi_week') }} as epi_week on enriched_data.unit_created_at between epi_week.start_of_week and epi_week.end_of_week 
-left join {{ ref('dim_county') }} as county on county.county = enriched_data.county
-left join {{ ref('dim_sub_county') }} as sub_county on sub_county.sub_county = enriched_data.subcounty
+left join {{ ref('dim_county') }} as county on concat(county.county, ' ', 'County') = enriched_data.county
+left join {{ ref('dim_sub_county') }} as sub_county on concat(sub_county.sub_county, ' ', 'Sub County') = enriched_data.subcounty
 group by 
 	epi_week.epi_week_key,
 	county.county_key,
 	sub_county_key,
-	subcounty_code
+	subcounty_code,
+	subcounty_code_2
