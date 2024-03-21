@@ -3,13 +3,8 @@ select
 	age_group,
 	substring(period, 2, 1) as epi_week,
 	right(Period, 4) as year,
-	case county
-          when 'Elgeyo Marakwet' then 'Elgeyo-Marakwet'
-          when 'Muranga' then 'Murang''a'
-          when 'Tharaka Nithi' then 'Tharaka-Nithi'
-          else county 
-    end as county,    
-	sub_county,
+    trim(county) as county,    
+	trim(sub_county) as sub_county,
     mappings.indicator,
     long_data.indicator as source_indicator_name,
 	case when indicator_value ~ '^\d+$' then indicator_value::int else null end as indicator_value,  /* handle non-text values so that we have just intergers */

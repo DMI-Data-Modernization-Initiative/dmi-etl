@@ -1,8 +1,11 @@
 select 
    "DATE_START"::date as date_start,
    "DATE_END"::date as date_end,
-   substring("COUNTY" from '^(.*?) County') as county,
-   substring("SUBCOUNTY" from '^(.*?) Sub') as subcounty,
+   "COUNTY" as county,
+    case 
+      when "SUBCOUNTY" = 'Buuri  East Sub County' then 'Buuri East Sub County' 
+      else  "SUBCOUNTY" 
+    end as subcounty,
    "UNIT_ID" as unit_id,
    "UNIT_NAME" as unit_name,
    "UNIT_CREATEDAT" as unit_createdat,
