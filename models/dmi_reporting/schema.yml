@@ -64,3 +64,18 @@ models:
         description: The type of unit reporting. Can either be Community or Health
         tests:
           - not_null
+  - name: ebridge_predictive_model_output
+    description: This table contains aggregate data for predicted cases based on the e-bridge ML model
+    columns:
+      - name: population
+        description: Population estimates for a sub county
+        tests:
+          - not_null
+      - name: predicted_cases
+        description: This is the no of predicted cases output by the e-bridge ML model
+        tests:
+          - not_null
+      - name: incidence
+        description: This is the number of new cases projected calculated using the formula 'predicted cases * 52 /population * 100,000'
+        tests:
+          - not_null
