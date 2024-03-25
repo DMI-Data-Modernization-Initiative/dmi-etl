@@ -14,3 +14,4 @@ left join {{ ref('sub_county_population') }} as popuation_tbl on ebridge_ml_outp
 left join {{ ref('dim_county') }} as county on concat(county.county, ' ', 'County')  = ebridge_ml_output.county
 left join {{ ref('dim_sub_county') }} as sub_county on concat(sub_county.sub_county, ' ', 'Sub County') = ebridge_ml_output.subcounty
 left join {{ ref('dim_epi_week') }} as epi_week on epi_week.week_number = substring(ebridge_ml_output.epiweek from 'W(\d+)')::int
+	and epi_week.year = substring(ebridge_ml_output.epiweek from '\d{4}$')::int
