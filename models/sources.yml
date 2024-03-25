@@ -20,3 +20,9 @@ sources:
         description: This table contains raw data for M-dharura app
       - name: mdharura_ebs_aggregate
         description: This table contains raw aggregate data for M-dharura app
+  - name: staging
+    database: SHIELD
+    schema: staging 
+    tables :
+      - name: stg_ebridge_output
+        description: This table contains raw data from the e-bridge ML model 
