@@ -32,7 +32,7 @@ jobs:
 
       - name: Run dbt seeds
         run: |
-          dbt seed --profiles-dir ./profiles/ --target prod
+          dbt seed --profiles-dir ./profiles/ --target prod --full-refresh
           
       - name: Run dbt models
         run: |
