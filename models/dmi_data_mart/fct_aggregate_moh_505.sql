@@ -88,7 +88,7 @@ select
 from long_format_table
 left join {{ref('dim_indicator')}} as indicators on indicators.indicator = long_format_table.indicator
 
-union 
+union all
 
 select 
 	disease_key,
