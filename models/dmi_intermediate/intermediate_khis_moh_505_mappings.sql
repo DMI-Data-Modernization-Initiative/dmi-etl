@@ -1,7 +1,7 @@
 select 
     mappings.disease,
 	age_group,
-	substring(period, 2, 1) as epi_week,
+	regexp_replace(period , '([^0-9]*)([0-9]+).*', '\2') as epi_week,
 	right(Period, 4) as year,
     trim(county) as county,    
 	trim(sub_county) as sub_county,
