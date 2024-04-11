@@ -66,6 +66,11 @@ models:
           - not_null
   - name: ebridge_predictive_model_output
     description: This table contains aggregate data for predicted cases based on the e-bridge ML model
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - sub_county
+            - epi_week
     columns:
       - name: population
         description: Population estimates for a sub county

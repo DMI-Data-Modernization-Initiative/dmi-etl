@@ -1,6 +1,6 @@
 with enriched_data as (
 	select 
-		"UNIT_CREATEDAT":: date as unit_created_at,
+		"CREATEDAT":: date as created_at,
 		"UNIT_PARENT_CODE" as subcounty_code_2,
 		case 
 			when "UNIT_PARENT_NAME" = 'Buuri  East Sub County' then 'Buuri East Sub County' 
@@ -10,7 +10,7 @@ with enriched_data as (
 		"SIGNAL",
 		population.subcounty_id 
 	from {{ ref('stg_mdharura_ebs_linelist') }} as ebs
-	left join {{ ref('sub_county_population') }} as population on concat(population.sub_county, ' ', 'Sub County') = ebs."UNIT_PARENT_NAME" 	
+	inner join {{ ref('sub_county_population') }} as population on population.subcounty_mdharura_id = ebs."UNIT_PARENT_ID" 	
 )
 select
 	epi_week.epi_week_key,
@@ -29,7 +29,7 @@ select
 	sum(case when "SIGNAL" = 'h2' then 1 else 0 end) as count_h2,
 	sum(case when "SIGNAL" = 'h3' then 1 else 0 end) as count_h3
 from enriched_data 
-left join {{ ref('dim_epi_week') }} as epi_week on enriched_data.unit_created_at between epi_week.start_of_week and epi_week.end_of_week 
+left join {{ ref('dim_epi_week') }} as epi_week on enriched_data.created_at between epi_week.start_of_week and epi_week.end_of_week 
 left join {{ ref('dim_county') }} as county on concat(county.county, ' ', 'County') = enriched_data.county
 left join {{ ref('dim_sub_county') }} as sub_county on concat(sub_county.sub_county, ' ', 'Sub County') = enriched_data.subcounty
 group by 
