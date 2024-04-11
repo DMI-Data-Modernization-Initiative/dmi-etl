@@ -12,7 +12,7 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "AEFI <5 yrs, Cases",AEFI,no_of_cases
 "AEFI <5 yrs, Deaths",AEFI,no_of_deaths
 "AEFI >5 yrs, Cases",AEFI,no_of_cases
-"AEFI >5 yrs, Deaths",AEFI,no_of_cases
+"AEFI >5 yrs, Deaths",AEFI,no_of_deaths
 "Acute Flaccid Paralysis <5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
 "Acute Flaccid Paralysis <5 yrs, Deaths",Acute Flaccid Paralysis (AFP),no_of_deaths
 "Acute Flaccid Paralysis >5 yrs, Cases",Acute Flaccid Paralysis (AFP),no_of_cases
@@ -104,7 +104,7 @@ Bacterial Meningitis No Tested,Bacterial Meningitis,no_of_tests
 "Typhoid <5 yrs, Cases",Typhoid fever,no_of_cases
 "Typhoid <5 yrs, Deaths",Typhoid fever,no_of_deaths
 "Typhoid >5 yrs, Cases",Typhoid fever,no_of_cases
-"Typhoid >5 yrs, Deaths",Yellow fever,no_of_deaths
+"Typhoid >5 yrs, Deaths",Typhoid fever,no_of_deaths
 "Yellow Fever <5 yrs, Cases",Yellow fever,no_of_cases
 "Yellow Fever <5 yrs, Deaths",Yellow fever,no_of_deaths
 "Yellow Fever >5 yrs, Cases",Yellow fever,no_of_cases

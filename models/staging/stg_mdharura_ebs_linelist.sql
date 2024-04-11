@@ -1,6 +1,6 @@
 select
 	"_ID",
-	"_STATUS",
+	"STATUS",
 	"CREATEDAT",
 	"UPDATEDAT",
 	"UNIT_ID",
