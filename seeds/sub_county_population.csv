@@ -1,40 +1,51 @@
-subcounty_id,sub_county,county,population
-1,Imenti South,Meru County,206506
-2,Buuri East,Meru County,76598
-3,Tigania East,Meru County,72549
-4,Igembe South,Meru County,161646
-5,Imenti North,Meru County,177567
-6,Igembe North,Meru County,169317
-7,Igembe Central,Meru County,221412
-8,Buuri West,Meru County,80762
-9,Imenti Central,Meru County,133818
-10,Tigania West,Meru County,139961
-11,Tigania Central,Meru County,104730
-12,Subukia,Nakuru County,85164
-13,Gilgil,Nakuru County,185209
-14,Naivasha,Nakuru County,355383
-15,Rongai,Nakuru County,199906
-16,Nakuru West,Nakuru County,198661
-17,Kuresoi South,Nakuru County,155324
-18,Nakuru North,Nakuru County,218050
-19,Molo,Nakuru County,156732
-20,Kuresoi North,Nakuru County,175074
-21,Njoro,Nakuru County,238773
-22,Nakuru East,Nakuru County,193926
-23,Bondo,Siaya County,197883
-24,Ugunja,Siaya County,104241
-25,Gem,Siaya County,179792
-26,Ugenya,Siaya County,134354
-27,Rarieda,Siaya County,152570
-28,Alego Usonga,Siaya County,224343
-29,Samia,Busia County,107176
-30,Matayos,Busia County,107176
-31,Teso South,Busia County,168116
-32,Butula,Busia County,140334
-35,Bunyala,Busia County,85977
-37,Embakasi Central,Nairobi County,85977
-38,Changamwe,Mombasa County,"131,882"
-39,Kisauni,Mombasa County,"291,930"
-40,Nyali,Mombasa County,"216,577"
-49,Embakasi East,Nairobi County,85977
-50,Ruaraka,Nairobi County,85977
+subcounty_mdharura_id,subcounty_id,subcounty,county,population
+60ac8ca85ff3fb154fbabb2c,1,Imenti South Sub County,Meru County,"206,506"
+60ac8cae5ff3fb154fbac009,2,Buuri  East Sub County,Meru County,"76,598"
+60ac8ca65ff3fb154fbab968,3,Tigania East Sub County,Meru County,"72,549"
+60ac8cab5ff3fb154fbabd48,4,Igembe South Sub County,Meru County,"161,646"
+60ac8cbc5ff3fb154fbacc6f,5,Imenti North Sub County,Meru County,"177,567"
+60ac8cab5ff3fb154fbabd52,6,Igembe North Sub County,Meru County,"169,317"
+60ac8cab5ff3fb154fbabd5c,7,Igembe Central Sub County,Meru County,"221,412"
+60ac8ca55ff3fb154fbab8d7,8,Buuri West Sub County,Meru County,"80,762"
+60ac8ca95ff3fb154fbabc21,9,Imenti Central Sub County,Meru County,"133,818"
+60ac8caf5ff3fb154fbac0db,10,Tigania West Sub County,Meru County,"139,961"
+60ac8ca55ff3fb154fbab8e3,11,Tigania Central Sub County,Meru County,"104,730"
+60ac8cc35ff3fb154fbad2f6,12,Subukia Sub County,Nakuru County,"85,164"
+60ac8cb05ff3fb154fbac266,13,Gilgil Sub County,Nakuru County,"185,209"
+60ac8cb25ff3fb154fbac3ab,14,Naivasha Sub County,Nakuru County,"355,383"
+60ac8ca65ff3fb154fbab9a4,15,Rongai Sub County,Nakuru County,"199,906"
+60ac8caa5ff3fb154fbabd20,16,Nakuru West Sub County,Nakuru County,"198,661"
+60ac8cb55ff3fb154fbac635,17,Kuresoi South Sub County,Nakuru County,"155,324"
+60ac8cb85ff3fb154fbac937,18,Nakuru North Sub County,Nakuru County,"218,050"
+60ac8ca85ff3fb154fbabafa,19,Molo Sub County,Nakuru County,"156,732"
+60ac8ca95ff3fb154fbabb8b,20,Kuresoi North Sub County,Nakuru County,"175,074"
+60ac8cb95ff3fb154fbac9c8,21,Njoro Sub County,Nakuru County,"238,773"
+60ac8ca75ff3fb154fbaba9b,22,Nakuru East Sub County,Nakuru County,"193,926"
+60ac8cb05ff3fb154fbac199,23,Bondo Sub County,Siaya County,"197,883"
+60ac8cb05ff3fb154fbac1c6,24,Ugunja Sub County,Siaya County,"104,241"
+60ac8caa5ff3fb154fbabcab,25,Gem Sub County,Siaya County,"179,792"
+60ac8cb05ff3fb154fbac25c,26,Ugenya Sub County,Siaya County,"134,354"
+60ac8cb85ff3fb154fbac95f,27,Rarieda Sub County,Siaya County,"152,570"
+60ac8caf5ff3fb154fbac0ef,28,Alego Usonga Sub County,Siaya County,"224,343"
+60ac8caa5ff3fb154fbabc5d,29,Samia Sub County,Busia County,"107,176"
+60ac8ca65ff3fb154fbab936,30,Matayos Sub County,Busia County,"107,176"
+60ac8cac5ff3fb154fbabe65,31,Teso South Sub County,Busia County,"168,116"
+60ac8cab5ff3fb154fbabd89,32,Butula Sub County,Busia County,"140,334"
+60ac8caa5ff3fb154fbabc8f,33,Nambale Sub County,Busia County,"111,543"
+60ac8cb05ff3fb154fbac1f8,34,Teso North Sub County,Busia County,"136,804"
+60ac8caa5ff3fb154fbabc53,35,Bunyala Sub County,Busia County,"85,645"
+60ac8cb05ff3fb154fbac18f,36,Kibra Sub County,Nairobi County,"181,509"
+60ac8caa5ff3fb154fbabcb7,37,Embakasi Central Sub County,Nairobi County,"85,977"
+60ac8cb45ff3fb154fbac5bd,38,Changamwe Sub County,Mombasa County,"131,882"
+60ac8cb45ff3fb154fbac5d1,39,Kisauni Sub County,Mombasa County,"291,930"
+60ac8cbf5ff3fb154fbacfa9,40,Nyali Sub County,Mombasa County,"216,577"
+60ac8ca75ff3fb154fbaba4b,41,Jomvu Sub County,Mombasa County,"162,760"
+60ac8cad5ff3fb154fbabf95,42,Kasarani Sub County,Nairobi County,"772,586"
+60ac8caf5ff3fb154fbac185,43,Embakasi South Sub County,Nairobi County,"491,616"
+60ac8cab5ff3fb154fbabd2f,44,Mathare Sub County,Nairobi County,"204,469"
+60ac8caf5ff3fb154fbac14e,45,Kamukunji Sub County,Nairobi County,"263,462"
+60ac8cb45ff3fb154fbac5c7,46,Dagoretti North Sub County,Nairobi County,"432,331"
+60ac8cb65ff3fb154fbac7a2,47,Embakasi North Sub County,Nairobi County,"491,616"
+60ac8ca95ff3fb154fbabbde,48,Westlands Sub County,Nairobi County,"301,295"
+60ac8cb65ff3fb154fbac775,49,Embakasi East Sub County,Nairobi County,"85,977"
+60ac8cb35ff3fb154fbac4d7,50,Ruaraka Sub County,Nairobi County,"85,977"
