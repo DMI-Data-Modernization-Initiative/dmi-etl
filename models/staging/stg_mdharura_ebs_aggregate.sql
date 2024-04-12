@@ -35,9 +35,6 @@ select
    "HCWS_REGISTERED" as hcws_registered,
    "HCWS_REPORTING" as hcws_reporting,
    "SFPS_REGISTERED" as sfps_registered,
-   "SFPS_VERIFYING" as sfps_verifying,
-   "CREATEDAT" as created_at,
-   "UPDATEDAT" as updated_at,
-   "DELETEDAT" as deleted_at
+   "SFPS_VERIFYING" as sfps_verifying
  from{{ source('central_raw_mdharura', 'mdharura_ebs_aggregate') }} 
  
