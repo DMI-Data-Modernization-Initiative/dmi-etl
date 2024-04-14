@@ -76,7 +76,7 @@ khis_data as (
 	select 
 		disease_key,
 		'unset' as gender,
-		khis_moh_505_mappings.age_group,
+		coalesce(khis_moh_505_mappings.age_group, 'unset') as age_group,
 		coalesce(county.county_key, 'unset') as county_key,
 		coalesce(sub_county_key, 'unset') as sub_county_key,
 		epi_week_key,
