@@ -27,7 +27,8 @@ select
 	sum(case when "SIGNAL" = '7' then 1 else 0 end) as count_c7,
 	sum(case when "SIGNAL" = 'h1' then 1 else 0 end) as count_h1,
 	sum(case when "SIGNAL" = 'h2' then 1 else 0 end) as count_h2,
-	sum(case when "SIGNAL" = 'h3' then 1 else 0 end) as count_h3
+	sum(case when "SIGNAL" = 'h3' then 1 else 0 end) as count_h3,
+	cast(current_date as date) as load_date
 from enriched_data 
 left join {{ ref('dim_epi_week') }} as epi_week on enriched_data.created_at between epi_week.start_of_week and epi_week.end_of_week 
 left join {{ ref('dim_county') }} as county on concat(county.county, ' ', 'County') = enriched_data.county
