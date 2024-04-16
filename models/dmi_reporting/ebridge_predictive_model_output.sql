@@ -5,6 +5,7 @@ select
 	model_output.population,
 	model_output.predicted_cases,
 	model_output.incidence,
+	model_output.predicted_diseases,
 	cast(current_date as date) as load_date
 from {{ ref('fct_ebridge_predictive_model_output') }} as model_output
 left join {{ ref('dim_county') }} as county on county.county_key = model_output.county_key
