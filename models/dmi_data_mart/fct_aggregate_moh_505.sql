@@ -1,17 +1,21 @@
 with influenza_data as (
 	select  
 		'Influenza' as disease, 
-		sari_data.*
+		sari_data.*,
+		case 
+			when age_in_years < 5 then '< 5 years'
+			when age_in_years >= 5 then '>= 5 years'
+		end as age_group
 	from {{ ref('stg_sari_ili') }} as sari_data
 ),
 joined_data as (
 	select
 		disease.disease_key,
-		age_group.age_group_category_1,
-		epi_wk.epi_week_key,
+		coalesce(age_group.age_group_key, 'unset') as  age_group_key,
+		coalesce(epi_wk.epi_week_key, 'unset') as epi_week_key,
 		coalesce(county.county_key, 'unset') as county_key,
         coalesce(facility.facility_key, 'unset') as facility_key,
-        coalesce(sari.gender, 'unset') as gender,
+        coalesce(gender.gender_key, 'unset') as gender_key,
 		sari.h3n2,
 		sari.ph1n1,
 		victoria,
@@ -20,18 +24,18 @@ joined_data as (
 		flua_positive,
 		flub_positive
 	from influenza_data as sari
-	left join {{ ref('dim_age_group') }} as age_group on sari.age_in_years >= age_group.start_age 
-		and sari.age_in_years < age_group.end_age 
+	left join {{ ref('dim_age_group_khis') }} as age_group on sari.age_group = age_group.age_group_category 
 	left join {{ ref('dim_epi_week') }} as epi_wk on sari.date_screened between epi_wk.start_of_week::date and epi_wk.end_of_week::date
 	left join {{ ref('dim_county') }} as county on county.county =  sari.county
 	left join {{ ref('dim_disease') }} as disease on disease.disease = sari.disease
-    left join {{ref('dim_facility')}} as facility on facility.facility_name_short = sari.facility_name
+    left join {{ ref('dim_facility') }} as facility on facility.facility_name_short = sari.facility_name
+	left join {{ ref('dim_gender') }} as gender on gender.gender = sari.gender
 ),
 influenza_summary as (
 	select
 		disease_key,
-		gender,
-		age_group_category_1 as age_group_category,
+		gender_key,
+		age_group_key,
 		county_key,
 		epi_week_key,
         facility_key,
@@ -44,8 +48,8 @@ influenza_summary as (
 	from joined_data
 	group by 		
 		disease_key,
-		gender,
-		age_group_category_1,
+		gender_key,
+		age_group_key,
 		county_key,
 		epi_week_key,
         facility_key
@@ -53,8 +57,8 @@ influenza_summary as (
 long_format_table as (
 	select
 		disease_key,
-		gender,
-		age_group_category,
+		gender_key,
+		age_group_key,
 		county_key,
 		epi_week_key,
         facility_key,
@@ -75,8 +79,8 @@ long_format_table as (
 khis_data as (
 	select 
 		disease_key,
-		'unset' as gender,
-		coalesce(khis_moh_505_mappings.age_group, 'unset') as age_group,
+		'unset' as gender_key,
+		coalesce(age_group.age_group_key, 'unset') as age_group_key,
 		coalesce(county.county_key, 'unset') as county_key,
 		coalesce(sub_county_key, 'unset') as sub_county_key,
 		epi_week_key,
@@ -91,17 +95,18 @@ khis_data as (
 	left join {{ ref('dim_disease') }} as disease on disease.disease = khis_moh_505_mappings.disease
 	left join {{ ref('dim_sub_county')}} as sub_county on sub_county.sub_county = khis_moh_505_mappings.sub_county
 	left join {{ ref('dim_indicator')}} as indicators on indicators.indicator = khis_moh_505_mappings.indicator
+	left join {{ ref('dim_age_group_khis') }} as age_group on  age_group.age_group_category = khis_moh_505_mappings.age_group
 ),
 unioned_data as (
 	select 
 		disease_key,
-		gender,
-		age_group_category,
+		gender_key,
+		age_group_key,
 		county_key,
 		'unset' as sub_county_key,
 		epi_week_key,
 		facility_key,
-		indicators.indicator_key,
+		coalesce(indicators.indicator_key, 'unset') as indicator_key,
 		'icap' as data_source,
 		indicator_value
 	from long_format_table
@@ -111,8 +116,8 @@ union all
 
 	select 
 			disease_key,
-			gender,
-			age_group as age_group_category,
+			gender_key,
+			age_group_key,
 			county_key,
 			sub_county_key,
 			epi_week_key,
@@ -123,8 +128,8 @@ union all
 	from khis_data
 	group by 
 			disease_key,
-			gender,
-			age_group,
+			gender_key,
+			age_group_key,
 			county_key,
 			sub_county_key,
 			epi_week_key,
@@ -133,7 +138,7 @@ union all
 			data_source
 )
 select 
-    {{ dbt_utils.surrogate_key( ['disease_key', 'gender', 'age_group_category', 'county_key', 'sub_county_key',
+    {{ dbt_utils.surrogate_key( ['disease_key', 'gender_key', 'age_group_key', 'county_key', 'sub_county_key',
          'epi_week_key', 'facility_key', 'indicator_key', 'indicator_value']) }} as fact_key,
 	unioned_data.*,
 	cast(current_date as date) as load_date

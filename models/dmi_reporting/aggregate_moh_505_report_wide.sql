@@ -18,8 +18,8 @@ select
 from (
     SELECT 
         disease.disease,
-        moh_505.gender,
-        moh_505.age_group_category,
+        gender.gender,
+        age_group.age_group_category,
         epi_wk.week_number as epi_week,
         epi_wk.year,
         CAST(epi_wk.start_of_week as date) as start_of_epi_week,
@@ -36,6 +36,8 @@ from (
     left join {{ ref('dim_disease') }} as disease on disease.disease_key = moh_505.disease_key
     left join {{ ref('dim_facility') }} as facility on facility.facility_key = moh_505.facility_key
     left join {{ ref('dim_indicator') }} as indicator on indicator.indicator_key = moh_505.indicator_key
+    left join {{ ref('dim_age_group_khis')}} as age_group on age_group.age_group_key = moh_505.age_group_key
+    left join {{ ref('dim_gender') }} as gender on gender.gender_key = moh_505.gender_key
 ) as long_format
 group by
     disease,

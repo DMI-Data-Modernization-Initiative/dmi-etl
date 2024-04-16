@@ -5,7 +5,7 @@ select
 	Eligible as eligible,
 	Enrolled as enrolled,
 	F_NAME as facility_name,
-	round(Age::numeric, 0) as age_in_years,
+	Age::decimal as age_in_years,
 	case 
 		when Sex = 1 then 'Male'
 		else 'Female' 
@@ -14,7 +14,10 @@ select
 	casedef as case_def,
 	chronic,
 	flutest,
-	covidtest,
+	case 
+		when covidtest = '' then NULL
+		else covidtest
+	end as covidtest,
 	cast(Dateassesment as date) as date_assesment,
 	outcome,
 	cast(colldate as date) as date_collected,
@@ -31,7 +34,10 @@ select
 	yamagata,
 	victoria,
 	flub_undetermined,
-	covidpos,
+	case 
+		when covidpos = '' then NULL
+		else covidpos
+	end as covidpos,
 	case substring(county from '^(.*?) County')
 		when 'Murang?a' then 'Muranga'
 		when 'Homa' then 'Homa Bay'

@@ -24,7 +24,8 @@ select
     hcws_registered,
     hcws_reporting,
     sfps_registered,
-    sfps_verifying
+    sfps_verifying,
+    cast(current_date as date) as load_date
 from {{ ref('stg_mdharura_ebs_aggregate') }} as ebs
 left join {{ ref('dim_date') }} as date on date.date = ebs.date_start
 left join {{ ref('dim_county') }}  as county on concat(county.county, ' ', 'County') = ebs.county 
