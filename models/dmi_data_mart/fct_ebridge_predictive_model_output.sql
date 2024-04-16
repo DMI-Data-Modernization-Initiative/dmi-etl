@@ -7,6 +7,7 @@ select
     coalesce(epi_week.epi_week_key, 'unset') as epi_week_key,
 	population_tbl.population,
 	ebridge_ml_output.predicted_cases,
+	ebridge_ml_output.predicted_diseases,
 	round((predicted_cases * 52/population_tbl.population * 100000), 2) as incidence,
 	cast(current_date as date) as load_date
 from ebridge_ml_output
