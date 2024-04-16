@@ -23,15 +23,32 @@ epi_week_cte as (
         date_part('year', date_day) as year,
         date_part('month', date_day) as month
   from dates
+),
+final_data as (
+  select
+    {{ dbt_utils.surrogate_key( ['epi_week_cte.date_day']) }} as epi_week_key,
+    start_of_week::date as start_of_week,
+    end_of_week::date as end_of_week,
+    date_part('week', date_day) as week_number,
+    weekday_name,
+    year,
+    month
+  from epi_week_cte
+  where weekday_name = 'Sunday'
+
+  union 
+
+  select
+    'unset' as epi_week_key,
+    '1900-01-01'::date as start_of_week,
+    '1900-01-01'::date as end_of_week,
+    -999 as week_number,
+    'unset' as weekday_name,
+    -999 as year,
+    -999 as month
 )
-select
-	{{ dbt_utils.surrogate_key( ['epi_week_cte.date_day']) }} as epi_week_key,
-    start_of_week,
-	end_of_week,
-	date_part('week', date_day) as week_number,
-  weekday_name,
-  year,
-  month,
+select 
+  final_data.*,
   cast(current_date as date) as load_date
-from epi_week_cte
-where weekday_name = 'Sunday'
+from final_data
+
