@@ -16,25 +16,36 @@ dates as (
 ),
 epi_week_cte as (
   select
-        date_day,
+  		distinct
+  		/* getting the start of week as Sunday and end of week as Sarturday */
         date_trunc('week', date_day) - interval '1 day' as start_of_week,
-        date_trunc('week', date_day) + interval '5 days' as end_of_week,
-        trim(to_char(date_day, 'Day')) as weekday_name,
-        date_part('year', date_day) as year,
-        date_part('month', date_day) as month
+        date_trunc('week', date_day) + interval '5 days' as end_of_week
   from dates
+ ),
+summary as (
+ select
+ 	start_of_week::date,
+ 	end_of_week::date,
+ 	trim(to_char(start_of_week, 'Day')) as start_week_day_name,
+ 	trim(to_char(end_of_week, 'Day')) as end_week_day_name,
+ 	/* if week number of end of week is 52 or 53 and month of end of week = 1 then put year as minus 1 */
+ 	case 
+ 		when date_part('month', end_of_week) = 1 and date_part('week', end_of_week) in (52,53) then date_part('year', end_of_week) - 1
+ 		else date_part('year', end_of_week)
+ 	end as year,
+ 	date_part('week', end_of_week) as week_number
+ from epi_week_cte
 ),
 final_data as (
-  select
-    {{ dbt_utils.surrogate_key( ['epi_week_cte.date_day']) }} as epi_week_key,
-    start_of_week::date as start_of_week,
-    end_of_week::date as end_of_week,
-    date_part('week', date_day) as week_number,
-    weekday_name,
-    year,
-    month
-  from epi_week_cte
-  where weekday_name = 'Sunday'
+  select 
+    {{ dbt_utils.surrogate_key( ['summary.start_of_week']) }} as epi_week_key,
+    start_of_week,
+    end_of_week,
+    week_number,
+    start_week_day_name,
+    end_week_day_name,
+    year
+  from summary
 
   union 
 
@@ -43,9 +54,9 @@ final_data as (
     '1900-01-01'::date as start_of_week,
     '1900-01-01'::date as end_of_week,
     -999 as week_number,
-    'unset' as weekday_name,
-    -999 as year,
-    -999 as month
+    'unset' as start_week_day_name,
+    'unset' as end_week_day_name,
+    -999 as year
 )
 select 
   final_data.*,
