@@ -1,5 +1,8 @@
 select
 	subcounty_code,
+	subcounty_code as id_var,
+	week_number as time_var,
+	0 as y_all,
 	concat('W', week_number::text, ' ', year::text) as year_week,	
 	count_c1,
 	count_c2,
