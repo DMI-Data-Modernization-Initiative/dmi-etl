@@ -11,7 +11,9 @@ select
 	count_c7,
 	count_h1,
 	count_h2,
-	count_h3
+	count_h3,
+    concat(county.county, ' ', 'County') as county,
+	concat(sub_county.sub_county, ' ', 'Sub County') as subcounty
 from {{ ref('fct_aggregate_ebridge_counts') }} as ebridge
 left join {{ ref('dim_epi_week') }} as epi_wk on epi_wk.epi_week_key = ebridge.epi_week_key
 left join {{ ref('dim_county') }} as county on county.county_key = ebridge.county_key
