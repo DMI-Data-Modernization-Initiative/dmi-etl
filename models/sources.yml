@@ -26,6 +26,7 @@ sources:
     tables :
       - name: stg_ebridge_output
         description: This table contains raw data from the e-bridge ML model 
+      - name: stg_ebridge_output_actual_predicted
   - name: central_raw_mortality
     database: SHIELD
     schema: central_raw_mortality 
