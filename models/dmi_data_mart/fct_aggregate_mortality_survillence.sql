@@ -39,7 +39,7 @@ left join {{ ref( 'dim_date') }} as date_collect on date_collect.date = subset_d
 left join {{ ref( 'dim_epi_week') }} as collect_epi_week on subset_data.datecollected >= collect_epi_week.start_of_week 
 	and subset_data.datecollected <= collect_epi_week.end_of_week 
 left join {{ ref('dim_gender') }} as gender on gender.code = subset_data.sex
-left join {{ ref( 'dim_age_group_mortality') }} as age_group on subset_data.calculated_age >= age_group.start_age 
+left join {{ ref( 'dim_age_group_afi_and_mortality') }} as age_group on subset_data.calculated_age >= age_group.start_age 
 	and subset_data.calculated_age < age_group.end_age /* making sure the end_age comparison is only for less than.. */
 group by 
  	coalesce(facility.facility_key, 'unset'),
