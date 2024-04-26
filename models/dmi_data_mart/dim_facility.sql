@@ -5,6 +5,8 @@ with facility_data as (
         mfl_code,
         facility_name,
         facility_name_short,
+        code,
+        afi_study_site_id,
         longitude,
         latitude
     from {{ ref('facility_mapping') }} as facility_mapping
@@ -16,6 +18,8 @@ with facility_data as (
         -999 as mfl_code,
         'unset' as facility_name,
         'unset' as facility_name_short,
+        'unset'as code,
+        -999 as afi_study_site_id,
         -999 as longitude,
         -999 as latitude
 )
