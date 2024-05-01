@@ -2,6 +2,8 @@ select
 	date.date,
 	concat(county.county, ' ', 'County') as county,
     concat(sub_county.sub_county, ' ', 'Sub County') as sub_county,
+	sub_county.iso_code as sub_county_iso_code,
+	county.iso_code as county_iso_code,  
 	unit.unit_type,
     sum(hebs_signals_reported) as hebs_signals_reported,
     sum(hebs_signals_verified) as hebs_signals_verified,
@@ -34,5 +36,6 @@ group by
     date.date,
 	county.county,
 	sub_county.sub_county,
-	unit.unit_type
-
+	unit.unit_type,
+    sub_county.iso_code,
+	county.iso_code
