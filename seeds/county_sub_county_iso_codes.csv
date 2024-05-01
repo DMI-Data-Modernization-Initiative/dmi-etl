@@ -1,0 +1,51 @@
+sub_county_mdharura_id,sub_county_id,sub_county,county,sub_county_iso_code,county_iso_code
+60ac8ca85ff3fb154fbabb2c,1,Imenti South Sub County,Meru County,KE-SUB-249,KE-26
+60ac8cae5ff3fb154fbac009,2,Buuri  East Sub County,Meru County,KE-SUB-27,KE-26
+60ac8ca65ff3fb154fbab968,3,Tigania East Sub County,Meru County,KE-SUB-266,KE-26
+60ac8cab5ff3fb154fbabd48,4,Igembe South Sub County,Meru County,KE-SUB-64,KE-26
+60ac8cbc5ff3fb154fbacc6f,5,Imenti North Sub County,Meru County,KE-SUB-214,KE-26
+60ac8cab5ff3fb154fbabd52,6,Igembe North Sub County,Meru County,KE-SUB-63,KE-26
+60ac8cab5ff3fb154fbabd5c,7,Igembe Central Sub County,Meru County,KE-SUB-62,KE-26
+60ac8ca55ff3fb154fbab8d7,8,Buuri West Sub County,Meru County,,KE-26
+60ac8ca95ff3fb154fbabc21,9,Imenti Central Sub County,Meru County,KE-SUB-28,KE-26
+60ac8caf5ff3fb154fbac0db,10,Tigania West Sub County,Meru County,KE-SUB-267,KE-26
+60ac8ca55ff3fb154fbab8e3,11,Tigania Central Sub County,Meru County,,KE-26
+60ac8cc35ff3fb154fbad2f6,12,Subukia Sub County,Nakuru County,KE-SUB-255,KE-31
+60ac8cb05ff3fb154fbac266,13,Gilgil Sub County,Nakuru County,KE-SUB-58,KE-31
+60ac8cb25ff3fb154fbac3ab,14,Naivasha Sub County,Nakuru County,KE-SUB-198,KE-31
+60ac8ca65ff3fb154fbab9a4,15,Rongai Sub County,Nakuru County,KE-SUB-230,KE-31
+60ac8caa5ff3fb154fbabd20,16,Nakuru West Sub County,Nakuru County,KE-SUB-200,KE-31
+60ac8cb55ff3fb154fbac635,17,Kuresoi South Sub County,Nakuru County,KE-SUB-133,KE-31
+60ac8cb85ff3fb154fbac937,18,Nakuru North Sub County,Nakuru County,,KE-31
+60ac8ca85ff3fb154fbabafa,19,Molo Sub County,Nakuru County,KE-SUB-182,KE-31
+60ac8ca95ff3fb154fbabb8b,20,Kuresoi North Sub County,Nakuru County,KE-SUB-132,KE-31
+60ac8cb95ff3fb154fbac9c8,21,Njoro Sub County,Nakuru County,KE-SUB-212,KE-31
+60ac8ca75ff3fb154fbaba9b,22,Nakuru East Sub County,Nakuru County,KE-SUB-199,KE-31
+60ac8cb05ff3fb154fbac199,23,Bondo Sub County,Siaya County,KE-SUB-19,KE-38
+60ac8cb05ff3fb154fbac1c6,24,Ugunja Sub County,Siaya County,KE-SUB-277,KE-38
+60ac8caa5ff3fb154fbabcab,25,Gem Sub County,Siaya County,KE-SUB-56,KE-38
+60ac8cb05ff3fb154fbac25c,26,Ugenya Sub County,Siaya County,KE-SUB-276,KE-38
+60ac8cb85ff3fb154fbac95f,27,Rarieda Sub County,Siaya County,KE-SUB-229,KE-38
+60ac8caf5ff3fb154fbac0ef,28,Alego Usonga Sub County,Siaya County,KE-SUB-04,KE-38
+60ac8caa5ff3fb154fbabc5d,29,Samia Sub County,Busia County,,KE-38
+60ac8ca65ff3fb154fbab936,30,Matayos Sub County,Busia County,KE-SUB-171,KE-38
+60ac8cac5ff3fb154fbabe65,31,Teso South Sub County,Busia County,KE-SUB-261,KE-38
+60ac8cab5ff3fb154fbabd89,32,Butula Sub County,Busia County,KE-SUB-26,KE-38
+60ac8caa5ff3fb154fbabc8f,33,Nambale Sub County,Busia County,KE-SUB-201,KE-38
+60ac8cb05ff3fb154fbac1f8,34,Teso North Sub County,Busia County,KE-SUB-260,KE-38
+60ac8caa5ff3fb154fbabc53,35,Bunyala Sub County,Busia County,,KE-38
+60ac8cb05ff3fb154fbac18f,36,Kibra Sub County,Nairobi County,KE-SUB-99,KE-30
+60ac8caa5ff3fb154fbabcb7,37,Embakasi Central Sub County,Nairobi County,KE-SUB-38,KE-30
+60ac8cb45ff3fb154fbac5bd,38,Changamwe Sub County,Mombasa County,KE-SUB-29,KE-28
+60ac8cb45ff3fb154fbac5d1,39,Kisauni Sub County,Mombasa County,KE-SUB-119,KE-28
+60ac8cbf5ff3fb154fbacfa9,40,Nyali Sub County,Mombasa County,KE-SUB-217,KE-28
+60ac8ca75ff3fb154fbaba4b,41,Jomvu Sub County,Mombasa County,KE-SUB-69,KE-28
+60ac8cad5ff3fb154fbabf95,42,Kasarani Sub County,Nairobi County,KE-SUB-90,KE-30
+60ac8caf5ff3fb154fbac185,43,Embakasi South Sub County,Nairobi County,KE-SUB-41,KE-30
+60ac8cab5ff3fb154fbabd2f,44,Mathare Sub County,Nairobi County,KE-SUB-172,KE-30
+60ac8caf5ff3fb154fbac14e,45,Kamukunji Sub County,Nairobi County,KE-SUB-82,KE-30
+60ac8cb45ff3fb154fbac5c7,46,Dagoretti North Sub County,Nairobi County,KE-SUB-34,KE-30
+60ac8cb65ff3fb154fbac7a2,47,Embakasi North Sub County,Nairobi County,KE-SUB-40,KE-30
+60ac8ca95ff3fb154fbabbde,48,Westlands Sub County,Nairobi County,KE-SUB-288,KE-30
+60ac8cb65ff3fb154fbac775,49,Embakasi East Sub County,Nairobi County,KE-SUB-39,KE-30
+60ac8cb35ff3fb154fbac4d7,50,Ruaraka Sub County,Nairobi County,KE-SUB-233,KE-30
