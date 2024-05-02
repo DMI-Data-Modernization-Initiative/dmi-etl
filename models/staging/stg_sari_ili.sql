@@ -8,7 +8,7 @@ select
 	Age::decimal as age_in_years,
 	case 
 		when Sex = 1 then 'Male'
-		else 'Female' 
+		when Sex = 2 then 'Female' 
 	end as gender,
 	cast(Dateonset as date) as date_onset,
 	casedef as case_def,
@@ -31,9 +31,18 @@ select
 	unsub_non,
 	notsubtyp,
 	flubpos as flub_positive,
-	yamagata,
-	victoria,
-	flub_undetermined,
+	case 
+		when yamagata = '' then NULL
+		else yamagata
+	end as yamagata,
+	case 
+		when victoria = '' then NULL
+		else victoria
+	end as victoria,
+	case 
+		when flub_undetermined = '' then NULL
+		else flub_undetermined
+	end as flub_undetermined,
 	case 
 		when covidpos = '' then NULL
 		else covidpos
