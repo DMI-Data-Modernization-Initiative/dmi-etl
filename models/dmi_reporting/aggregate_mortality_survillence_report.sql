@@ -13,7 +13,9 @@ select
 	mortality.enrolled,
 	mortality.sampled,
 	mortality.number_sars_cov_2_tested,
-	mortality.number_sars_cov_2_positive
+	mortality.number_sars_cov_2_positive,
+	mortality.number_sars_cov_2_negative,
+	cast(current_date as date) as load_date
 from {{ ref('fct_aggregate_mortality_survillence') }} as mortality
 left join {{ ref('dim_facility') }} as facility on facility.facility_key = mortality.facility_key
 left join {{ ref('dim_date') }} as screen_date on screen_date.date_key = mortality.screen_date_key

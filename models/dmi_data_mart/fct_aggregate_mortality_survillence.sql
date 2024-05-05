@@ -29,6 +29,7 @@ select
 	sum(case when barcode > 1 then 1 else 0 end) as sampled,
 	sum(case when "result" in ('Inconclusive', 'Invalid', 'Negative', 'Positive') then 1 else 0 end) as number_sars_cov_2_tested,
 	sum(case when "result" = 'Positive' then 1 else 0 end) as number_sars_cov_2_positive,
+	sum(case when "result" = 'Negative' then 1 else 0 end) as number_sars_cov_2_negative,
 	cast(current_date as date) as load_date
 from subset_data
 left join {{ ref( 'dim_facility' ) }} as facility on facility.mfl_code = subset_data.mflcode
