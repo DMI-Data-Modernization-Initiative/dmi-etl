@@ -10,7 +10,7 @@ select
     "Result" as Result,  
     "Plasmodium.1" AS Plasmodium, 
     "Dengue.1" AS Dengue, 
-    "HIV-1.1" AS HIV, 
+    "HIV-1.1" AS HIV_1, 
     "Rickettsia.1" AS Rickettsia, 
     "Bartonella.1" AS Bartonella, 
     "Chikungunya.1" AS Chikungunya, 
