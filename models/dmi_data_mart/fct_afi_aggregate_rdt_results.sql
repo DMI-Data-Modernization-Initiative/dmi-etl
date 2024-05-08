@@ -33,7 +33,8 @@ malaria_rdt_results as (
     coalesce(date.date_key, 'unset') as date_key,
     coalesce(result.lab_result_key, 'unset') as lab_result_key,
  	count(distinct "PID") as cases,
- 	'Malaria' as rdt
+ 	'Malaria' as rdt,
+	cast(current_date as date) as load_date
  from malaria_results_data
  left join {{ ref('dim_gender') }} as gender on gender.code  = malaria_results_data."Gender"
  left join {{ ref('dim_age_group_afi_and_mortality') }} as age_group on malaria_results_data."Ageyrs" >= age_group.start_age 
@@ -60,7 +61,8 @@ leptospirosis_rdt_results as (
     coalesce(date.date_key, 'unset') as date_key,
     coalesce(result.lab_result_key, 'unset') as lab_result_key,
  	count(distinct "PID") as cases,
- 	'Leptospirosis' as rdt
+ 	'Leptospirosis' as rdt,
+	cast(current_date as date) as load_date
  from leptospirosis_data
  left join {{ ref('dim_gender') }} as gender on gender.code  = leptospirosis_data."Gender"
  left join {{ ref('dim_age_group_afi_and_mortality') }} as age_group on leptospirosis_data."Ageyrs" >= age_group.start_age 

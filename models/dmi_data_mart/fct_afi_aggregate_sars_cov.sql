@@ -44,7 +44,8 @@ unioned_data as (
     coalesce(date.date_key, 'unset') as date_key,
     coalesce(result.lab_result_key, 'unset') as lab_result_key,
 	count(*) as no_of_cases,
-	unioned_data.type
+	unioned_data.type,
+	cast(current_date as date) as load_date
  from unioned_data as unioned_data
  left join dbt_shield_dev.stg_afi_enroll_and_household_info as enroll on enroll."PID" = unioned_data."PID" 
  left join {{ ref('dim_gender') }} as gender on gender.code  = enroll."Gender"

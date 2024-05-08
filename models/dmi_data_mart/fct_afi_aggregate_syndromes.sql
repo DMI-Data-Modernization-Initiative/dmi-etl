@@ -5,7 +5,8 @@
         coalesce(facility.facility_key, 'unset') as facility_key,
         coalesce(date.date_key, 'unset') as date_key,
         coalesce(case_classification.case_classification_key, 'unset') as case_classification_key,
-        count(distinct case_def."PID") as no_of_cases
+        count(distinct case_def."PID") as no_of_cases,
+        cast(current_date as date) as load_date
     from {{ ref('intermediate_afi_case_classification') }} as case_def
     left join {{ ref('stg_afi_enroll_and_household_info') }} as enroll on enroll."PID" = case_def."PID" 
     left join {{ ref('dim_gender') }} as gender on gender.code  = enroll."Gender"
