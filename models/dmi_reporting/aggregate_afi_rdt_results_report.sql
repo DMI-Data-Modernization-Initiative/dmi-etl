@@ -2,12 +2,15 @@ select
     gender.gender_2 as gender,
     age_group.age_group_category,
     facility.facility_name,
+    facility.latitude,
+    facility.longitude,
     epi_week.week_number,
     epi_week.year,
     date.date,
     lab_result.lab_result,
     rdt.rdt,
-    rdt.cases as no_of_cases
+    rdt.cases as no_of_cases,
+    cast(current_date as date) as load_date
 from {{ref('fct_afi_aggregate_rdt_results') }} as rdt 
 left join {{ ref('dim_gender') }} as gender on gender.gender_key = rdt.gender_key 
 left join {{ ref('dim_age_group_afi_and_mortality') }} as age_group on age_group.age_group_key = rdt.age_group_key

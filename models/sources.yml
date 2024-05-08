@@ -51,5 +51,6 @@ sources:
       - name: sarscov_merged_results
       - name: nasal_swab
       - name: throat_swab
+      - name: clinical_course_outcome
 
 
