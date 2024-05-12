@@ -8,6 +8,7 @@ select
     epi_week.year,
     date.date,
     lab_result.lab_result,
+    malaria_result.malaria_pos_category,
     rdt.rdt,
     rdt.cases as no_of_cases,
     cast(current_date as date) as load_date
@@ -18,3 +19,4 @@ left join {{ ref('dim_facility') }} as facility on facility.facility_key = rdt.f
 left join {{ ref('dim_epi_week')}} as epi_week on epi_week.epi_week_key = rdt.epi_week_key
 left join {{ ref('dim_date') }} as date on date.date_key = rdt.date_key
 left join {{ ref('dim_lab_result') }} as lab_result on lab_result.lab_result_key = rdt.lab_result_key
+left join {{ ref('dim_malaria_result') }} as malaria_result on malaria_result.malaria_pos_category_key = rdt.malaria_pos_category_key

@@ -6,7 +6,8 @@ with malaria_results_data as (
 		enroll.interview_date,
 		left(enroll."PID", 3) as site_short_code,
 		"ResultValue",
-		malaria_rdt."Barcode"
+		malaria_rdt."Barcode",
+		results."MalariaSpecies"
 	from {{ ref('stg_afi_malaria_rdt') }} as malaria_rdt
 	left join {{ ref('stg_afi_lab_results') }} as results on results."Barcode"  = malaria_rdt."Barcode"  
 	left join {{ ref('stg_afi_enroll_and_household_info') }} as enroll on enroll."PID" = malaria_rdt."PID"
@@ -19,7 +20,8 @@ leptospirosis_data as (
 		enroll.interview_date,
 		left(enroll."PID", 3) as site_short_code,
 		"ResultValue",
-		leptospirosis_rdt."Barcode" 
+		leptospirosis_rdt."Barcode",
+		results."MalariaSpecies"
 	from {{ ref('stg_afi_leptospirosis_rdt') }} as leptospirosis_rdt
 	left join {{ ref('stg_afi_lab_results') }} as results on results."Barcode"  = leptospirosis_rdt."Barcode" 
 	left join {{ ref('stg_afi_enroll_and_household_info') }} as enroll on enroll."PID" = leptospirosis_rdt."PID"
@@ -32,6 +34,7 @@ malaria_rdt_results as (
     coalesce(facility.facility_key, 'unset') as facility_key,
     coalesce(date.date_key, 'unset') as date_key,
     coalesce(result.lab_result_key, 'unset') as lab_result_key,
+	coalesce(malaria_result.malaria_pos_category_key, 'unset') as malaria_pos_category_key,
  	count(distinct "PID") as cases,
  	'Malaria' as rdt,
 	cast(current_date as date) as load_date
@@ -44,13 +47,15 @@ malaria_rdt_results as (
  left join {{ ref('dim_facility') }} as facility on facility.code = malaria_results_data.site_short_code
  left join {{ ref('dim_date') }} as date on date.date = malaria_results_data.interview_date
  left join {{ ref('dim_lab_result') }} as result on result.code = malaria_results_data."ResultValue"
+ left join {{ ref('dim_malaria_result') }} as malaria_result on malaria_result.code = malaria_results_data."MalariaSpecies"::int
  group by
         coalesce(gender.gender_key, 'unset'),
         coalesce(age_group.age_group_key, 'unset'),
         coalesce(epi_week.epi_week_key, 'unset'),
         coalesce(facility.facility_key, 'unset'),
         coalesce(date.date_key, 'unset'),
-        coalesce(result.lab_result_key, 'unset')
+        coalesce(result.lab_result_key, 'unset'),
+		coalesce(malaria_result.malaria_pos_category_key, 'unset')
 ),
 leptospirosis_rdt_results as (
  select
@@ -60,6 +65,7 @@ leptospirosis_rdt_results as (
     coalesce(facility.facility_key, 'unset') as facility_key,
     coalesce(date.date_key, 'unset') as date_key,
     coalesce(result.lab_result_key, 'unset') as lab_result_key,
+	coalesce(malaria_result.malaria_pos_category_key, 'unset') as malaria_pos_category_key,
  	count(distinct "PID") as cases,
  	'Leptospirosis' as rdt,
 	cast(current_date as date) as load_date
@@ -72,13 +78,16 @@ leptospirosis_rdt_results as (
  left join {{ ref('dim_facility') }} as facility on facility.code = leptospirosis_data.site_short_code
  left join{{ ref('dim_date') }} as date on date.date = leptospirosis_data.interview_date
  left join{{ ref('dim_lab_result') }} as result on result.code = leptospirosis_data."ResultValue"
+ left join {{ ref('dim_malaria_result') }} as malaria_result on malaria_result.code = leptospirosis_data."MalariaSpecies"::int
  group by
         coalesce(gender.gender_key, 'unset'),
         coalesce(age_group.age_group_key, 'unset'),
         coalesce(epi_week.epi_week_key, 'unset'),
         coalesce(facility.facility_key, 'unset'),
         coalesce(date.date_key, 'unset'),
-        coalesce(result.lab_result_key, 'unset')
+        coalesce(result.lab_result_key, 'unset'),
+		coalesce(malaria_result.malaria_pos_category_key, 'unset')
+
 )
 select 
 	*
