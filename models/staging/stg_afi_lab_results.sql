@@ -29,7 +29,12 @@ select
   "Furazolidone", 
   "Erythromycin", 
   "Oxacilin", 
-  "MalariaSpecies", 
+  case "MalariaSpecies"
+    when '' then null
+    when '1.0' then '1'
+    when '2.0' then '2'
+    when '3.0' then '3'
+  end as "MalariaSpecies", 
   "ParacountThick", 
   "ParacountThin", 
   "MigratedAt", 
