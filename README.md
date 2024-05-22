@@ -47,10 +47,12 @@ dmi_dbt:
       
  ```
 
-## Commands to interact with dbt
+## Common commands to interact with dbt
     
 - `dbt compile` - generates executable SQL from source
 - `dbt run` - runs all models in the models folder
+- `dbt run --select <model_name>` - runs a specified single model e.g `dbt run --select stg_sari_ili`
+- `dbt run --select <path/to/my/models>` - runs all models in a specified directory e.g `dbt run --select dmi_data_mart`
 - `dbt seed` - loads csv files (typically not for large files)
 - `dbt test` - runs tests against your models and seeds
 - `dbt docs generate` - generates your project's documentation
