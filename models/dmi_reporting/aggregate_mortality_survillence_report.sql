@@ -1,5 +1,7 @@
 select 
 	facility.facility_name,
+    facility.latitude,
+    facility.longitude,
 	age_group.age_group_category,
 	screen_date.date as screening_date,
 	screen_epi_week.week_number as screening_epi_week,
