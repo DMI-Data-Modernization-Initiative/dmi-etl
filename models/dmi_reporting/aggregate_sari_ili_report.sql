@@ -1,5 +1,7 @@
 select
 	facility.facility_name,
+    facility.latitude,
+    facility.longitude,
 	screen_date.date as screen_date,
 	age_group.age_group_category,
 	pat_outcome.patient_outcome,
