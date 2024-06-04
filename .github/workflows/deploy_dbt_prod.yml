@@ -1,15 +1,15 @@
-name: Deploy SHIELD dbt
+name: Deploy prod SHIELD dbt 
 
 on:
   schedule:
     - cron: '* * * * *'
 
 env:
-  DBT_SERVER: ${{ secrets.DBT_SERVER }}
-  DBT_PORT: ${{ secrets.DBT_PORT }}
-  DBT_USER: ${{ secrets.DBT_USER }}
-  DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }}
-  DBT_DATABASE: ${{ secrets.DBT_DATABASE }}
+  DBT_SERVER: ${{ secrets.DBT_SERVER_PROD }}
+  DBT_PORT: ${{ secrets.DBT_PORT_PROD }}
+  DBT_USER: ${{ secrets.DBT_USER_PROD }}
+  DBT_PASSWORD: ${{ secrets.DBT_PASSWORD_PROD }}
+  DBT_DATABASE: ${{ secrets.DBT_DATABASE_PROD }}
   DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
 
 jobs:
