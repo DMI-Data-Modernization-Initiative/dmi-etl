@@ -6,11 +6,11 @@ import sys
 import urllib.parse
 
 # Postgres connection details
-server = os.getenv("DBT_SERVER")
-username = os.getenv("DBT_USER")
-password = os.getenv("DBT_PASSWORD")
-database = os.getenv("DBT_DATABASE")
-port = os.getenv("DBT_PORT")
+server = os.getenv("DBT_SERVER_DEV")
+username = os.getenv("DBT_USER_DEV")
+password = os.getenv("DBT_PASSWORD_DEV")
+database = os.getenv("DBT_DATABASE_DEV")
+port = os.getenv("DBT_PORT_DEV")
 
 
 
