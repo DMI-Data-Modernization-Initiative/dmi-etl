@@ -18,18 +18,18 @@ Contains dbt models for transformations for the SHIELD data warehouse
 - Create a `.env` file on the root folder and paste the following environment variables (make sure there is no space between):
 
     ```
-        export DBT_USER=<sql server user>
-        export DBT_PASSWORD=<sql server password>
-        export DBT_DATABASE=<database to build models on>
-        export DBT_SERVER=<server ip address>
-        export DBT_SCHEMA=<schema to build models on>
+        export DBT_USER_DEV=<sql server user>
+        export DBT_PASSWORD_DEV=<sql server password>
+        export DBT_DATABASE_DEV=<database to build models on>
+        export DBT_SERVER_DEV=<server ip address>
+        export DBT_SCHEMA=< default schema to build models on>
         export DBT_PROFILES_DIR=./profiles/
     ```
 
     for `DBT_DATABASE` have a database in the Test SQL Server that you will use to build your models & datasets. Ideally call it
     *dbt_<name_of_dev>*
 - Run `source .env` to load your environment variables.
-- Make sure you have the config file `profiles.yml` inside the profiles folder with the following configarations:
+- Make sure you have the config file `profiles.yml` inside the profiles folder with the following configarations for dev:
     
 ```
 dmi_dbt:
@@ -37,12 +37,12 @@ dmi_dbt:
   outputs:
     dev:
       type: postgres
-      host: "{{env_var('DBT_SERVER')}}"
-      database: "{{env_var('DBT_DATABASE')}}"
+      host: "{{env_var('DBT_SERVER_DEV')}}"
+      database: "{{env_var('DBT_DATABASE_DEV')}}"
       schema: "{{env_var('DBT_SCHEMA')}}"
       port: 8988
-      user:  "{{env_var('DBT_USER')}}"
-      password: "{{env_var('DBT_PASSWORD')}}"
+      user:  "{{env_var('DBT_USER_DEV')}}"
+      password: "{{env_var('DBT_PASSWORD_DEV')}}"
       threads: 4
       
  ```
@@ -52,7 +52,7 @@ dmi_dbt:
 - `dbt compile` - generates executable SQL from source
 - `dbt run` - runs all models in the models folder
 - `dbt run --select <model_name>` - runs a specified single model e.g `dbt run --select stg_sari_ili`
-- `dbt run --select <path/to/my/models>` - runs all models in a specified directory e.g `dbt run --select dmi_data_mart`
+- `dbt run --models <path/to/my/models>` - runs all models in a specified directory e.g `dbt run --select dmi_data_mart`
 - `dbt seed` - loads csv files (typically not for large files)
 - `dbt test` - runs tests against your models and seeds
 - `dbt docs generate` - generates your project's documentation
