@@ -2,7 +2,7 @@ name: Deploy prod SHIELD dbt
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0 6 * * *'
 
 env:
   DBT_SERVER: ${{ secrets.DBT_SERVER_PROD }}
