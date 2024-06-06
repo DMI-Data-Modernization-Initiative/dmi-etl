@@ -15,8 +15,8 @@ dmi_dbt:
       host: "{{ env_var('DBT_SERVER_TEST') }}"
       database: "{{ env_var('DBT_DATABASE_TEST') }}"
       schema: "{{ env_var('DBT_SCHEMA') }}"
-      port: "{{ env_var('DBT_PORT_TEST') }}"
-      user:  "{{ env_var('DBT_USER_TEST') | int }}"
+      port: "{{ env_var('DBT_PORT_TEST')  | int }}"
+      user:  "{{ env_var('DBT_USER_TEST') }}"
       password: "{{ env_var('DBT_PASSWORD_TEST') }}"
       threads: 4
     prod:
