@@ -5,11 +5,11 @@ on:
     - cron: '* * * * *'
 
 env:
-  DBT_SERVER: ${{ secrets.DBT_SERVER_TEST }}
-  DBT_PORT: ${{ secrets.DBT_PORT_TEST }}
-  DBT_USER: ${{ secrets.DBT_USER_TEST }}
-  DBT_PASSWORD: ${{ secrets.DBT_PASSWORD_TEST }}
-  DBT_DATABASE: ${{ secrets.DBT_DATABASE_TEST }}
+  DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
+  DBT_PORT_TEST: ${{ secrets.DBT_PORT_TEST }}
+  DBT_USER_TEST: ${{ secrets.DBT_USER_TEST }}
+  DBT_PASSWORD_TEST: ${{ secrets.DBT_PASSWORD_TEST }}
+  DBT_DATABASE_TEST: ${{ secrets.DBT_DATABASE_TEST }}
   DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
 
 jobs:

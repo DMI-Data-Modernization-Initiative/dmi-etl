@@ -37,12 +37,12 @@ dmi_dbt:
   outputs:
     dev:
       type: postgres
-      host: "{{env_var('DBT_SERVER_DEV')}}"
-      database: "{{env_var('DBT_DATABASE_DEV')}}"
-      schema: "{{env_var('DBT_SCHEMA')}}"
-      port: 8988
-      user:  "{{env_var('DBT_USER_DEV')}}"
-      password: "{{env_var('DBT_PASSWORD_DEV')}}"
+      host: "{{ env_var('DBT_SERVER_DEV') }}"
+      database: "{{ env_var('DBT_DATABASE_DEV') }}"
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      port: "{{ env_var('DBT_PORT_DEV') | int }}"
+      user:  "{{ env_var('DBT_USER_DEV') }}"
+      password: "{{ env_var('DBT_PASSWORD_DEV') }}"
       threads: 4
       
  ```
