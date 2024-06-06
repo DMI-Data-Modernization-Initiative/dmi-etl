@@ -2,7 +2,7 @@ name: Deploy test SHIELD dbt
 
 on:
   schedule:
-    - cron: '0/1 * * * *'
+    - cron: '0 6 * * *'
 
 env:
   DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
