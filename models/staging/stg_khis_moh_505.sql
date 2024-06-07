@@ -1,7 +1,10 @@
 select
     "county" as county, 
     "Sub County" as sub_county, 
-    "Period" as period, 
+    case 
+        when "Period" like 'We%' then  'W' || substring("Period" FROM 'Week (\d+)') || ' ' || substring("Period" FROM 'Week \d+ (\d{4})')
+        else "Period" 
+    end as period, 
     "Bacterial Meningitis +ve H Influenza", 
     "Bacterial Meningitis +ve Nm",
     "Bacterial Meningitis +ve Sp", 
