@@ -26,8 +26,7 @@ Contains dbt models for transformations for the SHIELD data warehouse
         export DBT_PROFILES_DIR=./profiles/
     ```
 
-    for `DBT_DATABASE` have a database in the Test SQL Server that you will use to build your models & datasets. Ideally call it
-    *dbt_<name_of_dev>*
+For `DBT_SCHEMA` make sure you have a schema in the development Postgres instance that you will use to build your models & datasets. Ideally call it *dbt_<name_of_dev>*
 - Run `source .env` to load your environment variables.
 - Make sure you have the config file `profiles.yml` inside the profiles folder with the following configarations for dev:
     
