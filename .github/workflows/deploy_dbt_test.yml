@@ -3,7 +3,7 @@ name: Deploy test SHIELD dbt
 on:
   schedule:
     # - cron: '0 1 * * *'
-    - cron: '0 6 * * *'
+    - cron: '0/3 * * * *'
 
 env:
   DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies
         run: |
           # python -m pip install --upgrade pip
-          # pip install dbt-postgres
+          pip install dbt-postgres
           dbt deps --profiles-dir ./profiles/ --target test
 
       - name: Run dbt seeds
