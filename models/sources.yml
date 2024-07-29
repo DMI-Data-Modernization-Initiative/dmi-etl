@@ -23,20 +23,20 @@ sources:
   - name: staging
     database: SHIELD
     schema: staging 
-    tables :
+    tables:
       - name: stg_ebridge_output
         description: This table contains raw data from the e-bridge ML model 
       - name: stg_ebridge_output_actual_predicted
   - name: central_raw_mortality
     database: SHIELD
     schema: central_raw_mortality 
-    tables :
+    tables:
       - name: mortality_surveillance
         description: This table contains raw data for the mortality surveillance
   - name: central_raw_afi
     database: SHIELD
     schema: central_raw_afi 
-    tables :
+    tables:
       - name: screening
         description: This table contains raw data for AFI screening
       - name: lab_results
@@ -52,5 +52,9 @@ sources:
       - name: nasal_swab
       - name: throat_swab
       - name: clinical_course_outcome
-
-
+  - name: central_raw_krcs
+    database: SHIELD
+    schema: central_raw_krcs 
+    tables:
+      - name: cbs
+        description: This table contains raw data for Red Cross CBS
