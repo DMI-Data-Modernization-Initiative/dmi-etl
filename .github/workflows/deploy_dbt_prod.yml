@@ -2,7 +2,7 @@ name: Deploy prod SHIELD dbt
 
 on:
   schedule:
-    - cron: '0/1 * * * *'
+    - cron: '0 18 * * *'
 
 env:
   DBT_SERVER_PROD: ${{ secrets.DBT_SERVER_PROD }}
@@ -29,17 +29,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt-postgres
           dbt deps --profiles-dir ./profiles/ --target prod
+         
 
       - name: Run dbt seeds
         run: |
           dbt seed --profiles-dir ./profiles/ --target prod --full-refresh
           
+          
       - name: Run dbt models
         run: |
           dbt run --profiles-dir ./profiles/ --target prod
+         
 
       - name: Run dbt tests
         run: |
           dbt test --profiles-dir ./profiles/ --target prod
+       
 
           
