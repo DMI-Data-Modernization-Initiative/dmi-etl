@@ -54,6 +54,6 @@ SELECT
     vaccinated,
     dosage,
     (1)::integer AS suspected,
-    (case when type_of_testing is not null then 1 else 0 end)::integer AS tested,
-    (case when type_of_testing is not null and lab_result = 'Positive' then 1 else 0 end)::integer AS confirmed
+    (case when type_of_testing is not null and type_of_testing <> 'Unknown' then 1 else 0 end)::integer AS tested,
+    (case when type_of_testing is not null and type_of_testing <> 'Unknown' and lab_result = 'Positive' then 1 else 0 end)::integer AS confirmed
 FROM {{ ref('stg_ears_covid') }}
