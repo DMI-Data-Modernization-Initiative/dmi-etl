@@ -54,7 +54,12 @@ sources:
       - name: clinical_course_outcome
   - name: central_raw_krcs
     database: SHIELD
-    schema: central_raw_krcs 
+    schema: central_raw_krcs
     tables:
       - name: cbs
         description: This table contains raw data for Red Cross CBS
+  - name: central_raw_ears
+    database: SHIELD
+    schema: central_raw_ears
+    tables:
+      - name: veoc_covid_linelist_results
