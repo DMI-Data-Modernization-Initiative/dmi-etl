@@ -18,4 +18,5 @@ mfl_code,facility_name,facility_name_short,code,longitude,latitude,afi_study_sit
 21335,Kakuma Sub County Hospital,Kakuma SCH,KAK,35.123,3,14
 13055,Madina Nursing Home,Madina NH,MDN,36.85066,-1.27605,3
 17411,Mama Lucy Kibaki Hospital,Mama LKH,MLK,36.89843,-1.27416,5
-13080,Mbagathi District Hospital,,MBG,,,2
+13080,Mbagathi District Hospital,,MBG,36.80317,-1.30793,2
+12950,Gertrudes Childrens Hospital,Gertrudes HF,GHP,36.83214,-1.25612,
