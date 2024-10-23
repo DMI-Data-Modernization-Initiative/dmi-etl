@@ -1,19 +1,19 @@
 version: 2
 sources:
   - name: central_raw_sari_ili
-    database: SHIELD
+    database: shield
     schema: central_raw_sari_ili
     tables:
       - name: sari_ili_data
         description: This table contains raw data for SARI-ILI
   - name: central_raw_khis
-    database: SHIELD
+    database: shield
     schema: central_raw_khis
     tables:
       - name: moh_505
         description: This table contains raw data for MOH 505 form
   - name: central_raw_mdharura
-    database: SHIELD
+    database: shield
     schema: central_raw_mdharura
     tables:
       - name: mdharura_ebs_linelist
@@ -21,7 +21,7 @@ sources:
       - name: mdharura_ebs_aggregate
         description: This table contains raw aggregate data for M-dharura app
   - name: staging
-    database: SHIELD
+    database: shield
     schema: staging 
     tables:
       - name: stg_ebridge_output
@@ -34,7 +34,7 @@ sources:
       - name: mortality_surveillance
         description: This table contains raw data for the mortality surveillance
   - name: central_raw_afi
-    database: SHIELD
+    database: shield
     schema: central_raw_afi 
     tables:
       - name: screening
@@ -53,13 +53,13 @@ sources:
       - name: throat_swab
       - name: clinical_course_outcome
   - name: central_raw_krcs
-    database: SHIELD
+    database: shield
     schema: central_raw_krcs
     tables:
       - name: cbs
         description: This table contains raw data for Red Cross CBS
   - name: central_raw_ears
-    database: SHIELD
+    database: shield
     schema: central_raw_ears
     tables:
       - name: veoc_covid_linelist_results
