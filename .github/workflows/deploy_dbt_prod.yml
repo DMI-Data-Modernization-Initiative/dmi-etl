@@ -9,8 +9,7 @@ env:
   DBT_PORT_PROD: ${{ secrets.DBT_PORT_PROD }}
   DBT_USER_PROD: ${{ secrets.DBT_USER_PROD }}
   DBT_PASSWORD_PROD: ${{ secrets.DBT_PASSWORD_PROD }}
-  # DBT_DATABASE_PROD: ${{ secrets.DBT_DATABASE_PROD }}
-  DBT_DATABASE_PROD: shield
+  DBT_DATABASE_PROD: ${{ secrets.DBT_DATABASE_PROD }}
   DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
 
 jobs:
