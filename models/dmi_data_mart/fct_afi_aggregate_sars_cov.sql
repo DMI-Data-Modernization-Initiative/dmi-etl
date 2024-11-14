@@ -54,7 +54,7 @@ unioned_data as (
  left join {{ ref('dim_epi_week') }} as epi_week on unioned_data.date_collected  >= epi_week.start_of_week 
      and unioned_data.date_collected <= epi_week.end_of_week 
  left join {{ ref('dim_facility') }} as facility on facility.code = unioned_data.site_short_code
- left join staging.dim_date as date on date.date = unioned_data.date_collected
+ left join dmi_data_mart.dim_date as date on date.date = unioned_data.date_collected
  left join {{ ref('dim_lab_result') }} as result on result.lab_result_2 = unioned_data."Results" 
  group by 
   	coalesce(gender.gender_key, 'unset'),
