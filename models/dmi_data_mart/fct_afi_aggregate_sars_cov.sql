@@ -5,8 +5,8 @@ with npop as (
 		sarscov."Results",
 		sarscov."Date Collected"::date as date_collected,
 		'npop' as type
- from dbt_shield_dev.stg_afi_npop_swab as swab
- left join dbt_shield_dev.stg_afi_sarscov_merged_results as sarscov on sarscov."Sample Name" = swab."Barcode"
+ from staging.stg_afi_npop_swab as swab
+ left join staging.stg_afi_sarscov_merged_results as sarscov on sarscov."Sample Name" = swab."Barcode"
  where left(swab."PID", 3) <> 'MRT'
 ),
 nasal as (
@@ -16,8 +16,8 @@ nasal as (
 		sarscov."Results",
 		sarscov."Date Collected"::date as date_collected,
 		'nasal' as type
-	from dbt_shield_dev.stg_afi_nasal_swab as swab
-	left join dbt_shield_dev.stg_afi_sarscov_merged_results as sarscov on sarscov."Sample Name" = swab."Barcode" 
+	from staging.stg_afi_nasal_swab as swab
+	left join staging.stg_afi_sarscov_merged_results as sarscov on sarscov."Sample Name" = swab."Barcode" 
 ),
 throat as (
 	select 
@@ -26,8 +26,8 @@ throat as (
 		sarscov."Results",
 		sarscov."Date Collected"::date as date_collected,
 		'throat' as type
-	from dbt_shield_dev.stg_afi_throat_swab as swab
-	left join dbt_shield_dev.stg_afi_sarscov_merged_results as sarscov on sarscov."Sample Name" = swab."Barcode" 
+	from staging.stg_afi_throat_swab as swab
+	left join staging.stg_afi_sarscov_merged_results as sarscov on sarscov."Sample Name" = swab."Barcode" 
 ),
 unioned_data as (
 	 select  * from  npop 
@@ -47,14 +47,14 @@ unioned_data as (
 	unioned_data.type,
 	cast(current_date as date) as load_date
  from unioned_data as unioned_data
- left join dbt_shield_dev.stg_afi_enroll_and_household_info as enroll on enroll."PID" = unioned_data."PID" 
+ left join staging.stg_afi_enroll_and_household_info as enroll on enroll."PID" = unioned_data."PID" 
  left join {{ ref('dim_gender') }} as gender on gender.code  = enroll."Gender"
  left join {{ ref('dim_age_group_afi_and_mortality') }} as age_group on enroll."Ageyrs" >= age_group.start_age 
      and  enroll."Ageyrs"  < age_group.end_age 
  left join {{ ref('dim_epi_week') }} as epi_week on unioned_data.date_collected  >= epi_week.start_of_week 
      and unioned_data.date_collected <= epi_week.end_of_week 
  left join {{ ref('dim_facility') }} as facility on facility.code = unioned_data.site_short_code
- left join dbt_shield_dev.dim_date as date on date.date = unioned_data.date_collected
+ left join staging.dim_date as date on date.date = unioned_data.date_collected
  left join {{ ref('dim_lab_result') }} as result on result.lab_result_2 = unioned_data."Results" 
  group by 
   	coalesce(gender.gender_key, 'unset'),
