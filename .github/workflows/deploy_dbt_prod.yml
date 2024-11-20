@@ -27,7 +27,8 @@ jobs:
           
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
+          # python -m pip install --upgrade pip
+          python -m pip install pip
           pip install dbt-postgres
           dbt deps --profiles-dir ./profiles/ --target prod
          
