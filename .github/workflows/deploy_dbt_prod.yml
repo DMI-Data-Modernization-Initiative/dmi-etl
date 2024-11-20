@@ -1,12 +1,9 @@
 name: Deploy prod SHIELD dbt 
 
 on:
-  # schedule:
-  #    # - cron: '0/10 * * * *'
-  #     - cron: '0/30 * * * *'
-  push:
-   branches:
-     - main
+  schedule:
+     # - cron: '0/10 * * * *'
+      - cron: '0/30 * * * *'
 
 env:
   DBT_SERVER_PROD: ${{ secrets.DBT_SERVER_PROD }}
@@ -26,8 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          # python-version: '3.10'
-          python-version: '3.12'
+          python-version: '3.10'
           
       - name: Install dependencies
         run: |
