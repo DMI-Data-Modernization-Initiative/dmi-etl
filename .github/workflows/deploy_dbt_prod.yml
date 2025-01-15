@@ -1,28 +1,32 @@
-name: Deploy prod SHIELD dbt 
+name: Deploy SHIELD dbt to Prod and Dev
 
 on:
   schedule:
-     - cron: '0/3 * * * *'
+    - cron: '*/3 * * * *'
 
-# env:
-#   DBT_SERVER_PROD: ${{ secrets.DBT_SERVER_PROD }}
-#   DBT_PORT_PROD: ${{ secrets.DBT_PORT_PROD }}
-#   DBT_USER_PROD: ${{ secrets.DBT_USER_PROD }}
-#   DBT_PASSWORD_PROD: ${{ secrets.DBT_PASSWORD_PROD }}
-#   DBT_DATABASE_PROD: ${{ secrets.DBT_DATABASE_PROD }}
-#   DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
 env:
-  DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
-  DBT_PORT_TEST: ${{ secrets.DBT_PORT_TEST }}
-  DBT_USER_TEST: ${{ secrets.DBT_USER_TEST }}
-  DBT_PASSWORD_TEST: ${{ secrets.DBT_PASSWORD_TEST }}
-  DBT_DATABASE_TEST: ${{ secrets.DBT_DATABASE_TEST }}
   DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
-
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        environment: [dev, prod]
+        include:
+          - environment: dev
+            DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
+            DBT_PORT_TEST: ${{ secrets.DBT_PORT_TEST }}
+            DBT_USER_TEST: ${{ secrets.DBT_USER_TEST }}
+            DBT_PASSWORD_TEST: ${{ secrets.DBT_PASSWORD_TEST }}
+            DBT_DATABASE_TEST: ${{ secrets.DBT_DATABASE_TEST }}
+          - environment: prod
+            DBT_SERVER_PROD: ${{ secrets.DBT_SERVER_PROD }}
+            DBT_PORT_PROD: ${{ secrets.DBT_PORT_PROD }}
+            DBT_USER_PROD: ${{ secrets.DBT_USER_PROD }}
+            DBT_PASSWORD_PROD: ${{ secrets.DBT_PASSWORD_PROD }}
+            DBT_DATABASE_PROD: ${{ secrets.DBT_DATABASE_PROD }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,31 +35,21 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install dbt-postgres
-          # dbt deps --profiles-dir ./profiles/ --target prod
-          dbt deps --profiles-dir ./profiles/ --target test
-         
+          dbt deps --profiles-dir ./profiles/ --target ${{ matrix.environment }}
 
-      - name: Run dbt seeds
+      - name: Run dbt seeds for ${{ matrix.environment }}
         run: |
-          # dbt seed --profiles-dir ./profiles/ --target prod --full-refresh
-          dbt seed --profiles-dir ./profiles/ --target test --full-refresh
-          
-          
-      - name: Run dbt models
-        run: |
-          # dbt run --profiles-dir ./profiles/ --target prod
-          dbt run --profiles-dir ./profiles/ --target test
-         
+          dbt seed --profiles-dir ./profiles/ --target ${{ matrix.environment }} --full-refresh
 
-      - name: Run dbt tests
+      - name: Run dbt models for ${{ matrix.environment }}
         run: |
-          # dbt test --profiles-dir ./profiles/ --target prod
-          dbt test --profiles-dir ./profiles/ --target test
-       
+          dbt run --profiles-dir ./profiles/ --target ${{ matrix.environment }}
 
-          
+      - name: Run dbt tests for ${{ matrix.environment }}
+        run: |
+          dbt test --profiles-dir ./profiles/ --target ${{ matrix.environment }}
