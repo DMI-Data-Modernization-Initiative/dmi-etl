@@ -4,29 +4,24 @@ on:
   schedule:
     - cron: '*/3 * * * *'
 
-env:
-  DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         environment: [test, prod]
-        include:
-          - environment: test
-            DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
-            DBT_PORT_TEST: ${{ secrets.DBT_PORT_TEST }}
-            DBT_USER_TEST: ${{ secrets.DBT_USER_TEST }}
-            DBT_PASSWORD_TEST: ${{ secrets.DBT_PASSWORD_TEST }}
-            DBT_DATABASE_TEST: ${{ secrets.DBT_DATABASE_TEST }}
-          - environment: prod
-            DBT_SERVER_PROD: ${{ secrets.DBT_SERVER_PROD }}
-            DBT_PORT_PROD: ${{ secrets.DBT_PORT_PROD }}
-            DBT_USER_PROD: ${{ secrets.DBT_USER_PROD }}
-            DBT_PASSWORD_PROD: ${{ secrets.DBT_PASSWORD_PROD }}
-            DBT_DATABASE_PROD: ${{ secrets.DBT_DATABASE_PROD }}
-
+    env:
+      DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
+      DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
+      DBT_PORT_TEST: ${{ secrets.DBT_PORT_TEST }}
+      DBT_USER_TEST: ${{ secrets.DBT_USER_TEST }}
+      DBT_PASSWORD_TEST: ${{ secrets.DBT_PASSWORD_TEST }}
+      DBT_DATABASE_TEST: ${{ secrets.DBT_DATABASE_TEST }}
+      DBT_SERVER_DEV: ${{ secrets.DBT_SERVER_DEV }}
+      DBT_PORT_DEV: ${{ secrets.DBT_PORT_DEV }}
+      DBT_USER_DEV: ${{ secrets.DBT_USER_DEV }}
+      DBT_PASSWORD_DEV: ${{ secrets.DBT_PASSWORD_DEV }}
+      DBT_DATABASE_DEV: ${{ secrets.DBT_DATABASE_DEV }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -53,3 +48,5 @@ jobs:
       - name: Run dbt tests for ${{ matrix.environment }}
         run: |
           dbt test --profiles-dir ./profiles/ --target ${{ matrix.environment }}
+      
+          
