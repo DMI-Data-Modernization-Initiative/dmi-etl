@@ -1,4 +1,4 @@
-name: Deploy SHIELD dbt to Prod and Tes
+name: Deploy SHIELD dbt to Prod and Test
 
 on:
   schedule:
