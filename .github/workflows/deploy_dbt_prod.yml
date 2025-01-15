@@ -1,4 +1,4 @@
-name: Deploy SHIELD dbt to Prod and Dev
+name: Deploy SHIELD dbt to Prod and Tes
 
 on:
   schedule:
@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        environment: [dev, prod]
+        environment: [test, prod]
         include:
-          - environment: dev
+          - environment: test
             DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
             DBT_PORT_TEST: ${{ secrets.DBT_PORT_TEST }}
             DBT_USER_TEST: ${{ secrets.DBT_USER_TEST }}
