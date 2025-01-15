@@ -2,7 +2,7 @@ name: Deploy SHIELD dbt to Prod and Test
 
 on:
   schedule:
-    - cron: '*/3 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
   deploy:
