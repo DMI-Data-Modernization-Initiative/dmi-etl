@@ -36,22 +36,26 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install dbt-postgres
-          dbt deps --profiles-dir ./profiles/ --target prod
+          # dbt deps --profiles-dir ./profiles/ --target prod
+          dbt deps --profiles-dir ./profiles/ --target test
          
 
       - name: Run dbt seeds
         run: |
-          dbt seed --profiles-dir ./profiles/ --target prod --full-refresh
+          # dbt seed --profiles-dir ./profiles/ --target prod --full-refresh
+          dbt seed --profiles-dir ./profiles/ --target test --full-refresh
           
           
       - name: Run dbt models
         run: |
-          dbt run --profiles-dir ./profiles/ --target prod
+          # dbt run --profiles-dir ./profiles/ --target prod
+          dbt run --profiles-dir ./profiles/ --target test
          
 
       - name: Run dbt tests
         run: |
-          dbt test --profiles-dir ./profiles/ --target prod
+          # dbt test --profiles-dir ./profiles/ --target prod
+          dbt test --profiles-dir ./profiles/ --target test
        
 
           
