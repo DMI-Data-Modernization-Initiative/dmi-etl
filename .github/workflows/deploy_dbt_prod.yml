@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        environment: [test, prod]
+        environment: [test]
     env:
       DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
       DBT_SERVER_TEST: ${{ secrets.DBT_SERVER_TEST }}
