@@ -1,6 +1,8 @@
 select
     subcounty_code,
     year_month,
+    year,
+    month,
     count_c1,
     count_c2,
     count_c3,

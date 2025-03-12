@@ -17,8 +17,9 @@ with
             on population.subcounty_mdharura_id = ebs."UNIT_PARENT_ID"
     )
 select
-
     concat(dim_date.year, lpad(dim_date.month::text, 2, '0')) as year_month,
+    dim_date.year,
+    lpad(dim_date.month::text, 2, '0') as month,
     coalesce(county.county_key, 'unset') as county_key,
     coalesce(sub_county.sub_county_key, 'unset') as sub_county_key,
     subcounty_id as subcounty_code,
