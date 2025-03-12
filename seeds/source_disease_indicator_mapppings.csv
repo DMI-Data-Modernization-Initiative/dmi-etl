@@ -137,3 +137,187 @@ Typhoid Positive <5 yrs,Typhoid fever,no_of_tests_specimen_positive
 Typhoid Positive >5 yrs,Typhoid fever,no_of_tests_specimen_positive
 Typhoid Tested <5 yrs,Typhoid fever,no_of_tests
 Typhoid Tested >5 yrs,Typhoid fever,no_of_tests
+Abortion <5 yrs,,no_of_cases
+Abortion >5 yrs,,no_of_cases
+All other diseases <5 yrs,,no_of_cases
+All other diseases >5 yrs,,no_of_cases
+Anaemia cases <5 yrs,,no_of_cases
+Anaemia cases >5 yrs,,no_of_cases
+"Arthritis, Joint pains etc. <5 yrs",,no_of_cases
+"Arthritis, Joint pains etc. >5 yrs",,no_of_cases
+Asthma <5 yrs,,no_of_cases
+Asthma >5 yrs,,no_of_cases
+Autism <5 yrs,,no_of_cases
+Autism >5 yrs,,no_of_cases
+Bilharzia (Schistosomiasis) <5 yrs,,no_of_cases
+Bilharzia (Schistosomiasis) >5 yrs,,no_of_cases
+Brucellosis <5 yrs,,no_of_cases
+Brucellosis >5 yrs,,no_of_cases
+Burns <5 yrs,,no_of_cases
+Burns >5 yrs,,no_of_cases
+Cardiovascular conditions <5 yrs,,no_of_cases
+Cardiovascular conditions >5 yrs,,no_of_cases
+Central Nervous System Conditions <5 yrs,,no_of_cases
+Central Nervous System Conditions >5 yrs,,no_of_cases
+Cerebral Palsy <5 yrs,,no_of_cases
+Cerebral Palsy >5 yrs,,no_of_cases
+Chicken Pox <5 yrs,,no_of_cases
+Chicken Pox >5 yrs,,no_of_cases
+Cholera <5 yrs,,no_of_cases
+Cholera >5 yrs,,no_of_cases
+Confirmed Malaria (only Positive cases) <5 yrs,,no_of_cases
+Confirmed Malaria (only Positive cases) >5 yrs,,no_of_cases
+Deaths due to Road Traffic Injuries <5 yrs,,no_of_cases
+Deaths due to Road Traffic Injuries >5 yrs,,no_of_cases
+Dental Disorders <5 yrs,,no_of_cases
+Dental Disorders >5 yrs,,no_of_cases
+Diabetes <5 yrs,,no_of_cases
+Diabetes >5 yrs,,no_of_cases
+Diarrhoea <5 yrs,,no_of_cases
+Diarrhoea >5 yrs,,no_of_cases
+Disease of Puerperium and Childbirth <5 yrs,,no_of_cases
+Disease of Puerperium and Childbirth >5 yrs,,no_of_cases
+Disease of the skin <5 yrs,,no_of_cases
+Disease of the skin >5 yrs,,no_of_cases
+Dog Bites <5 yrs,,no_of_cases
+Dog Bites >5 yrs,,no_of_cases
+Down's syndromes <5 yrs,,no_of_cases
+Down's syndromes >5 yrs,,no_of_cases
+Dysentery (Bloody Diarrhoea) <5 yrs,,no_of_cases
+Dysentery (Bloody Diarrhoea) >5 yrs,,no_of_cases
+Ear Infections/ Conditions <5 yrs,,no_of_cases
+Ear Infections/ Conditions >5 yrs,,no_of_cases
+Epilepsy <5 yrs,,no_of_cases
+Epilepsy >5 yrs,,no_of_cases
+Eye Infections <5 yrs,,no_of_cases
+Eye Infections >5 yrs,,no_of_cases
+Fistula (Birth related) <5 yrs,,no_of_cases
+Fistula (Birth related) >5 yrs,,no_of_cases
+Hepatitis <5 yrs,,no_of_cases
+Hepatitis >5 yrs,,no_of_cases
+Hypertension <5 yrs,,no_of_cases
+Hypertension >5 yrs,,no_of_cases
+Intestinal worms <5 yrs,,no_of_cases
+Intestinal worms >5 yrs,,no_of_cases
+Jiggers Infestation <5 yrs,,no_of_cases
+Jiggers Infestation >5 yrs,,no_of_cases
+Leishmaniaisis(Kalazar) <5 yrs,,no_of_cases
+Leishmaniaisis(Kalazar) >5 yrs,,no_of_cases
+Amoebiasis <5 yrs,,no_of_cases
+Amoebiasis >5 yrs,,no_of_cases
+Chikungunya <5 yrs,,no_of_cases
+Chikungunya >5 yrs,,no_of_cases
+Cutaneous leishmaniasis <5 yrs,,no_of_cases
+Cutaneous leishmaniasis >5 yrs,,no_of_cases
+Dengue fever <5 yrs,,no_of_cases
+Dengue fever >5 yrs,,no_of_cases
+Diarrhoea with severe dehydration <5 yrs,,no_of_cases
+Diarrhoea with severe dehydration >5 yrs,,no_of_cases
+Diarrhoea with some dehydration <5 yrs,,no_of_cases
+Diarrhoea with some dehydration >5 yrs,,no_of_cases
+Down's syndrome <5 yrs,,no_of_cases
+Down's syndrome >5 yrs,,no_of_cases
+Gastroenterirtis <5 yrs,,no_of_cases
+Gastroenterirtis >5 yrs,,no_of_cases
+Hypoxaemia (Spo2<90%) <5 yrs,,no_of_cases
+Hypoxaemia (Spo2<90%) >5 yrs,,no_of_cases
+Lower Respiratory Tract Infections <5 yrs,,no_of_cases
+Lower Respiratory Tract Infections >5 yrs,,no_of_cases
+Neonatal Sepsis <5 yrs,,no_of_cases
+Neonatal Sepsis >5 yrs,,no_of_cases
+Pneumonia <5 yrs,S.pneumoniae,no_of_cases
+Pneumonia >5 yrs,S.pneumoniae,no_of_cases
+Rev 2020 Pneumonia <5 yrs,S.pneumoniae,no_of_cases
+Rev 2020 Pneumonia >5 yrs,S.pneumoniae,no_of_cases
+Rheumatic Fever <5 yrs,,no_of_cases
+Rheumatic Fever >5 yrs,,no_of_cases
+Rift valley fever <5 yrs,,no_of_cases
+Rift valley fever >5 yrs,,no_of_cases
+Severe pneumonia <5 yrs,S.pneumoniae,no_of_cases
+Severe pneumonia >5 yrs,S.pneumoniae,no_of_cases
+Suspected Childhood Cancers <5 yrs,,no_of_cases
+Suspected Childhood Cancers >5 yrs,,no_of_cases
+Suspected anthrax <5 yrs,,no_of_cases
+Suspected anthrax >5 yrs,,no_of_cases
+Tested for Malaria <5 yrs,,no_of_cases
+Tested for Malaria >5 yrs,,no_of_cases
+Diarrhoea with no dehydration <5 yrs,,no_of_cases
+Diarrhoea with no dehydration >5 yrs,,no_of_cases
+Malaria in pregnancy <5 yrs,,no_of_cases
+Malaria in pregnancy >5 yrs,,no_of_cases
+Malnutrition <5 yrs,,no_of_cases
+Malnutrition >5 yrs,,no_of_cases
+Measles <5 yrs,,no_of_cases
+Measles >5 yrs,,no_of_cases
+Meningococcal Meningitis <5 yrs,,no_of_cases
+Meningococcal Meningitis >5 yrs,,no_of_cases
+Mental Disorders <5 yrs,,no_of_cases
+Mental Disorders >5 yrs,,no_of_cases
+Mumps <5 yrs,,no_of_cases
+Mumps >5 yrs,,no_of_cases
+Muscular skeletal conditions <5 yrs,,no_of_cases
+Muscular skeletal conditions >5 yrs,,no_of_cases
+Neonatal Tetanus <5 yrs,,no_of_cases
+Neonatal Tetanus >5 yrs,,no_of_cases
+Neoplasms <5 yrs,,no_of_cases
+Neoplasms >5 yrs,,no_of_cases
+Other Dis. Of Respiratory System <5 yrs,,no_of_cases
+Other Dis. Of Respiratory System >5 yrs,,no_of_cases
+Other Bites <5 yrs,,no_of_cases
+Other Bites >5 yrs,,no_of_cases
+Other Central Nervous System Conditions <5 yrs,,no_of_cases
+Other Central Nervous System Conditions >5 yrs,,no_of_cases
+Other Convulsive Disorders <5 yrs,,no_of_cases
+Other Convulsive Disorders >5 yrs,,no_of_cases
+Other Eye conditions <5 yrs,,no_of_cases
+Other Eye conditions >5 yrs,,no_of_cases
+Other Meningitis <5 yrs,,no_of_cases
+Other Meningitis >5 yrs,,no_of_cases
+Other injuries <5 yrs,,no_of_cases
+Other injuries >5 yrs,,no_of_cases
+Overweight (BMI >25) <5 yrs,,no_of_cases
+Overweight (BMI >25) >5 yrs,,no_of_cases
+Physical Disability <5 yrs,,no_of_cases
+Physical Disability >5 yrs,,no_of_cases
+Plague <5 yrs,,no_of_cases
+Plague >5 yrs,,no_of_cases
+Poisoning <5 yrs,,no_of_cases
+Poisoning >5 yrs,,no_of_cases
+Poliomyelitis (AFP) <5 yrs,,no_of_cases
+Poliomyelitis (AFP) >5 yrs,,no_of_cases
+Presumed Tuberculosis <5 yrs,,no_of_cases
+Presumed Tuberculosis >5 yrs,,no_of_cases
+Referrals from Community Unit <5 yrs,,no_of_cases
+Referrals from Community Unit >5 yrs,,no_of_cases
+Referrals to Community Unit <5 yrs,,no_of_cases
+Referrals to Community Unit >5 yrs,,no_of_cases
+Rickets <5 yrs,,no_of_cases
+Rickets >5 yrs,,no_of_cases
+Road Traffic Injuries <5 yrs,,no_of_cases
+Road Traffic Injuries >5 yrs,,no_of_cases
+Sexual Violence <5 yrs,,no_of_cases
+Sexual Violence >5 yrs,,no_of_cases
+Sexually Transmitted Infections <5 yrs,,no_of_cases
+Sexually Transmitted Infections >5 yrs,,no_of_cases
+Snake Bites <5 yrs,,no_of_cases
+Snake Bites >5 yrs,,no_of_cases
+Suspected Malaria <5 yrs,,no_of_cases
+Suspected Malaria >5 yrs,,no_of_cases
+Tetanus <5 yrs,,no_of_cases
+Tetanus >5 yrs,,no_of_cases
+Tonsilitis <5 yrs,,no_of_cases
+Tonsilitis >5 yrs,,no_of_cases
+Tryponosomiasis <5 yrs,,no_of_cases
+Tryponosomiasis >5 yrs,,no_of_cases
+Typhoid fever <5 yrs,,no_of_cases
+Typhoid fever >5 yrs,,no_of_cases
+Upper Respiratory Tract Infections <5 yrs,Upper Respiratory Tract Infections,no_of_cases
+Upper Respiratory Tract Infections >5 yrs,Upper Respiratory Tract Infections,no_of_cases
+Urinary Tract Infection <5 yrs,,no_of_cases
+Urinary Tract Infection >5 yrs,,no_of_cases
+Violence related injuries <5 yrs,,no_of_cases
+Violence related injuries >5 yrs,,no_of_cases
+Viral Haemorrhagic Fever <5 yrs,,no_of_cases
+Viral Haemorrhagic Fever >5 yrs,,no_of_cases
+Yellow fever cases <5 yrs,,no_of_cases
+Yellow fever cases >5 yrs,,no_of_cases
