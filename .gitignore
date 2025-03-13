@@ -133,9 +133,3 @@ dmypy.json
 .legacy
 dbt_packages/
 logs/
-<<<<<<< HEAD
-.github/
-=======
-
-.github
->>>>>>> 4dafbb7bb4c49227e6c4e89ddb2920c038627315
