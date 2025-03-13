@@ -132,4 +132,3 @@ dmypy.json
 .legacy
 dbt_packages/
 logs/
-.github/
