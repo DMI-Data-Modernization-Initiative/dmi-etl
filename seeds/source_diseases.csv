@@ -1,3 +1,46 @@
+<<<<<<< HEAD
+disease,threshold
+Malaria,5
+Cholera,10
+Dengue fever,10
+Acute Malnutrition,10
+Rabies,10
+Acute jaundice,10
+Neonatal deaths,10
+Measles,10
+Dysentery,10
+Yellow fever,5
+Typhoid fever,10
+Meningococcal meningitis,10
+Acute Flaccid Paralysis (AFP),10
+Neonatal Tetanus(NNT),10
+Guinea worm disease,10
+Anthrax,10
+Influenza,10
+Maternal deaths,10
+Bacterial Meningitis,10
+AEFI,10
+Other Viral Haemorrhagic Fevers,10
+Other cases,10
+Plague,10
+Rift Valley Fever,10
+SARI (Cluster =3 cases),10
+Tubercullosis,10
+CSF,10
+Shigella Dysentry,10
+Bartonella,10
+S.pneumoniae,10
+Leptospira,10
+Plasmodium,10
+Leishmania,10
+HIV-1,10
+B.pseudomallei,10
+Chikungunya,10
+Brucella,10
+C.burnetii,10 
+Salmonella,10
+Rickettsia,10
+=======
 disease,threshold
 Malaria,5
 Cholera,10
@@ -41,3 +84,4 @@ C.burnetii,10
 Salmonella,10
 Rickettsia,10
 Upper Respiratory Tract Infections,10
+>>>>>>> upstream/dev
