@@ -3,7 +3,14 @@ SELECT "Unique_ID",
        pid,
         screening_interviewdate::DATE as screening_date ,
        ROUND(screeningpoint:: NUMERIC) :: INT as screeningpoint,
-        eligible::INT as eligible,
+
+CASE
+  WHEN eligible::TEXT IN ('0') THEN 0
+  WHEN eligible::TEXT IN ('1', 'Yes', 'yes') THEN 1
+  WHEN eligible::TEXT IN ('2', 'No', 'no') THEN 2
+  ELSE NULL
+END AS eligible,
+    
          ROUND(gender:: numeric)::INT as gender,
             case
 	when consent = '<NA>' then 99
