@@ -37,7 +37,6 @@ select
 	sum(case when eligible = 1 then 1 else 0 end) as eligible,
 	sum(case when enrolled = 1 then 1 else 0 end) as enrolled,
 	sum(case when barcode > 1 then 1 else 0 end) as sampled,
-
 	sum(case when sarcov_result in ('Negative', 'Positive') then 1 else 0 end) as number_sars_cov_2_tested,
 	sum(case when sarcov_result = 'Positive' then 1 else 0 end) as number_sars_cov_2_positive,
 	sum(case when sarcov_result = 'Negative' then 1 else 0 end) as number_sars_cov_2_negative,
