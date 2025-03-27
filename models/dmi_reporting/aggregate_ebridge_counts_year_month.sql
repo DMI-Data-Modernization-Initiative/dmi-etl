@@ -1,5 +1,5 @@
 select
-    regexp_replace(sub_county.sub_county_unit_code, '\D', '', 'g') as subcounty_code,
+    subcounty_code,
     year_month,
     year,
     month,
