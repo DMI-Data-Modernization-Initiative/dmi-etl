@@ -5,21 +5,11 @@ with subset_data as (
 		mflcode::int,
 		eligible::int,
 		enrolled::int,
-		case sarcov_result
+		case "result" 
 			when 'NEG' then 'Negative'
 			when 'POS' then  'Positive'
-			else sarcov_result
-		end as sarcov_result,
-case rsv_result
-			when 'NEG' then 'Negative'
-			when 'POS' then  'Positive'
-			else rsv_result
-		end as rsv_result,
- case flu_result
-			when 'NEG' then 'Negative'
-			when 'POS' then  'Positive'
-			else flu_result
-		end as flu_result,
+			else "result" 
+		end as "result",
 		calculated_age::decimal,
 		sex::int,
 		barcode::int
@@ -37,19 +27,9 @@ select
 	sum(case when eligible = 1 then 1 else 0 end) as eligible,
 	sum(case when enrolled = 1 then 1 else 0 end) as enrolled,
 	sum(case when barcode > 1 then 1 else 0 end) as sampled,
-
-	sum(case when sarcov_result in ('Inconclusive', 'Invalid', 'Negative', 'Positive') then 1 else 0 end) as number_sars_cov_2_tested,
-	sum(case when sarcov_result = 'Positive' then 1 else 0 end) as number_sars_cov_2_positive,
-	sum(case when sarcov_result = 'Negative' then 1 else 0 end) as number_sars_cov_2_negative,
-	
-	sum(case when rsv_result in ('Inconclusive', 'Invalid', 'Negative', 'Positive') then 1 else 0 end) as number_rsv_tested,
-	sum(case when rsv_result = 'Positive' then 1 else 0 end) as number_rsv_positive,
-	sum(case when rsv_result = 'Negative' then 1 else 0 end) as number_rsv_negative,
-
-	sum(case when flu_result in ('Inconclusive', 'Invalid', 'Negative', 'Positive') then 1 else 0 end) as number_flu_tested,
-	sum(case when flu_result = 'Positive' then 1 else 0 end) as number_flu_positive,
-	sum(case when flu_result = 'Negative' then 1 else 0 end) as number_flu_negative,
-
+	sum(case when "result" in ('Negative', 'Positive') then 1 else 0 end) as number_sars_cov_2_tested,
+	sum(case when "result" = 'Positive' then 1 else 0 end) as number_sars_cov_2_positive,
+	sum(case when "result" = 'Negative' then 1 else 0 end) as number_sars_cov_2_negative,
 	cast(current_date as date) as load_date
 from subset_data
 left join {{ ref( 'dim_facility' ) }} as facility on facility.mfl_code = subset_data.mflcode
