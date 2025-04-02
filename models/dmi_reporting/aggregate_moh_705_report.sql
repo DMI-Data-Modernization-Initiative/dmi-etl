@@ -10,6 +10,7 @@ select
     facility.facility_name,
     indicator.indicator_description,
     moh_705.indicator_value,
+    moh_705.indicator_name,
     moh_705.data_source,
     cast(current_date as date) as load_date
 from {{ ref("fct_aggregate_moh_705") }} as moh_705

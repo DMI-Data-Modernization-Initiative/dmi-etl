@@ -13,6 +13,7 @@ with
             moh_705_mappings.month as month,
             moh_705_mappings.year_month as year_month,
             moh_705_mappings.indicator_value as indicator_value,
+            moh_705_mappings.source_indicator_name as indicator_name,
             'khis' as data_source
         from {{ ref("intermediate_khis_moh_705_mappings") }} as moh_705_mappings
         left join
