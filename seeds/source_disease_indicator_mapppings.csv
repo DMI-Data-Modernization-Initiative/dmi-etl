@@ -221,8 +221,8 @@ Gastroenterirtis <5 yrs,,no_of_cases
 Gastroenterirtis >5 yrs,,no_of_cases
 Hypoxaemia (Spo2<90%) <5 yrs,,no_of_cases
 Hypoxaemia (Spo2<90%) >5 yrs,,no_of_cases
-Lower Respiratory Tract Infections <5 yrs,,no_of_cases
-Lower Respiratory Tract Infections >5 yrs,,no_of_cases
+Lower Respiratory Tract Infections <5 yrs,Lower Respiratory Tract Infections,no_of_cases
+Lower Respiratory Tract Infections >5 yrs,Lower Respiratory Tract Infections,no_of_cases
 Neonatal Sepsis <5 yrs,,no_of_cases
 Neonatal Sepsis >5 yrs,,no_of_cases
 Pneumonia <5 yrs,S.pneumoniae,no_of_cases
