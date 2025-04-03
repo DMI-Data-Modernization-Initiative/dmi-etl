@@ -1,6 +1,7 @@
 select 
     gender.gender_2 as gender,
     age_group.age_group_category,
+    screeningpoint.screeningpoint_description,
     facility.facility_name,
     facility.latitude,
     facility.longitude,
@@ -17,6 +18,7 @@ select
 	sampled,
     cast(current_date as date) as load_date
 from {{ ref('fct_aggregate_afi_surveillance_cascade') }} as cascade
+left join {{ ref('dim_afi_screening_point') }} as screeningpoint on screeningpoint.screeningpoint_key = cascade.screeningpoint_key 
 left join {{ ref('dim_gender') }} as gender on gender.gender_key = cascade.gender_key 
 left join {{ ref('dim_age_group_afi') }} as age_group on age_group.age_group_key = cascade.age_group_key
 left join {{ ref('dim_facility') }} as facility on facility.facility_key = cascade.facility_key
