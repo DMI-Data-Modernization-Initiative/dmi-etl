@@ -6,7 +6,9 @@ SELECT
     COALESCE(date.date_key, 'unset') AS date_key,
     COALESCE(case_classification.case_classification_key, 'unset') AS case_classification_key,
     COUNT(DISTINCT enroll.PID) AS no_of_cases,
-    CAST(CURRENT_DATE AS DATE) AS load_date
+    CAST(CURRENT_DATE AS DATE) AS load_date,
+    enroll.screening_date,
+    enroll.screeningpoint
 FROM {{ ref('stg_afi_surveillance') }} AS enroll
 
 -- Joining case classification dimension
@@ -43,4 +45,6 @@ GROUP BY
     COALESCE(epi_week.epi_week_key, 'unset'),
     COALESCE(facility.facility_key, 'unset'),
     COALESCE(date.date_key, 'unset'),
-    COALESCE(case_classification.case_classification_key, 'unset')
+    COALESCE(case_classification.case_classification_key, 'unset'),
+    screening_date,
+    screeningpoint

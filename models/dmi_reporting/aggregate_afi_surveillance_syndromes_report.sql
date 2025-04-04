@@ -11,6 +11,8 @@ select
     case_classification.case_classification,
     case_classification.case_classification_full_name,
     syndromes.no_of_cases,
+    syndromes.screening_date,
+    syndromes.screeningpoint,
     cast(current_date as date) as load_date
 from {{ ref('fct_aggregate_afi_surveillance_syndromes') }} as syndromes
 left join {{ ref('dim_gender') }} as gender on gender.gender_key = syndromes.gender_key 
