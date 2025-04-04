@@ -10,6 +10,8 @@ SELECT gender.gender_2 as gender,
     date.Year as calender_year,
     disease as disease,
     positive_results.no_of_cases,
+    positive_results.screening_date,
+    positive_results.screeningpoint,
     pid,
     cast(current_date as date) as load_date
 from {{ ref('fct_aggregate_afi_surveillance_pcr_positive_results') }} as positive_results

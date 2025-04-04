@@ -16,7 +16,9 @@ positive_results as (
 		coalesce(date.date_key, 'unset') as date_key,
 		coalesce(disease_key, 'unset') as disease_key,
 		count(*) as no_of_cases,
-		enroll.pid
+		enroll.pid,
+		enroll.screening_date,
+		enroll.screeningpoint
 	from sub_set_data as pcr_results
 	left join {{ ref('stg_afi_surveillance') }} as enroll on enroll.pid = pcr_results.pid 
 	LEFT JOIN {{ ref('dim_gender') }} AS gender 
@@ -38,7 +40,9 @@ LEFT JOIN {{ ref('dim_age_group_afi') }} AS age_group
 		coalesce(facility.facility_key, 'unset'),
 		coalesce(date.date_key, 'unset'),
 		coalesce(disease_key, 'unset'),
-		enroll.pid
+		enroll.pid,
+		enroll.screening_date,
+		enroll.screeningpoint
 )
 select 
 	positive_results.*,
