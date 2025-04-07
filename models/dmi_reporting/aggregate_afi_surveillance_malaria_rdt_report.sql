@@ -4,11 +4,14 @@ gender.gender_2  as gender,
 facility.facility_name,
 age_group.age_group_category,
 epi_week.week_number,
+  screeningpoint.screeningpoint_description,
 date.year,
 date.month,
 result.lab_result as result,
 malaria_result.malaria_pos_category,
 malaria_rdt_results.cases_tested,
+malaria_rdt_results.screening_date,
+malaria_rdt_results.screeningpoint,
 cast(current_date as date) as load_date
 FROM 
 {{ ref('fct_aggregate_afi_surveillance_malaria_rdt_results') }} as malaria_rdt_results
@@ -22,4 +25,4 @@ left join {{ ref('dim_date') }} as date on date.date_key = malaria_rdt_results.d
 
   left join {{ ref('dim_lab_result') }} as result on result.lab_result_key = malaria_rdt_results.lab_result_key
  left join {{ ref('dim_malaria_results') }} as malaria_result on malaria_result.malaria_pos_category_key = malaria_rdt_results.malaria_pos_category_key
- 
+ left join {{ ref('dim_afi_screening_point') }} as screeningpoint on screeningpoint.screeningpoint_key = malaria_rdt_results.screeningpoint_key 
