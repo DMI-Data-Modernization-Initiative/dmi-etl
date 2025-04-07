@@ -26,9 +26,21 @@ select
     model_output_data.predicted_cases,
     model_output_data.incidence,
     model_output_data.predicted_diseases,
+    moh_705."pneuomonia<5",
+    moh_705."pneuomonia>5",
+    moh_705."severe_pneuomonia<5",
+    moh_705."severe_pneuomonia>5",
+    moh_705."rev_pneuomonia<5",
+    moh_705."rev_pneuomonia>5",
+    moh_705."lrti<5",
+    moh_705."lrti>5",
+    moh_705."urti<5",
+    moh_705."urti>5",
     moh_705.pneuomonia_cases,
     moh_705.upper_respiratory_infections_cases,
+    moh_705.lower_respiratory_infections_cases,
     moh_705.total_cases
+
 from model_output_data
 left join
     {{ ref("aggregate_moh_705_respiratory_diseases_report") }} as moh_705
