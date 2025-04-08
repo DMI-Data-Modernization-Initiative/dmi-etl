@@ -7,7 +7,9 @@ WITH malaria_rdt_results AS (
      malaria_rdt.enr_interviewdate,
      malaria_rdt.malariardtres, --This from labresult  - (Positive, Negative)
      malaria_rdt.malariares, --This from malaria result - (Mixed species, Pan Malaria & P.falciparum)
-     CASE WHEN  malaria_rdt.consent= 1 AND malariardtres IS NOT NULL then 1 else 0 end as malaria_rdt_tested
+     CASE WHEN  malaria_rdt.consent= 1 AND malariardtres IS NOT NULL then 1 else 0 end as malaria_rdt_tested,
+     malaria_rdt.screening_date,
+     malaria_rdt.screeningpoint 
     
    FROM {{ ref('stg_afi_surveillance') }} AS malaria_rdt 
    WHERE malaria_rdt.consent= 1  AND malariardtres IS NOT NULL --This is the condition to filter out the those with a malaria result
@@ -21,7 +23,10 @@ coalesce(facility.facility_key, 'unset') as facility_key,
 coalesce(date.date_key, 'unset') as date_key,
 coalesce(result.lab_result_key, 'unset') as lab_result_key,
 coalesce(malaria_result.malaria_pos_category_key, 'unset') as malaria_pos_category_key,
+coalesce(screeningpoint.screeningpoint_key, 'unset') as screeningpoint_key,
 malaria_rdt_tested as cases_tested,
+malaria_rdt_results.screening_date,
+malaria_rdt_results.screeningpoint,
 PID,
 cast(current_date as date) as load_date
 
@@ -38,4 +43,5 @@ LEFT JOIN {{ ref('dim_facility') }} AS facility
  left join {{ ref('dim_date') }} as date on date.date = malaria_rdt_results.enr_interviewdate
   left join {{ ref('dim_lab_result') }} as result on result.code = malaria_rdt_results.malariardtres
  left join {{ ref('dim_malaria_results') }} as malaria_result on malaria_result.code = malaria_rdt_results.malariares::int
- 
+ left join {{ ref('dim_afi_screening_point') }} as screeningpoint on screeningpoint.screeningpoint = malaria_rdt_results.screeningpoint
+
