@@ -9,7 +9,9 @@ select
     population_tbl.population,
     ebridge_ml_output.predicted_cases,
     ebridge_ml_output.predicted_diseases,
-    round((predicted_cases * 52 / population_tbl.population * 100000), 2) as incidence,
+    round(
+        ((predicted_cases * 12 / population_tbl.population) * 100000), 2
+    ) as incidence,
     cast(current_date as date) as load_date
 from ebridge_ml_output
 left join
