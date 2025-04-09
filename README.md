@@ -3,7 +3,7 @@ Contains dbt models for transformations for the SHIELD data warehouse
 
 ## Setting up locally
 ### Requirements 
-1. Make sure you have python installed: Python 3.8 and above 
+1. Make sure you have python installed: Python 3.8 and above
 2. For Windows preferably use Git Bash as your terminal. Download the git package here https://gitforwindows.org/ (It will include git bash)
 3. Make sure you have a PostgreSQL client to interact with your PostgreSQL database e.g PgAdmin, DBeaver, Azure Data Studio etc
 
