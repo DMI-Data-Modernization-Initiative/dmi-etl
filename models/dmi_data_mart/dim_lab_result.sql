@@ -2,6 +2,7 @@
 with lab_result_code as (
   select 1 as code union all
   select 2 as code 
+  
  ),
  final_data as (
   select

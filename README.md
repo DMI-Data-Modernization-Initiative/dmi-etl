@@ -1,5 +1,5 @@
 # DMI dbt project
-Contains dbt models for transformations for the SHIELD data warehouse
+Contains dbt models for transformations for the SHIELD data warehouse.
 
 ## Setting up locally
 ### Requirements 
