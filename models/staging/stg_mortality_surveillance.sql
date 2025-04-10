@@ -131,6 +131,13 @@ select
   date_tested::date as date_tested, 
   "result", 
   tat_receiving, 
-  tat_testing 
+  tat_testing,
+  sarcov_result,
+  rsv_result,
+  min_dob,
+  flu_ct,
+  rsv_ct,
+  flu_result,
+  sarscov_ct
 from 
   {{ source('central_raw_mortality', 'mortality_surveillance') }}

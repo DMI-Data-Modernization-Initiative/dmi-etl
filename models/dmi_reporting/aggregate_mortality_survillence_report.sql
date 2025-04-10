@@ -4,9 +4,11 @@ select
     facility.longitude,
 	age_group.age_group_category,
 	screen_date.date as screening_date,
+	screen_date.month as screening_month,
 	screen_epi_week.week_number as screening_epi_week,
 	screen_epi_week.year as screening_year,
 	date_collect.date as collection_date,
+	date_collect.month as collection_month,
 	collect_epi_week.week_number as collection_epi_week,
 	collect_epi_week.year as collection_year,
 	gender.gender as sex,
@@ -17,6 +19,12 @@ select
 	mortality.number_sars_cov_2_tested,
 	mortality.number_sars_cov_2_positive,
 	mortality.number_sars_cov_2_negative,
+	mortality.number_rsv_tested,
+	mortality.number_rsv_positive,
+	mortality.number_rsv_negative,
+	mortality.number_flu_tested,
+	mortality.number_flu_positive,
+	mortality.number_flu_negative,
 	cast(current_date as date) as load_date
 from {{ ref('fct_aggregate_mortality_survillence') }} as mortality
 left join {{ ref('dim_facility') }} as facility on facility.facility_key = mortality.facility_key

@@ -5,11 +5,21 @@ with subset_data as (
 		mflcode::int,
 		eligible::int,
 		enrolled::int,
-		case "result" 
+		case sarcov_result
 			when 'NEG' then 'Negative'
 			when 'POS' then  'Positive'
-			else "result" 
-		end as "result",
+			else sarcov_result
+		end as sarcov_result,
+case rsv_result
+			when 'NEG' then 'Negative'
+			when 'POS' then  'Positive'
+			else rsv_result
+		end as rsv_result,
+ case flu_result
+			when 'NEG' then 'Negative'
+			when 'POS' then  'Positive'
+			else flu_result
+		end as flu_result,
 		calculated_age::decimal,
 		sex::int,
 		barcode::int

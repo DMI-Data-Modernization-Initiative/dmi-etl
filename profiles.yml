@@ -1,0 +1,30 @@
+dmi_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_SERVER_DEV') }}"
+      database: "{{ env_var('DBT_DATABASE_DEV') }}"
+      schema: "{{ env_var('DBT_SCHEMA')}}"
+      port: "{{ env_var('DBT_PORT_DEV') | int }}"
+      user:  "{{env_var('DBT_USER_DEV')}}"
+      password: "{{ env_var('DBT_PASSWORD_DEV') }}"
+      threads: 4
+    test:
+      type: postgres
+      host: "{{ env_var('DBT_SERVER_TEST') }}"
+      database: "{{ env_var('DBT_DATABASE_TEST') }}"
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      port: "{{ env_var('DBT_PORT_TEST')  | int }}"
+      user:  "{{ env_var('DBT_USER_TEST') }}"
+      password: "{{ env_var('DBT_PASSWORD_TEST') }}"
+      threads: 4
+    prod:
+      type: postgres
+      host: "{{ env_var('DBT_SERVER_PROD') }}"
+      database: "{{ env_var('DBT_DATABASE_PROD') }}"
+      schema: "{{ env_var('DBT_SCHEMA') }}"
+      port: "{{ env_var('DBT_PORT_PROD') | int }}"
+      user:  "{{ env_var('DBT_USER_PROD') }}"
+      password: "{{ env_var('DBT_PASSWORD_PROD') }}"
+      threads: 4
