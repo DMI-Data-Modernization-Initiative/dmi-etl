@@ -3,6 +3,8 @@ select
     facility.latitude,
     facility.longitude,
 	screen_date.date as screen_date,
+	screen_date.year as screen_year,
+	screen_date.month as screen_month,
 	age_group.age_group_category,
 	pat_outcome.patient_outcome,
 	epi_week.week_number as screening_epi_week,
