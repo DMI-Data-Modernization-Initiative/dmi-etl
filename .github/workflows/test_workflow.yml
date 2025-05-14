@@ -1,4 +1,4 @@
-name: Conduct Code Test
+name: SHIELD DQA Tests
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  test-code:
+  test-models:
     runs-on: ubuntu-latest
     env:
       DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
@@ -32,9 +32,7 @@ jobs:
       - name: Run dbt seeds for test
         run: |
           dbt seed --profiles-dir ./profiles/ --target test --full-refresh
-      - name: Run dbt models for test
-        run: |
-          dbt run --profiles-dir ./profiles/ --target test
-      - name: Run dbt tests for test
+
+      - name: Run Tests for all models
         run: |
           dbt test --profiles-dir ./profiles/ --target test
