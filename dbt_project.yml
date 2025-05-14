@@ -61,4 +61,4 @@ dispatch:
     search_order: ['tsql_utils', 'audit_helper']
 
 vars:
-  'dbt_date:time_zone': 'America/Los_Angeles'
+  'dbt_date:time_zone': 'Africa/Nairobi'
