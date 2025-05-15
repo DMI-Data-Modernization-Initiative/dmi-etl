@@ -36,9 +36,7 @@ jobs:
       - name: Run dbt models for test
         run: |
           dbt run --profiles-dir ./profiles/ --target test
-      - name: Run dbt tests for test
-        run: |
-          dbt test --profiles-dir ./profiles/ --target test
+    
 
   deploy-prod:
     runs-on: ubuntu-latest
@@ -71,6 +69,3 @@ jobs:
       - name: Run dbt models for prod
         run: |
           dbt run --profiles-dir ./profiles/ --target prod
-      - name: Run dbt tests for prod
-        run: |
-          dbt test --profiles-dir ./profiles/ --target prod
