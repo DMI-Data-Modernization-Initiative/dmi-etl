@@ -1,9 +1,8 @@
 name: SHIELD DQA Tests
 
 on:
-  push:
-    branches:
-      - dev
+  schedule:
+    - cron: '*/10 * * * *'
 
 jobs:
   test-models:
@@ -36,3 +35,35 @@ jobs:
       - name: Run Tests for all models
         run: |
           dbt test --profiles-dir ./profiles/ --target test
+
+  test-prod-models:
+      runs-on: ubuntu-latest
+      env:
+        DBT_SCHEMA: ${{ secrets.DBT_SCHEMA }}
+        DBT_SERVER_PROD: ${{ secrets.DBT_SERVER_PROD }}
+        DBT_PORT_PROD: ${{ secrets.DBT_PORT_PROD }}
+        DBT_USER_PROD: ${{ secrets.DBT_USER_PROD }}
+        DBT_PASSWORD_PROD: ${{ secrets.DBT_PASSWORD_PROD }}
+        DBT_DATABASE_PROD: ${{ secrets.DBT_DATABASE_PROD }}
+      steps:
+        - name: Checkout repository
+          uses: actions/checkout@v4
+          with:
+            ref: main
+
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.12'
+
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install dbt-postgres
+            dbt deps --profiles-dir ./profiles/ --target prod
+        - name: Run dbt seeds for prod
+          run: |
+            dbt seed --profiles-dir ./profiles/ --target prod --full-refresh 
+        - name: Run tests for prod models
+          run: |
+            dbt test --profiles-dir ./profiles/ --target prod
