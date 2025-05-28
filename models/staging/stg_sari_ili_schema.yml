@@ -7,256 +7,256 @@ models:
         description: Unique ID given to the SARI/ILI cases
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Patient_id_exists
+              name: stg_sari_ili_Patient_id_exists
           - dbt_expectations.expect_column_values_to_be_unique:
-              name: Patient_id_is_unique
+              name: stg_sari_ili_Patient_id_is_unique
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Patient_id_is_a_string
+              name: stg_sari_ili_Patient_id_is_a_string
               column_type: text
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Patient_id_is_not_null
+              name: stg_sari_ili_Patient_id_is_not_null
               row_condition: "patient_id is not null"
               
       - name: date_screened
         description: The date when the case was screed for SARI/ILI
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Date_screened_exists
+              name: stg_sari_ili_Date_screened_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Date_screened_is_a_date
+              name: stg_sari_ili_Date_screened_is_a_date
               column_type: date
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Date_screened_is_not_null
+              name: stg_sari_ili_Date_screened_is_not_null
               row_condition: "date_screened is not null"
 
       - name: date_enrolled
         description: Checks whether the client has been enrolled for SARI/ILI
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Date_enrolled_exists
+              name: stg_sari_ili_Date_enrolled_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Date_enrolled_is_a_date
+              name: stg_sari_ili_Date_enrolled_is_a_date
               column_type: date
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Date_enrolled_is_not_null
+              name: stg_sari_ili_Date_enrolled_is_not_null
               row_condition: "date_enrolled is not null"
       
       - name: eligible
         description: Checks whether the client is eligible for SARI/ILI
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Eligible_exists
+              name: stg_sari_ili_Eligible_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Elligible_is_integer
+              name: stg_sari_ili_Elligible_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_be_between:
-              name: Eligible_is_boolean_value
+              name: stg_sari_ili_Eligible_is_boolean_value
               min_value: 0 
               max_value: 1
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Eligible_is_not_null
+              name: stg_sari_ili_Eligible_is_not_null
               row_condition: "eligible is not null"
 
       - name: enrolled
         description: Checks whether the client has been enrolled for SARI/ILI
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Enrolled_exists
+              name: stg_sari_ili_Enrolled_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Enrolled_is_integer
+              name: stg_sari_ili_Enrolled_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_be_between:
-              name: Enrolled_is_boolean_value
+              name: stg_sari_ili_Enrolled_is_boolean_value
               min_value: 0 
               max_value: 1
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Enrolled_is_not_null
+              name: stg_sari_ili_Enrolled_is_not_null
               row_condition: "enrolled is not null"
 
       - name: facility_name
         description: The name of the health facility
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Facility_name_exists
+              name: stg_sari_ili_Facility_name_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Facility_name_is_a_VARCHAR
+              name: stg_sari_ili_Facility_name_is_a_VARCHAR
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Facility_name_is_not_null
+              name: stg_sari_ili_Facility_name_is_not_null
               row_condition: "facility_name is not null"
 
       - name: age_in_years
         description: Case's age in years
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Age_exists
+              name: stg_sari_ili_Age_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Age_is_numeric
+              name: stg_sari_ili_Age_is_numeric
               column_type: numeric
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Age_is_not_null
+              name: stg_sari_ili_Age_is_not_null
               row_condition: "age_in_years is not null"
 
       - name: gender
         description: Gender of the case
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Gender_exists
+              name: stg_sari_ili_Gender_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Gender_is_a_string
+              name: stg_sari_ili_Gender_is_a_string
               column_type: text
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Gender_is_not_null
+              name: stg_sari_ili_Gender_is_not_null
               row_condition: "gender is not null"
           - dbt_expectations.expect_column_values_to_be_in_set:
-              name: Gender_constraints_match
+              name: stg_sari_ili_Gender_constraints_match
               value_set: ['Male','Female']
         
       - name: date_onset
         description: Date when the condition started
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Date_onset_exists
+              name: stg_sari_ili_Date_onset_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Date_onset_is_a_date
+              name: stg_sari_ili_Date_onset_is_a_date
               column_type: date
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Date_onset_is_not_null
+              name: stg_sari_ili_Date_onset_is_not_null
               row_condition: "date_onset is not null"
       
       - name: case_def
         description: SARI/ILI case definition
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Case_def_exists
+              name: stg_sari_ili_Case_def_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Case_def_is_integer
+              name: stg_sari_ili_Case_def_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Case_def_is_not_null
+              name: stg_sari_ili_Case_def_is_not_null
               row_condition: "case_def is not null"
 
       - name: chronic
         description: Documents if the condition of the case is chronic
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Chronic_exists
+              name: stg_sari_ili_Chronic_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Chronic_is_integer
+              name: stg_sari_ili_Chronic_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Chronic_is_not_null
+              name: stg_sari_ili_Chronic_is_not_null
               row_condition: "chronic is not null"
 
       - name: flutest
         description: Flu test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Flutest_exists
+              name: stg_sari_ili_Flutest_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Flutest_is_integer
+              name: stg_sari_ili_Flutest_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: flutest_is_not_null
+              name: stg_sari_ili_flutest_is_not_null
               row_condition: "flutest is not null"
       
       - name: covidtest
         description: Covid 19 test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Covidtest_exists
+              name: stg_sari_ili_Covidtest_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Covidtest_is_varchar
+              name: stg_sari_ili_Covidtest_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Covidtest_is_not_null
+              name: stg_sari_ili_Covidtest_is_not_null
               row_condition: "covidtest is not null"
       
       - name: date_assesment
         description: Date when the SARI/ILI assessment was done to the patient
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Date_assesment_exists
+              name: stg_sari_ili_Date_assesment_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Date_assesment_is_a_date
+              name: stg_sari_ili_Date_assesment_is_a_date
               column_type: date
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Date_assesment_is_not_null
+              name: stg_sari_ili_Date_assesment_is_not_null
               row_condition: "date_assesment is not null"
 
       - name: outcome
         description: Flu test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Outcome_exists
+              name: stg_sari_ili_Outcome_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Outcome_is_integer
+              name: stg_sari_ili_Outcome_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Outcome_is_not_null
+              name: stg_sari_ili_Outcome_is_not_null
               row_condition: "outcome is not null"
 
       - name: date_collected
         description: Date when the lab test sample was collected
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Date_collected_exists
+              name: stg_sari_ili_Date_collected_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Date_collected_is_a_date
+              name: stg_sari_ili_Date_collected_is_a_date
               column_type: date
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Date_collected_is_not_null
+              name: stg_sari_ili_Date_collected_is_not_null
               row_condition: "date_collected is not null"
 
       - name: samplecollected
         description: The type of the sample collected
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Samplecollected_exists
+              name: stg_sari_ili_Samplecollected_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Samplecollected_is_varchar
+              name: stg_sari_ili_Samplecollected_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Samplecollected_is_not_null
+              name: stg_sari_ili_Samplecollected_is_not_null
               row_condition: "samplecollected is not null"
 
       - name: sampletested
         description: The type of the sample tested
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Sampletested_exists
+              name: stg_sari_ili_Sampletested_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Sampletested_is_varchar
+              name: stg_sari_ili_Sampletested_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Sampletested_is_not_null
+              name: stg_sari_ili_Sampletested_is_not_null
               row_condition: "sampletested is not null"   
       
       - name: date_tested
         description: Date when the sample was tested
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Date_tested_exists
+              name: stg_sari_ili_Date_tested_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Date_tested_is_a_date
+              name: stg_sari_ili_Date_tested_is_a_date
               column_type: date
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Date_tested_is_not_null
+              name: stg_sari_ili_Date_tested_is_not_null
               row_condition: "date_tested is not null"
 
       - name: flu_positive
         description: SARI/ILI Positive results for the Influenza A & B test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: flu_positive_exists
+              name: stg_sari_ili_flu_positive_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: flu_positive_is_integer
+              name: stg_sari_ili_flu_positive_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: flu_positive_is_not_null
+              name: stg_sari_ili_flu_positive_is_not_null
               row_condition: "flu_positive is not null"
           - dbt_expectations.expect_column_values_to_be_between:
-              name: flu_positive_constraints_match
+              name: stg_sari_ili_flu_positive_constraints_match
               min_value: 0 # Negative
               max_value: 1 # Positive
       
@@ -264,15 +264,15 @@ models:
         description: SARI/ILI Positive results for the Influenza A test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Flu_A_positive_exists
+              name: stg_sari_ili_Flu_A_positive_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Flu_A_positive_is_integer
+              name: stg_sari_ili_Flu_A_positive_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Flu_A_positive_is_not_null
+              name: stg_sari_ili_Flu_A_positive_is_not_null
               row_condition: "flua_positive is not null"
           - dbt_expectations.expect_column_values_to_be_between:
-              name: flua_positive_constraints_match
+              name: stg_sari_ili_flua_positive_constraints_match
               min_value: 0 # Negative
               max_value: 1 # Positive
 
@@ -280,15 +280,15 @@ models:
         description: Positive results for the Influenza A virus type H3N2 test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: H3N2_positive_exists
+              name: stg_sari_ili_H3N2_positive_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: H3N2_positive_is_integer
+              name: stg_sari_ili_H3N2_positive_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: H3N2_positive_is_not_null
+              name: stg_sari_ili_H3N2_positive_is_not_null
               row_condition: "h3n2 is not null"
           - dbt_expectations.expect_column_values_to_be_between:
-              name: h3n2_constraints_match
+              name: stg_sari_ili_h3n2_constraints_match
               min_value: 0 # Negative
               max_value: 1 # Positive
 
@@ -296,15 +296,15 @@ models:
         description: Positive results for the Influenza virus type ph1n1 test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: PH1N1_exists
+              name: stg_sari_ili_PH1N1_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: PH1N1_is_integer
+              name: stg_sari_ili_PH1N1_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: PH1N1_is_not_null
+              name: stg_sari_ili_PH1N1_is_not_null
               row_condition: "ph1n1 is not null" 
           - dbt_expectations.expect_column_values_to_be_between:
-              name: ph1n1_constraints_match
+              name: stg_sari_ili_ph1n1_constraints_match
               min_value: 0 # Negative
               max_value: 1 # Positive
 
@@ -312,36 +312,36 @@ models:
         description: Influenza A Non Sub Typable 2
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: unsub_non_exists
+              name: stg_sari_ili_unsub_non_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: unsub_non_is_integer
+              name: stg_sari_ili_unsub_non_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: unsub_non_is_not_null
+              name: stg_sari_ili_unsub_non_is_not_null
               row_condition: "unsub_non is not null" 
              
       - name: notsubtyp
         description: Influenza A Not Yet Sub Typed 
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: notsubtyp_exists
+              name: stg_sari_ili_notsubtyp_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: notsubtyp_is_integer
+              name: stg_sari_ili_notsubtyp_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: notsubtyp_is_not_null
+              name: stg_sari_ili_notsubtyp_is_not_null
               row_condition: "notsubtyp is not null" 
 
       - name: flub_positive
         description: SARI/ILI Positive results for the Influenza B test
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: Flu_B_positive_exists
+              name: stg_sari_ili_Flu_B_positive_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: Flu_B_positive_is_integer
+              name: stg_sari_ili_Flu_B_positive_is_integer
               column_type: integer
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: Flu_B_positive_is_not_null
+              name: stg_sari_ili_Flu_B_positive_is_not_null
               row_condition: "flub_positive is not null"
           - dbt_expectations.expect_column_values_to_be_between:
               name: flub_positive_constraints_match
@@ -352,82 +352,82 @@ models:
         description: Yamagata Type of influenza B lineage in a patient
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: yamagata_exists
+              name: stg_sari_ili_yamagata_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: yamagata_is_varchar
+              name: stg_sari_ili_yamagata_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: yamagata_is_not_null
+              name: stg_sari_ili_yamagata_is_not_null
               row_condition: "yamagata is not null"   
 
       - name: victoria
         description: Victoria Type of influenza B lineage in a patient
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: victoria_exists
+              name: stg_sari_ili_victoria_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: victoria_is_varchar
+              name: stg_sari_ili_victoria_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: victoria_is_not_null
+              name: stg_sari_ili_victoria_is_not_null
               row_condition: "victoria is not null"   
 
       - name: flub_undetermined
         description: Type of influenza B lineage not determined in a patient
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: flub_undetermined_exists
+              name: stg_sari_ili_flub_undetermined_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: flub_undetermined_is_varchar
+              name: stg_sari_ili_flub_undetermined_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: flub_undetermined_is_not_null
+              name: stg_sari_ili_flub_undetermined_is_not_null
               row_condition: "flub_undetermined is not null"          
 
       - name: covidpos
         description: Test results for COVID-19 which are Positive
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: covidpos_exists
+              name: stg_sari_ili_covidpos_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: covidpos_is_varchar
+              name: stg_sari_ili_covidpos_is_varchar
               column_type: CHARACTER VARYING
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: covidpos_is_not_null
+              name: stg_sari_ili_covidpos_is_not_null
               row_condition: "covidpos is not null" 
       
       - name: county
         description: Case's County
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: County_exists
+              name: stg_sari_ili_County_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: County_is_a_string
+              name: stg_sari_ili_County_is_a_string
               column_type: text
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: County_is_not_null
+              name: stg_sari_ili_County_is_not_null
               row_condition: "county is not null"
 
       - name: longitude
         description: Patient's GPS coordinates of domicile
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: longitude_exists
+              name: stg_sari_ili_longitude_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: longitude_is_double_precision
+              name: stg_sari_ili_longitude_is_double_precision
               column_type: DOUBLE PRECISION
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: longitude_is_not_null
+              name: stg_sari_ili_longitude_is_not_null
               row_condition: "longitude is not null"  
 
       - name: latitude
         description: Patient's GPS coordinates of domicile
         tests:
           - dbt_expectations.expect_column_to_exist:
-              name: latitude_exists
+              name: stg_sari_ili_latitude_exists
           - dbt_expectations.expect_column_values_to_be_of_type:
-              name: latitude_is_double_precision
+              name: stg_sari_ili_latitude_is_double_precision
               column_type: DOUBLE PRECISION
           - dbt_expectations.expect_column_values_to_not_be_null:
-              name: latitude_is_not_null
+              name: stg_sari_ili_latitude_is_not_null
               row_condition: "latitude is not null"                  
