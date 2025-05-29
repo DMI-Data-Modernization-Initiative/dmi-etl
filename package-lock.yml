@@ -1,6 +1,10 @@
 packages:
-- package: dbt-labs/dbt_utils
-  version: 0.8.6
-- package: dbt-msft/tsql_utils
-  version: 0.8.1
-sha1_hash: 7f9ac06a261ffcdd416dcb0d3495d25c61846e31
+  - package: dbt-labs/dbt_utils
+    version: 0.8.6
+  - package: dbt-msft/tsql_utils
+    version: 0.8.1
+  - package: metaplane/dbt_expectations
+    version: 0.10.8
+  - package: godatadriven/dbt_date
+    version: 0.12.0
+sha1_hash: a1ea4f1ecfd9f1b0ae634b3367636e93fc77936e
