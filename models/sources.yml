@@ -27,9 +27,12 @@ sources:
     schema: staging
     tables:
       - name: stg_ebridge_output
-        description: This table contains raw data from the e-bridge ML model
+        description: This table contains raw data from the e-bridge diarrhoeal ML model
       - name: stg_ebridge_output_actual_predicted
+        description: This table contains raw data from the e-bridge diarrhoeal ML model
       - name: stg_ebridge_output_respiratory_illness
+        description: This table contains raw data from the e-bridge respiratory ML model
+
   - name: central_raw_mortality
     database: SHIELD
     schema: central_raw_mortality
