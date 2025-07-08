@@ -6,6 +6,7 @@ select
     coalesce(county.county_key, 'unset') as county_key,
     coalesce(sub_county.sub_county_key, 'unset') as sub_county_key,
     coalesce(epi_week.epi_week_key, 'unset') as epi_week_key,
+    ebridge_ml_output.year_epi_week,
     population_tbl.population,
     ebridge_ml_output.predicted_cases,
     ebridge_ml_output.predicted_diseases,
@@ -16,7 +17,7 @@ select
 from ebridge_ml_output
 left join
     {{ ref("sub_county_population") }} as population_tbl
-    on ebridge_ml_output.subcountyid = population_tbl.subcounty_id
+    on ebridge_ml_output.subcounty = population_tbl.subcounty
 left join
     {{ ref("dim_county") }} as county
     on concat(county.county, ' ', 'County') = ebridge_ml_output.county

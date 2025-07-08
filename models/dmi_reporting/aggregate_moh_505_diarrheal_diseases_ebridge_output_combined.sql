@@ -3,8 +3,9 @@ with
         select
             county,
             sub_county,
-            regexp_replace(epi_week, '([^0-9]*)([0-9]+).*', '\2')::int as epi_week,
-            right(epi_week, 4)::int as year,
+            epi_week,
+            year,
+            year_epi_week,
             sub_county_iso_code,
             county_iso_code,
             population,
@@ -18,6 +19,7 @@ select
     model_output_data.sub_county,
     model_output_data.epi_week,
     model_output_data.year,
+    model_output_data.year_epi_week,
     model_output_data.sub_county_iso_code,
     model_output_data.county_iso_code,
     model_output_data.population,
@@ -33,6 +35,5 @@ left join
     {{ ref("aggregate_moh_505_diarrheal_diseases_report") }} as moh_505
     on moh_505.county = model_output_data.county
     and moh_505.sub_county = model_output_data.sub_county
-    and moh_505.epi_week = model_output_data.epi_week
-    and moh_505.year = model_output_data.year
+    and moh_505.year_epi_week = model_output_data.year_epi_week
 where predicted_diseases = 'Diarrhoeal Diseases'

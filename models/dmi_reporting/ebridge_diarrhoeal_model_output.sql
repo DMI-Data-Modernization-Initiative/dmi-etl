@@ -1,7 +1,9 @@
 select
     concat(county.county, ' ', 'County') as county,
     concat(sub_county.sub_county, ' ', 'Sub County') as sub_county,
-    concat('W', epi_week.week_number, ' ', epi_week.year) as epi_week,
+    epi_week.week_number as epi_week,
+    epi_week.year as year,
+    model_output.year_epi_week,
     sub_county.iso_code as sub_county_iso_code,
     county.iso_code as county_iso_code,
     model_output.population,
