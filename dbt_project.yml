@@ -59,3 +59,6 @@ dispatch:
     search_order: ['tsql_utils', 'dbt_expectations']
   - macro_namespace: audit_helper
     search_order: ['tsql_utils', 'audit_helper']
+
+vars:
+  'dbt_date:time_zone': 'Africa/Nairobi'
