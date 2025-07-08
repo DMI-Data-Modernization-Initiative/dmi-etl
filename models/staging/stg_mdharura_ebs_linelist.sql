@@ -8,7 +8,7 @@ select
   "VERSION", 
   "SUGGESTIONS", 
   "UNITS", 
-  "CREATEDAT", 
+  "CREATEDAT"::date as "CREATEDAT", 
   "UPDATEDAT", 
   "SPOT", 
   "UNIT_ID", 
