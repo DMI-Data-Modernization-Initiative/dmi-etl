@@ -4,7 +4,7 @@ Kenya,Kericho County,Ainamoi Sub County,GshNTMZJ5r1,KE_SubCounty_3026,Subcounty
 Kenya,Nandi County,Aldai Sub County,Sq2fLWnOCGg,KE_SubCounty_3171,Subcounty
 Kenya,Siaya County,Alego Usonga Sub County,Cu46otDi1RO,KE_SubCounty_3203,Subcounty
 Kenya,Mandera County,Arabia Sub County,QiXBA5Ji7dA,KE_SubCounty_3272,Subcounty
-Kenya,Turkana County,Aroo Sub County,FKt9UVErwh3,,Subcounty
+Kenya,Turkana County,Aroo Sub County,FKt9UVErwh3,3293,Subcounty
 Kenya,Machakos County,Athi River Sub County,BxfsSc6Svrc,KE_SubCounty_3093,Subcounty
 Kenya,Migori County,Awendo Sub County,ka9Uv3Ckcbd,KE_SubCounty_3125,Subcounty
 Kenya,Garissa County,Balambala Sub County,FGBNPr91pXH,KE_SubCounty_2993,Subcounty
@@ -34,7 +34,7 @@ Kenya,Bungoma County,Cheptais Sub County,NZphHeczehh,KE_SubCounty_1289,Subcounty
 Kenya,Trans Nzoia County,Cherangany Sub County,f18kGo9yXWo,KE_SubCounty_3215,Subcounty
 Kenya,Nandi County,Chesumei Sub County,xLWuQq3DjOR,KE_SubCounty_3169,Subcounty
 Kenya,Tharaka Nithi County,Chuka Sub County,JmE1qRVQD4F,KE_SubCounty_3213,Subcounty
-Kenya,Garissa County,Dadaab Refugee Camp Sub County,wYTqff68aVM,,Subcounty
+Kenya,Garissa County,Dadaab Refugee Camp Sub County,wYTqff68aVM,3267,Subcounty
 Kenya,Garissa County,Dadaab Sub County,EW4Jw4dVWBt,KE_SubCounty_2991,Subcounty
 Kenya,Nairobi County,Dagoretti North Sub County,CcTr4bcVGAG,KE_SubCounty_3154,Subcounty
 Kenya,Nairobi County,Dagoretti South Sub County,sqNWYDHZZ6W,KE_SubCounty_3153,Subcounty
@@ -72,14 +72,14 @@ Kenya,Meru County,Imenti Central Sub County,OnNcTsJgfvL,KE_SubCounty_3112,Subcou
 Kenya,Meru County,Imenti North Sub County,BDxUGx86itV,KE_SubCounty_3113,Subcounty
 Kenya,Meru County,Imenti South Sub County,AFIlzKNxXST,KE_SubCounty_3110,Subcounty
 Kenya,Isiolo County,Isiolo Sub County,I2LYLqKU6AW,KE_SubCounty_3004,Subcounty
-Kenya,Muranga County,Ithanga Sub County,ETGSIeGBsqt,,Subcounty
+Kenya,Muranga County,Ithanga Sub County,ETGSIeGBsqt,3270,Subcounty
 Kenya,Mombasa County,Jomvu Sub County,vSISrsNNHwq,KE_SubCounty_3131,Subcounty
 Kenya,Kiambu County,Juja Sub County,aiqi2bz0IMI,KE_SubCounty_3038,Subcounty
 Kenya,Kiambu County,Kabete Sub County,lb5LzWiUX8Y,KE_SubCounty_3032,Subcounty
 Kenya,Homa Bay County,Kabondo Kasipul Sub County,BzFBYZhF5fx,KE_SubCounty_3001,Subcounty
 Kenya,Bungoma County,Kabuchai Sub County,k1mze33jOs0,KE_SubCounty_2970,Subcounty
 Kenya,West Pokot County,Kacheliba Sub County,wwDtq26ddp6,KE_SubCounty_3264,Subcounty
-Kenya,Muranga County,Kahuro Sub County,s2jeo1C9aM8,,Subcounty
+Kenya,Muranga County,Kahuro Sub County,s2jeo1C9aM8,3271,Subcounty
 Kenya,Makueni County,Kaiti Sub County,pKJ4NZGPzTA,KE_SubCounty_3251,Subcounty
 Kenya,Kajiado County,Kajiado Central Sub County,SZapM1R0Kti,KE_SubCounty_3009,Subcounty
 Kenya,Kajiado County,Kajiado East Sub County,g6gTzQ5nfYq,KE_SubCounty_3008,Subcounty
@@ -163,8 +163,8 @@ Kenya,Kakamega County,Likuyani Sub County,wMv0s3U2nnG,KE_SubCounty_3021,Subcount
 Kenya,Kiambu County,Limuru Sub County,xhVi71INcFs,KE_SubCounty_3030,Subcounty
 Kenya,Turkana County,Loima Sub County,OZiGQn2R8kK,KE_SubCounty_3222,Subcounty
 Kenya,Kajiado County,Loitokitok Sub County,eyADpAXM834,KE_SubCounty_3006,Subcounty
-Kenya,Turkana County,Lokichoggio Sub County,tKOna0n1Nmk,,Subcounty
-Kenya,Turkana County,Lokiriama Sub County,UGFoTN6rMVy,,Subcounty
+Kenya,Turkana County,Lokichoggio Sub County,tKOna0n1Nmk,3295,Subcounty
+Kenya,Turkana County,Lokiriama Sub County,UGFoTN6rMVy,3294,Subcounty
 Kenya,Vihiga County,Luanda Sub County,lkYdgjRSOoE,KE_SubCounty_3234,Subcounty
 Kenya,Kakamega County,Lugari Sub County,ZOdhgR19Akq,KE_SubCounty_3022,Subcounty
 Kenya,Kwale County,Lunga Lunga Sub County,TdcYaufNV4p,KE_SubCounty_3079,Subcounty
@@ -267,7 +267,7 @@ Kenya,Marsabit County,Saku Sub County,WILszL634oZ,KE_SubCounty_3107,Subcounty
 Kenya,Samburu County,Samburu Central Sub County,EmQRGVtvWy3,KE_SubCounty_3199,Subcounty
 Kenya,Samburu County,Samburu East Sub County,ldZ10N9unC9,KE_SubCounty_3197,Subcounty
 Kenya,Samburu County,Samburu North Sub County,E2DGjZRlwbY,KE_SubCounty_3198,Subcounty
-Kenya,Kwale County,Samburu Sub County,TnCu7j4XNj6,,Subcounty
+Kenya,Kwale County,Samburu Sub County,TnCu7j4XNj6,3277,Subcounty
 Kenya,Busia County,Samia Sub County,NHRktMsAkO1,KE_SubCounty_2974,Subcounty
 Kenya,Kisumu County,Seme Sub County,LRNmnMw1fBs,KE_SubCounty_3065,Subcounty
 Kenya,Kakamega County,Shinyalu Sub County,sjlSPeRgl7d,KE_SubCounty_3012,Subcounty
@@ -280,7 +280,7 @@ Kenya,Nairobi County,Starehe Sub County,nKHlZyN0lt9,KE_SubCounty_3140,Subcounty
 Kenya,Homa Bay County,Suba Central Sub County,MYSShwNcjzb,3265,Subcounty
 Kenya,Homa Bay County,Suba South Sub County,HoRW5aISmiD,KE_SubCounty_2995,Subcounty
 Kenya,Nakuru County,Subukia Sub County,zQEuNRaPYgE,KE_SubCounty_3160,Subcounty
-Kenya,Turkana County,Suguta Sub County,m1X5Chs8cRL,,Subcounty
+Kenya,Turkana County,Suguta Sub County,m1X5Chs8cRL,3292,Subcounty
 Kenya,Migori County,Suna East Sub County,nHEr5EciFh0,KE_SubCounty_3124,Subcounty
 Kenya,Migori County,Suna West Sub County,VtuwXD7O1O9,KE_SubCounty_3123,Subcounty
 Kenya,Wajir County,Tarbaj Sub County,fmNokBURXjM,KE_SubCounty_3241,Subcounty
