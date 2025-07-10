@@ -13,35 +13,35 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ["Female", "Male", "unset"]
+             values: ['Female', 'Male', 'unset']
       - name: age_group_category
         description: Age group categorization of under five years or over five year
         tests:
           - accepted_values:
-              values: ["< 5 years", ">= 5 years", "unset"]
+             values: ['< 5 years', '>= 5 years', 'unset']  
           - not_null:
               where: "indicator_description not in ('CSF -Typed HiB','Bacterial Meningitis +ve Sp','CSF -Typed +ve NmA','Bacterial Meningitis No Contaminated','Bacterial Meningitis +ve H Influenza','CSF -Type Indeterminate','CSF -Typed +ve NmX','Bacterial Meningitis +ve Nm','Dysentery <5 yrs, Cases','CSF -Typed +ve NmC','Bacterial Meningitis No Tested','Bacterial Meningitis No CSF','CSF -Typed +ve NmW 135','CSF -Typed +ve NmB')"
       - name: epi_week
         description: EPI week of the report
         tests:
           - not_null
-      - name: year
+      - name: year         
         description: Year of the report
         tests:
           - not_null
-      - name: county
+      - name: county         
         description: County where data was reported for
         tests:
           - not_null
-      - name: facility_name
+      - name: facility_name       
         description: Facility where data was reported for
         tests:
           - not_null
-      - name: indicator_description
+      - name: indicator_description     
         description: Indicator name being reported
         tests:
           - not_null
-      - name: indicator_value
+      - name: indicator_value      
         description: Indicator name being reported
         tests:
           - not_null
@@ -52,19 +52,19 @@ models:
         description: Date when indicator was reported
         tests:
           - not_null
-      - name: county
+      - name: county 
         description: County where indicator was reported
         tests:
-          - not_null
+          - not_null 
       - name: sub_county
-        description: Sub county where indicator was reported
-        tests:
-          - not_null
-      - name: unit_type
+        description: Sub county where indicator was reported 
+        tests: 
+          - not_null 
+      - name: unit_type 
         description: The type of unit reporting. Can either be Community or Health
         tests:
           - not_null
-  - name: ebridge_diarrhoeal_model_output
+  - name: ebridge_predictive_model_output
     description: This table contains aggregate data for predicted cases based on the e-bridge ML model
     tests:
       - dbt_utils.unique_combination_of_columns:
