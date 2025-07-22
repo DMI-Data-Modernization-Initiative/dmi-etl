@@ -1,4 +1,4 @@
-select 
+select
     disease.disease,
     gender.gender,
     age_group.age_group_category,
@@ -13,12 +13,22 @@ select
     moh_505.indicator_value,
     moh_505.data_source,
     cast(current_date as date) as load_date
-from {{ref('fct_aggregate_moh_505')}} as moh_505
-left join {{ ref('dim_epi_week') }} as epi_wk on epi_wk.epi_week_key = moh_505.epi_week_key
-left join {{ ref('dim_county') }} as county on county.county_key = moh_505.county_key
-left join {{ ref('dim_disease') }} as disease on disease.disease_key = moh_505.disease_key
-left join {{ref('dim_facility')}} as facility on facility.facility_key = moh_505.facility_key
-left join {{ref('dim_indicator')}} as indicator on indicator.indicator_key = moh_505.indicator_key
-left join {{ref('dim_sub_county')}} as sub_county on sub_county.sub_county_key = moh_505.sub_county_key
-left join {{ ref('dim_age_group_khis')}} as age_group on age_group.age_group_key = moh_505.age_group_key
-left join {{ ref('dim_gender') }} as gender on gender.gender_key = moh_505.gender_key
+from {{ ref("fct_aggregate_moh_505") }} as moh_505
+left join
+    {{ ref("dim_epi_week") }} as epi_wk on epi_wk.epi_week_key = moh_505.epi_week_key
+left join {{ ref("dim_county") }} as county on county.county_key = moh_505.county_key
+left join
+    {{ ref("dim_disease") }} as disease on disease.disease_key = moh_505.disease_key
+left join
+    {{ ref("dim_facility") }} as facility
+    on facility.facility_key = moh_505.facility_key
+left join
+    {{ ref("dim_indicator") }} as indicator
+    on indicator.indicator_key = moh_505.indicator_key
+left join
+    {{ ref("dim_sub_county") }} as sub_county
+    on sub_county.sub_county_key = moh_505.sub_county_key
+left join
+    {{ ref("dim_age_group_khis") }} as age_group
+    on age_group.age_group_key = moh_505.age_group_key
+left join {{ ref("dim_gender") }} as gender on gender.gender_key = moh_505.gender_key

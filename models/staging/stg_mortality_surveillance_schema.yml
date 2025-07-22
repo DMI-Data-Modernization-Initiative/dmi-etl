@@ -1,0 +1,1151 @@
+version: 2
+models:
+- name: stg_mortality_surveillance
+  description: This table contains raw data for mortality surveillance
+  columns:
+  - name: unique_id
+    description: Unique id
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_unique_id_exists
+    - dbt_expectations.expect_column_values_to_be_unique:
+        name: stg_mortality_surveillance_unique_id_is_unique
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_unique_id_is_text
+        column_type: text
+    - dbt_expectations.expect_column_values_to_not_be_null:
+        name: stg_mortality_surveillance_unique_id_is_not_null
+  - name: record_id
+    description: Record id
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_record_id_exists
+    - dbt_expectations.expect_column_values_to_be_unique:
+        name: stg_mortality_surveillance_record_id_is_unique
+    - dbt_expectations.expect_column_values_to_not_be_null:
+        name: stg_mortality_surveillance_record_id_is_not_null
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_record_id_is_text
+        column_type: text
+  - name: redcap_data_access_group
+    description: Redcap data access group
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_redcap_data_access_group_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_redcap_data_access_group_is_text
+        column_type: text
+    - dbt_expectations.expect_column_values_to_not_be_null:
+        name: stg_mortality_surveillance_redcap_data_access_group_is_not_null
+  - name: mflcode
+    description: Mflcode
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_mflcode_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_mflcode_is_int8
+        column_type: int8
+  - name: screeningdate
+    description: Screeningdate
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_screeningdate_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_screeningdate_is_date
+        column_type: date
+  - name: eligible
+    description: Eligible
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_eligible_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_eligible_is_int8
+        column_type: int8
+  - name: plid
+    description: Plid
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_plid_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_plid_is_text
+        column_type: text
+  - name: ineligiblereason
+    description: Ineligiblereason
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_ineligiblereason_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_ineligiblereason_is_text
+        column_type: text
+  - name: ineligibleother
+    description: Ineligibleother
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_ineligibleother_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_ineligibleother_is_text
+        column_type: text
+  - name: enrolled
+    description: Enrolled
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_enrolled_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_enrolled_is_text
+        column_type: text
+  - name: unenrollreason
+    description: Unenrollreason
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_unenrollreason_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_unenrollreason_is_text
+        column_type: text
+  - name: unenrollother
+    description: Unenrollother
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_unenrollother_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_unenrollother_is_text
+        column_type: text
+  - name: reviewdate
+    description: Reviewdate
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_reviewdate_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_reviewdate_is_text
+        column_type: text
+  - name: dob
+    description: Dob
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_dob_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_dob_is_text
+        column_type: text
+  - name: age
+    description: Age
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_age_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_age_is_text
+        column_type: text
+  - name: ageyears
+    description: Ageyears
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_ageyears_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_ageyears_is_int8
+        column_type: int8
+  - name: agemonths
+    description: Agemonths
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_agemonths_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_agemonths_is_int8
+        column_type: int8
+  - name: agedays
+    description: Agedays
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_agedays_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_agedays_is_int8
+        column_type: int8
+  - name: sex
+    description: Sex
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sex_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sex_is_text
+        column_type: text
+  - name: marital_status
+    description: Marital status
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_marital_status_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_marital_status_is_text
+        column_type: text
+  - name: nationality
+    description: Nationality
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_nationality_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_nationality_is_text
+        column_type: text
+  - name: education_level_max
+    description: Education level max
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_education_level_max_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_education_level_max_is_text
+        column_type: text
+  - name: occupation
+    description: Occupation
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_occupation_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_occupation_is_text
+        column_type: text
+  - name: county
+    description: County
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_county_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_county_is_text
+        column_type: text
+  - name: othercounty
+    description: Othercounty
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_othercounty_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_othercounty_is_text
+        column_type: text
+  - name: sub_county
+    description: Sub county
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sub_county_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sub_county_is_text
+        column_type: text
+  - name: othersubcounty
+    description: Othersubcounty
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_othersubcounty_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_othersubcounty_is_text
+        column_type: text
+  - name: ward
+    description: Ward
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_ward_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_ward_is_text
+        column_type: text
+  - name: date_admission
+    description: Date admission
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_date_admission_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_date_admission_is_text
+        column_type: text
+  - name: illness_date
+    description: Illness date
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_illness_date_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_illness_date_is_text
+        column_type: text
+  - name: cough
+    description: Cough
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_cough_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_cough_is_text
+        column_type: text
+  - name: fever
+    description: Fever
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_fever_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_fever_is_text
+        column_type: text
+  - name: abnormal_breath_sounds
+    description: Abnormal breath sounds
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_abnormal_breath_sounds_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_abnormal_breath_sounds_is_text
+        column_type: text
+  - name: sore_throat
+    description: Sore throat
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sore_throat_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sore_throat_is_text
+        column_type: text
+  - name: difficulty_in_breathing
+    description: Difficulty in breathing
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_difficulty_in_breathing_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_difficulty_in_breathing_is_text
+        column_type: text
+  - name: chest_pain
+    description: Chest pain
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_chest_pain_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_chest_pain_is_text
+        column_type: text
+  - name: rhinorrhea
+    description: Rhinorrhea
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_rhinorrhea_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_rhinorrhea_is_text
+        column_type: text
+  - name: sore_muscles
+    description: Sore muscles
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sore_muscles_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sore_muscles_is_text
+        column_type: text
+  - name: hemoptysis_coughing_out
+    description: Hemoptysis coughing out
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_hemoptysis_coughing_out_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_hemoptysis_coughing_out_is_text
+        column_type: text
+  - name: chills
+    description: Chills
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_chills_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_chills_is_text
+        column_type: text
+  - name: headache
+    description: Headache
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_headache_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_headache_is_text
+        column_type: text
+  - name: diarrhea
+    description: Diarrhea
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_diarrhea_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_diarrhea_is_text
+        column_type: text
+  - name: vomiting
+    description: Vomiting
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_vomiting_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_vomiting_is_text
+        column_type: text
+  - name: skin_rash
+    description: Skin rash
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_skin_rash_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_skin_rash_is_text
+        column_type: text
+  - name: lack_of_appetite
+    description: Lack of appetite
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_lack_of_appetite_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_lack_of_appetite_is_text
+        column_type: text
+  - name: conjunctivitis
+    description: Conjunctivitis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_conjunctivitis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_conjunctivitis_is_text
+        column_type: text
+  - name: convulsions
+    description: Convulsions
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_convulsions_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_convulsions_is_text
+        column_type: text
+  - name: nasal_flaring
+    description: Nasal flaring
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_nasal_flaring_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_nasal_flaring_is_text
+        column_type: text
+  - name: chest_in_drawing
+    description: Chest in drawing
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_chest_in_drawing_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_chest_in_drawing_is_text
+        column_type: text
+  - name: lethargic
+    description: Lethargic
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_lethargic_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_lethargic_is_text
+        column_type: text
+  - name: unconscious
+    description: Unconscious
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_unconscious_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_unconscious_is_text
+        column_type: text
+  - name: symtons_other
+    description: Symtons other
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_symtons_other_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_symtons_other_is_text
+        column_type: text
+  - name: congenital_respiratory
+    description: Congenital respiratory
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_congenital_respiratory_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_congenital_respiratory_is_text
+        column_type: text
+  - name: neurological
+    description: Neurological
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_neurological_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_neurological_is_text
+        column_type: text
+  - name: newly_diagnosed_tb
+    description: Newly diagnosed tb
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_newly_diagnosed_tb_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_newly_diagnosed_tb_is_text
+        column_type: text
+  - name: prior_tb
+    description: Prior tb
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_prior_tb_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_prior_tb_is_text
+        column_type: text
+  - name: hiv_aids
+    description: Hiv aids
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_hiv_aids_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_hiv_aids_is_text
+        column_type: text
+  - name: congenital_cardiac_heart
+    description: Congenital cardiac heart
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_congenital_cardiac_heart_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_congenital_cardiac_heart_is_text
+        column_type: text
+  - name: malnutrition
+    description: Malnutrition
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_malnutrition_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_malnutrition_is_text
+        column_type: text
+  - name: acquired_heart_disease
+    description: Acquired heart disease
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_acquired_heart_disease_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_acquired_heart_disease_is_text
+        column_type: text
+  - name: immune_disorder
+    description: Immune disorder
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_immune_disorder_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_immune_disorder_is_text
+        column_type: text
+  - name: liver_disease
+    description: Liver disease
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_liver_disease_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_liver_disease_is_text
+        column_type: text
+  - name: renal_disease
+    description: Renal disease
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_renal_disease_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_renal_disease_is_text
+        column_type: text
+  - name: diabetes
+    description: Diabetes
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_diabetes_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_diabetes_is_text
+        column_type: text
+  - name: asthma_reactive_airway
+    description: Asthma reactive airway
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_asthma_reactive_airway_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_asthma_reactive_airway_is_text
+        column_type: text
+  - name: cancer_currently_or_12
+    description: Cancer currently or 12
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_cancer_currently_or_12_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_cancer_currently_or_12_is_text
+        column_type: text
+  - name: sickle_cell_disease
+    description: Sickle cell disease
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sickle_cell_disease_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sickle_cell_disease_is_text
+        column_type: text
+  - name: rickets
+    description: Rickets
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_rickets_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_rickets_is_text
+        column_type: text
+  - name: q_pregnant
+    description: Q pregnant
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_q_pregnant_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_q_pregnant_is_text
+        column_type: text
+  - name: current_smoker
+    description: Current smoker
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_current_smoker_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_current_smoker_is_text
+        column_type: text
+  - name: past_smoker
+    description: Past smoker
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_past_smoker_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_past_smoker_is_text
+        column_type: text
+  - name: drug_substance_use
+    description: Drug substance use
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_drug_substance_use_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_drug_substance_use_is_text
+        column_type: text
+  - name: familial_hered_disease
+    description: Familial hered disease
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_familial_hered_disease_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_familial_hered_disease_is_text
+        column_type: text
+  - name: history_of_attending_mass
+    description: History of attending mass
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_history_of_attending_mass_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_history_of_attending_mass_is_text
+        column_type: text
+  - name: specify_event
+    description: Specify event
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_specify_event_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_specify_event_is_text
+        column_type: text
+  - name: respiratory_rate
+    description: Respiratory rate
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_respiratory_rate_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_respiratory_rate_is_text
+        column_type: text
+  - name: height_measurement
+    description: Height measurement
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_height_measurement_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_height_measurement_is_text
+        column_type: text
+  - name: weight_measurement
+    description: Weight measurement
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_weight_measurement_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_weight_measurement_is_text
+        column_type: text
+  - name: temperature
+    description: Temperature
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_temperature_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_temperature_is_text
+        column_type: text
+  - name: oxygen_saturation
+    description: Oxygen saturation
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_oxygen_saturation_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_oxygen_saturation_is_text
+        column_type: text
+  - name: mid_upper_arm_circumference
+    description: Mid upper arm circumference
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_mid_upper_arm_circumference_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_mid_upper_arm_circumference_is_text
+        column_type: text
+  - name: respiratory_specimen
+    description: Respiratory specimen
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_respiratory_specimen_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_respiratory_specimen_is_text
+        column_type: text
+  - name: swab_type_1
+    description: Swab type 1
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type_1_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type_1_is_int8
+        column_type: int8
+  - name: swab_type_2
+    description: Swab type 2
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type_2_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type_2_is_int8
+        column_type: int8
+  - name: swab_type__1
+    description: Swab type  1
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type__1_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type__1_is_int8
+        column_type: int8
+  - name: swab_type__2
+    description: Swab type  2
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type__2_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type__2_is_int8
+        column_type: int8
+  - name: swab_type__999
+    description: Swab type  999
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type__999_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type__999_is_int8
+        column_type: int8
+  - name: swab_type__8
+    description: Swab type  8
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type__8_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type__8_is_int8
+        column_type: int8
+  - name: swab_type__1000
+    description: Swab type  1000
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_swab_type__1000_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_swab_type__1000_is_int8
+        column_type: int8
+  - name: specimen_date
+    description: Specimen date
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_specimen_date_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_specimen_date_is_text
+        column_type: text
+  - name: hiv_test
+    description: Hiv test
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_hiv_test_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_hiv_test_is_text
+        column_type: text
+  - name: hiv_result
+    description: Hiv result
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_hiv_result_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_hiv_result_is_text
+        column_type: text
+  - name: malaria_test
+    description: Malaria test
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_malaria_test_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_malaria_test_is_text
+        column_type: text
+  - name: malaria_result
+    description: Malaria result
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_malaria_result_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_malaria_result_is_text
+        column_type: text
+  - name: malaria_treated
+    description: Malaria treated
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_malaria_treated_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_malaria_treated_is_text
+        column_type: text
+  - name: tb_therapy
+    description: Tb therapy
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_tb_therapy_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_tb_therapy_is_text
+        column_type: text
+  - name: oxygen_admission
+    description: Oxygen admission
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_oxygen_admission_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_oxygen_admission_is_text
+        column_type: text
+  - name: patient_admitted
+    description: Patient admitted
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_patient_admitted_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_patient_admitted_is_text
+        column_type: text
+  - name: where_admitted
+    description: Where admitted
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_where_admitted_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_where_admitted_is_text
+        column_type: text
+  - name: days_admitted
+    description: Days admitted
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_days_admitted_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_days_admitted_is_text
+        column_type: text
+  - name: mechanical_ventilation
+    description: Mechanical ventilation
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_mechanical_ventilation_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_mechanical_ventilation_is_text
+        column_type: text
+  - name: hemoglobin_level
+    description: Hemoglobin level
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_hemoglobin_level_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_hemoglobin_level_is_text
+        column_type: text
+  - name: white_blood_cell_count
+    description: White blood cell count
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_white_blood_cell_count_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_white_blood_cell_count_is_text
+        column_type: text
+  - name: neutrophil_count
+    description: Neutrophil count
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_neutrophil_count_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_neutrophil_count_is_text
+        column_type: text
+  - name: lymphocytes_count
+    description: Lymphocytes count
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_lymphocytes_count_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_lymphocytes_count_is_text
+        column_type: text
+  - name: erythrocyte_rate
+    description: Erythrocyte rate
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_erythrocyte_rate_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_erythrocyte_rate_is_text
+        column_type: text
+  - name: sars_cov_2
+    description: Sars cov 2
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sars_cov_2_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sars_cov_2_is_text
+        column_type: text
+  - name: malaria
+    description: Malaria
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_malaria_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_malaria_is_text
+        column_type: text
+  - name: pneumonia
+    description: Pneumonia
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_pneumonia_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_pneumonia_is_text
+        column_type: text
+  - name: sepsis
+    description: Sepsis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sepsis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sepsis_is_text
+        column_type: text
+  - name: meningitis
+    description: Meningitis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_meningitis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_meningitis_is_text
+        column_type: text
+  - name: dehydration
+    description: Dehydration
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_dehydration_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_dehydration_is_text
+        column_type: text
+  - name: malnutrition_diagnosis
+    description: Malnutrition diagnosis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_malnutrition_diagnosis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_malnutrition_diagnosis_is_text
+        column_type: text
+  - name: bronchitis
+    description: Bronchitis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_bronchitis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_bronchitis_is_text
+        column_type: text
+  - name: respiratory_distress
+    description: Respiratory distress
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_respiratory_distress_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_respiratory_distress_is_text
+        column_type: text
+  - name: diagnosis
+    description: Diagnosis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_diagnosis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_diagnosis_is_text
+        column_type: text
+  - name: gastroenteritis
+    description: Gastroenteritis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_gastroenteritis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_gastroenteritis_is_text
+        column_type: text
+  - name: other_diagnosis
+    description: Other diagnosis
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_other_diagnosis_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_other_diagnosis_is_text
+        column_type: text
+  - name: other_diagnosis1
+    description: Other diagnosis1
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_other_diagnosis1_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_other_diagnosis1_is_text
+        column_type: text
+  - name: date_of_death
+    description: Date of death
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_date_of_death_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_date_of_death_is_date
+        column_type: date
+  - name: documented_cause_of_death
+    description: Documented cause of death
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_documented_cause_of_death_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_documented_cause_of_death_is_text
+        column_type: text
+  - name: other_death_cause
+    description: Other death cause
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_other_death_cause_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_other_death_cause_is_text
+        column_type: text
+  - name: antecedent_causes
+    description: Antecedent causes
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_antecedent_causes_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_antecedent_causes_is_text
+        column_type: text
+  - name: antecedent_death_cause
+    description: Antecedent death cause
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_antecedent_death_cause_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_antecedent_death_cause_is_text
+        column_type: text
+  - name: otherconditiondeath
+    description: Otherconditiondeath
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_otherconditiondeath_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_otherconditiondeath_is_text
+        column_type: text
+  - name: otherconditiondeath1
+    description: Otherconditiondeath1
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_otherconditiondeath1_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_otherconditiondeath1_is_text
+        column_type: text
+  - name: samplecollected
+    description: Samplecollected
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_samplecollected_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_samplecollected_is_text
+        column_type: text
+  - name: datecollected
+    description: Datecollected
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_datecollected_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_datecollected_is_text
+        column_type: text
+  - name: barcode
+    description: Barcode
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_barcode_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_barcode_is_text
+        column_type: text
+  - name: calculated_age
+    description: Calculated age
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_calculated_age_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_calculated_age_is_text
+        column_type: text
+  - name: date_received
+    description: Date received
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_date_received_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_date_received_is_date
+        column_type: date
+  - name: date_tested
+    description: Date tested
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_date_tested_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_date_tested_is_date
+        column_type: date
+  - name: result
+    description: Result
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_result_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_result_is_text
+        column_type: text
+  - name: tat_receiving
+    description: Tat receiving
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_tat_receiving_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_tat_receiving_is_text
+        column_type: text
+  - name: tat_testing
+    description: Tat testing
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_tat_testing_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_tat_testing_is_text
+        column_type: text
+  - name: sarcov_result
+    description: Sarcov result
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sarcov_result_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sarcov_result_is_text
+        column_type: text
+  - name: rsv_result
+    description: Rsv result
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_rsv_result_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_rsv_result_is_text
+        column_type: text
+  - name: min_dob
+    description: Min dob
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_min_dob_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_min_dob_is_text
+        column_type: text
+  - name: flu_ct
+    description: Flu ct
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_flu_ct_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_flu_ct_is_text
+        column_type: text
+  - name: rsv_ct
+    description: Rsv ct
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_rsv_ct_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_rsv_ct_is_text
+        column_type: text
+  - name: flu_result
+    description: Flu result
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_flu_result_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_flu_result_is_text
+        column_type: text
+  - name: sarscov_ct
+    description: Sarscov ct
+    tests:
+    - dbt_expectations.expect_column_to_exist:
+        name: stg_mortality_surveillance_sarscov_ct_exists
+    - dbt_expectations.expect_column_values_to_be_of_type:
+        name: stg_mortality_surveillance_sarscov_ct_is_text
+        column_type: text
